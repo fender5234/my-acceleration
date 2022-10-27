@@ -1,0 +1,11 @@
+<script src="js/vendor.min.js"></script>
+<script src="js/main.min.js{{ version }}"></script>
+
+{% if isDev %}
+  <script>
+    window.pinegladePP = {
+      breakpoints: [320, 768, 1320]
+    };
+  </script>
+  <script src="https://efiand.github.io/pineglade-pp/pineglade-pp.min.js"></script>
+{% endif %}
