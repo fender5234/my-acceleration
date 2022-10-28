@@ -25,6 +25,7 @@ module.exports = {
     'function-linear-gradient-no-nonstandard-direction': true,
 
     'number-leading-zero': 'always',
+    'number-max-precision': 8,
     'number-no-trailing-zeros': true,
     'length-zero-no-unit': true,
 
@@ -164,7 +165,6 @@ module.exports = {
 
     'color-no-invalid-hex': true,
     'color-no-hex': null,
-    'color-named': 'never',
-    'number-max-precision': 2
+    'color-named': 'never'
   }
 };

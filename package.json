@@ -2,7 +2,7 @@
   "name": "smart-device",
   "type": "module",
   "browserslist": [
-    "last 3 versions",
+    "last 6 versions",
     "not dead",
     "not IE 11"
   ],
@@ -44,7 +44,7 @@
     "gulp-prettier": "4.0.0",
     "gulp-rename": "2.0.0",
     "gulp-sass": "5.1.0",
-    "gulp-stacksvg": "1.0.4",
+    "gulp-stacksvg": "1.0.6",
     "gulp-twig": "1.2.0",
     "gulp-webp": "4.0.1",
     "pineglade-w3c": "1.0.3",
