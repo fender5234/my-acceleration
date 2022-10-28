@@ -403,30 +403,19 @@ template {
   box-sizing: border-box;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-}
-
 html {
   min-width: 320px;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
-  font-family: "Placeholder", "Arial", sans-serif;
-  color: #000000;
+  line-height: 1.34375;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
 body {
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
+  margin: 0;
+  min-height: 100vh;
 }
 
 a {
@@ -441,13 +430,16 @@ video {
   height: auto;
 }
 
-textarea {
-  resize: none;
-}
-
-input:-webkit-autofill {
-  box-shadow: inset 0 0 0 1000px #ffffff;
-  -webkit-text-fill-color: #000000;
+select,
+textarea,
+input:matches([type=email], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url]),
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 input,
@@ -470,6 +462,10 @@ textarea:invalid {
   box-shadow: none;
 }
 
+textarea {
+  resize: none;
+}
+
 select {
   border-radius: 0;
 }
@@ -479,10 +475,15 @@ input::-ms-reveal {
   display: none;
 }
 
-input[type=search]::-webkit-search-decoration,
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration {
+input:-webkit-autofill {
+  box-shadow: inset 0 0 0 1000px #ffffff;
+  -webkit-text-fill-color: #000000;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
   -webkit-appearance: none;
   appearance: none;
 }
@@ -498,29 +499,6 @@ input[type=number] {
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
   appearance: textfield;
-}
-
-select,
-textarea,
-input:matches([type=email],
-[type=number],
-[type=password],
-[type=search],
-[type=tel],
-[type=text],
-[type=url]) {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .wrapper {
@@ -596,17 +574,11 @@ button,
 }
 
 .btn {
-  display: inline-flex;
+  box-sizing: border-box;
   padding: 10px 20px;
-  color: #ffffff;
-  background-color: #2c39f2;
   border: none;
   cursor: pointer;
   transition: opacity 0.3s ease;
-}
-
-.btn--red {
-  background-color: #ff1553;
 }
 
 .btn:disabled {
