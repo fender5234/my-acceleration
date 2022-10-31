@@ -1,0 +1,44 @@
+.promo {
+  background-color: $color-black-pearl;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),url("../img/background-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.promo h2 {
+  margin: 0 0 32px 0;
+  padding: 0;
+  font-size: 80px;
+  line-height: 94px;
+  font-family: "Roboto-Condensed";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-alice-blue;
+  letter-spacing: 6px;
+}
+
+.promo p {
+  margin: 0 0 47px 0;
+  font-size: 22px;
+  line-height: 155%;
+  color: $color-alice-blue;
+}
+
+.promo button {
+  padding: 17px 25px;
+  font-family: "Roboto-Condensed";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: $color-deep-sky-blue;
+  border: none;
+  border-radius: 3px;
+  color: #f2f5f6;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.promo__container {
+  padding: 304px 0 280px 125px;
+}
