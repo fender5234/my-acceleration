@@ -384,17 +384,34 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto-Condensed";
   font-display: swap;
-  src: url("../fonts/roboto-condensed-400.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-style: normal;
   font-weight: 700;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto-Condensed";
   font-display: swap;
-  src: url("../fonts/roboto-condensed-700.woff2") format("woff2");
+  font-style: normal;
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "PTMono-Regular";
+  font-display: swap;
+  src: url("../fonts/PTMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2");
 }
 
 *,
@@ -676,6 +693,170 @@ input[type=number] {
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, #041827 80.9%, rgba(4, 24, 39, 0) 100%);
+}
+
+.header__nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #ffffff;
+}
+
+.header__top {
+  display: flex;
+  padding: 30px 0 35px;
+}
+
+.header__nav-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__nav-link {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.header__nav-link::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  background-color: #00b2ff;
+}
+
+.header__nav-link--mail::before {
+  top: 0;
+  left: -35px;
+  -webkit-mask-image: url(../img/sprite/icon-mail.svg);
+  mask-image: url(../img/sprite/icon-mail.svg);
+}
+
+.header__nav-link--phone::before {
+  top: 0;
+  left: -35px;
+  -webkit-mask-image: url(../img/sprite/icon-phone.svg);
+  mask-image: url(../img/sprite/icon-phone.svg);
+}
+
+.header__logo {
+  margin-right: 49px;
+}
+
+.header__nav-list-item {
+  margin-left: 136px;
+  padding: 15px 10px;
+}
+
+.header__callback-button {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Roboto-Condensed";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f2f5f7;
+  background-color: transparent;
+  border: 1px solid #f2f5f7;
+  border-radius: 3px;
+  align-self: baseline;
+  margin: 5px 0 0 157px;
+  padding: 11px 13px;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+body {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "PTMono-Regular", Arial, Helvetica, sans-serif;
+}
+
+.promo {
+  background-color: #041827;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.promo h2 {
+  margin: 0 0 32px 0;
+  padding: 0;
+  font-size: 80px;
+  line-height: 94px;
+  font-family: "Roboto-Condensed";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f2f5f7;
+  letter-spacing: 6px;
+}
+
+.promo p {
+  margin: 0 0 47px 0;
+  font-size: 22px;
+  line-height: 155%;
+  color: #f2f5f7;
+}
+
+.promo button {
+  padding: 17px 25px;
+  font-family: "Roboto-Condensed";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #00b2ff;
+  border: none;
+  border-radius: 3px;
+  color: #f2f5f6;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.promo__container {
+  padding: 304px 0 280px 125px;
+}
+
+.advantages {
+  padding-top: 120px;
+}
+
+.advantages ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-family: "Roboto-Condensed";
+  line-height: 140px;
+  font-weight: 400;
+  color: #00b2ff;
+}
+
+.advantages p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 21px;
+  color: #041827;
 }
 
 /* @mixin hover-focus {
