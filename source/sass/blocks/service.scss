@@ -1,0 +1,45 @@
+.service {
+  padding: 66px 0 194px;
+  background-color: $color-black-pearl;
+}
+
+.service h3 {
+  font-family: "Roboto-Condensed";
+  font-weight: 400;
+  font-size: 36px;
+  color: $color-default-white;
+  line-height: 50px;
+  margin: 0;
+}
+
+.service ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0 85px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service a {
+  display: block;
+  padding: 50px 40px;
+  font-family: "Roboto-Condensed";
+  color: $color-default-white;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  min-height: 650px;
+
+  &:nth-of-type(1) {
+    background-image: url("../img/background-card-desktop-1.jpg");
+  }
+
+  &:nth-of-type(2) {
+    background-image: url("../img/background-card-desktop-2.jpg");
+  }
+}
+
+.service li {
+  padding-top: 54px;
+}
