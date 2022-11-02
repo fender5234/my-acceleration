@@ -5,17 +5,85 @@
 .advantages ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.advantages li {
+  position: relative;
+  border: 1px solid #e5e5e5;
+  padding: 93px 45px 69px;
+  min-height: 300px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: $color-deep-sky-blue;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 39px;
+    left: 45px;
+    width: 35px;
+    height: 35px;
+    mask-repeat: no-repeat;
+    background-color: $color-deep-sky-blue;
+  }
+
+  &:nth-of-type(1) {
+    &::after {
+      mask-image: url("../img/sprite/icon-watch.svg");
+    }
+  }
+
+  &:nth-of-type(2) {
+    &::after {
+      mask-image: url("../img/sprite/icon-people.svg");
+    }
+  }
+
+  &:nth-of-type(3) {
+    &::after {
+      left: 40px;
+      mask-image: url("../img/sprite/icon-spy.svg");
+    }
+  }
+
+  &:nth-of-type(4) {
+    &::after {
+      mask-image: url("../img/sprite/icon-price.svg");
+    }
+  }
+
+  &:hover {
+    background-color: $color-deep-sky-blue;
+      &::after {
+        background-color: #f2f5f6;
+      }
+  }
+}
+
+.advantages li:hover h3,
+.advantages li:hover p {
+  color: #f2f5f6;
+}
+
+
+
 .advantages h3 {
-  margin: 0;
+  margin: 0 0 15px 0;
   padding: 0;
   font-size: 24px;
   font-family: "Roboto-Condensed";
-  line-height: 140px;
+  line-height: 34px;
   font-weight: 400;
   color: $color-deep-sky-blue;
 }
