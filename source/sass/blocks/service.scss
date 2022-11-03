@@ -1,5 +1,5 @@
 .service {
-  padding: 66px 0 194px;
+  padding: 66px 0 140px;
   background-color: $color-black-pearl;
 }
 
@@ -22,6 +22,7 @@
 }
 
 .service a {
+  position: relative;
   display: block;
   padding: 50px 40px;
   font-family: "Roboto-Condensed";
@@ -31,14 +32,51 @@
   line-height: 30px;
   min-height: 650px;
 
-  &:nth-of-type(1) {
-    background-image: url("../img/background-card-desktop-1.jpg");
+  &::before {
+    content: "";
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: $color-deep-sky-blue;
+    border-radius: 3px 0px 0px 0px;
   }
 
-  &:nth-of-type(2) {
-    background-image: url("../img/background-card-desktop-2.jpg");
+  &::after {
+    content: "";
+    bottom: 21px;
+    right: 25px;
+    position: absolute;
+    width: 6px;
+    height: 14px;
+    background-color: $color-default-white;
+    mask-repeat: no-repeat;
+    mask-image: url(../img/sprite/icon-arrow.svg);
   }
 }
+
+.service li {
+
+  &:nth-child(1) {
+    & a {
+      background-image: url("../img/background-card-desktop-1.jpg");
+    }
+  }
+
+  &:nth-child(2) {
+    & a {
+      background-image: url("../img/background-card-desktop-2.jpg");
+    }
+  }
+
+  &:nth-child(3) {
+    & a {
+      background-image: url("../img/background-card-desktop-3.jpg");
+    }
+  }
+}
+
 
 .service li {
   padding-top: 54px;

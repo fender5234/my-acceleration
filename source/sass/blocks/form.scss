@@ -1,0 +1,23 @@
+.form {
+  background-color: $color-deep-sky-blue;;
+}
+
+.form h3 {
+  margin: 0;
+  font-family: "Roboto-Condensed";
+  font-weight: 400;
+  line-height: 50px;
+  font-size: 36px;
+  color: $color-default-white;
+}
+
+.form p {
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+}
+
+.form-container {
+  width: 50%;
+  margin-left: auto;
+}
