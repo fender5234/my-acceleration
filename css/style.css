@@ -1053,9 +1053,37 @@ body {
 }
 
 .form {
-  padding: 166px 0 250px 0;
+  position: relative;
+  padding: 166px 0 245px 0;
   background-color: #00b2ff;
   color: #ffffff;
+}
+
+.form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -137px;
+  bottom: 0;
+  width: 59%;
+  background-color: rgba(4, 24, 39, 0.5);
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.form form {
+  position: relative;
+}
+
+.form form::after {
+  content: "";
+  position: absolute;
+  right: 700px;
+  bottom: 67px;
+  width: 510px;
+  height: 285px;
+  background-image: url(../img/airplane.png);
+  background-repeat: no-repeat;
 }
 
 .form h3 {
@@ -1083,12 +1111,14 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 0 31px;
+  align-items: start;
   margin: 0;
   padding: 0 0 0 4px;
   border: none;
 }
 
 .form input:not([type=checkbox]) {
+  padding: 15px 15px;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
@@ -1129,10 +1159,6 @@ body {
   color: #ffffff;
 }
 
-.form input {
-  padding: 15px 15px;
-}
-
 .form__text-area {
   grid-column: 1/-1;
   margin-bottom: 35px;
@@ -1153,9 +1179,45 @@ body {
   cursor: pointer;
 }
 
-.form label > span {
-  display: block;
+.form__checkbox-label {
   position: relative;
+}
+
+.form__checkbox {
+  position: absolute;
+  top: 22px;
+  left: 9px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form__checkbox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.form__checkbox:checked::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 9px;
+  height: 6px;
+  -webkit-mask-image: url(../img/sprite/icon-check.svg);
+  mask-image: url(../img/sprite/icon-check.svg);
+  background-color: #ffffff;
+}
+
+.form__checkbox-label span {
+  display: block;
+  padding: 15px 0 0 36px;
 }
 
 /* @mixin hover-focus {
