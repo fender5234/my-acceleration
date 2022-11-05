@@ -1,0 +1,84 @@
+.footer {
+  padding: 48px 0;
+  background-color: $color-black-pearl;
+}
+
+.footer-title {
+  margin: 0;
+  font-family: "Roboto-Condensed";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: $color-default-white;
+  text-transform: uppercase;
+}
+
+.footer ul {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  list-style: none;
+  color: $color-default-white;
+}
+
+.footer__social-list {
+  display: flex;
+  padding: 25px 0 0 9px;
+}
+
+.footer__social-link {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  &--ok {
+    background-image: url(../img/sprite/icon-ok.svg);
+  }
+
+  &--vk {
+    background-image: url(../img/sprite/icon-vk.svg);
+  }
+
+  &--pin {
+    background-image: url(../img/sprite/icon-pint.svg);
+  }
+}
+
+.footer__social-list-item {
+  margin-right: 15px;
+}
+
+.footer__info {
+  padding: 10px 0 0 10px;
+}
+
+.footer__info-list-item {
+  margin: 0 30px 10px 0;
+
+  &:last-child {
+    margin: 0 30px 44px 0;
+  }
+}
+
+.footer__info-list {
+  column-count: 2;
+  padding: 20px 0 0 0;
+}
+
+.footer__contacts {
+  padding: 8px 0 0 20px;
+}
+
+.footer__contacts-list {
+  padding: 23px 0 0;
+}
+
+.footer__contacts-list-item {
+  margin-bottom: 7px;
+}
+
+.footer__contacts-list-item address {
+  font-style: normal;
+}

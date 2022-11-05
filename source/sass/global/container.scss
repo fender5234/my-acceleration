@@ -9,4 +9,9 @@
   @media ($mobile) {
     padding: 0 25px;
   }
+
+  &--footer {
+    display: grid;
+    grid-template-columns: 30% 1fr 1fr;
+  }
 }

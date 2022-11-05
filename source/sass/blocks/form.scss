@@ -1,6 +1,6 @@
 .form {
   position: relative;
-  padding: 166px 0 245px 0;
+  padding: 166px 0 242px 0;
   background-color: $color-deep-sky-blue;
   color: $color-default-white;
 
@@ -13,21 +13,6 @@
     width: 59%;
     background-color: rgba(4, 24, 39, 0.5);
     clip-path: polygon(0 0,100% 0,0 100%);
-  }
-}
-
-.form form {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    right: 700px;
-    bottom: 67px;
-    width: 510px;
-    height: 285px;
-    background-image: url(../img/airplane.png);
-    background-repeat: no-repeat;
   }
 }
 
@@ -47,9 +32,21 @@
 }
 
 .form-container {
+  position: relative;
   width: 50%;
   margin-left: auto;
   padding: 0 10px 0 15px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 116%;
+    bottom: 68px;
+    width: 510px;
+    height: 285px;
+    background-image: url(../img/airplane.png);
+    background-repeat: no-repeat;
+  }
 }
 
 .form fieldset {
@@ -86,7 +83,7 @@
   font-size: 16px;
   line-height: 22px;
   color: $color-default-white;
-  width: 580px;
+  width: 100%;
   min-height: 155px;
   background-color: #019bdf;
   border: none;
