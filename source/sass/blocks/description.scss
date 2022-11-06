@@ -1,5 +1,9 @@
 .description {
   padding: 120px 0 120px 250px;
+
+  @media ($tablet-mobile) {
+    padding: 76px 0 80px 175px;
+  }
 }
 
 .description h2 {
@@ -20,6 +24,11 @@
     width: 150px;
     height: 320px;
     background-image: url("../img/year.png");
+
+    @media ($tablet-mobile) {
+      top: 4px;
+      left: -179px;
+    }
   }
 }
 
@@ -28,6 +37,10 @@
   line-height: 22px;
   margin: 0 0 21px 0;
   padding: 0;
+
+  @media ($tablet-mobile) {
+    margin: 0 0 19px 0;
+  }
 
   &:last-of-type {
     display: none;
@@ -48,5 +61,8 @@
   padding: 15px 15px 12px 15px;
   min-width: 180px;
   cursor: pointer;
-}
 
+  @media ($tablet-mobile) {
+    margin-top: -3px;
+  }
+}

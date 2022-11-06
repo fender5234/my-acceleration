@@ -15,6 +15,13 @@
   text-transform: uppercase;
   color: $color-alice-blue;
   letter-spacing: 6px;
+
+  @media ($tablet-mobile) {
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 4px;
+    margin: 0;
+  }
 }
 
 .promo p {
@@ -22,6 +29,10 @@
   font-size: 22px;
   line-height: 155%;
   color: $color-alice-blue;
+
+  @media ($tablet-mobile) {
+    margin: 0 0 58px 0;
+  }
 }
 
 .promo button {
@@ -37,8 +48,16 @@
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 1px;
+
+  @media ($tablet-mobile) {
+    margin-left: 45px;
+  }
 }
 
 .promo__container {
   padding: 304px 0 280px 125px;
+
+  @media ($tablet-mobile) {
+    padding: 179px 0 205px 0px;
+  }
 }

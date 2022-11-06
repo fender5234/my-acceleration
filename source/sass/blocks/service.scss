@@ -1,6 +1,10 @@
 .service {
   padding: 66px 0 140px;
   background-color: $color-black-pearl;
+
+  @media ($tablet-mobile) {
+    padding: 56px 0 45px;
+  }
 }
 
 .service h3 {
@@ -19,6 +23,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media($tablet-mobile) {
+    display: block;
+    padding-top: 39px;
+  }
 }
 
 .service a {
@@ -31,6 +40,11 @@
   font-size: 20px;
   line-height: 30px;
   min-height: 650px;
+
+  @media($tablet-mobile) {
+    padding: 36px 44px;
+    min-height: 250px;
+  }
 
   &::before {
     content: "";
@@ -80,4 +94,9 @@
 
 .service li {
   padding-top: 54px;
+
+  @media($tablet-mobile) {
+    margin-bottom: 30px;
+    padding: 0;
+  }
 }

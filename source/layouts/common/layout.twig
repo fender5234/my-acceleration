@@ -61,7 +61,7 @@
 									class="header__nav-link header__nav-link--mail"
 									aria-label="Адрес электронной почты для связи"
 								>
-									info@sd.ru
+									<span class="header__nav-link-text">info@sd.ru</span>
 								</a>
 							</li>
 							<li class="header__nav-list-item">
@@ -70,7 +70,7 @@
 									class="header__nav-link header__nav-link--phone"
 									aria-label="Номер телефона для связи"
 								>
-									+7 (495) 000 52 52
+									<span class="header__nav-link-text">+7 (495) 000 52 52</span>
 								</a>
 							</li>
 						</ul>
@@ -139,7 +139,8 @@
 						</li>
 						<li class="footer__info-list-item">
 							<a href="#" class="footer__info-link">
-								Производство&nbsp;печатных <br>	плат
+								Производство&nbsp;печатных <br />
+								плат
 							</a>
 						</li>
 						<li class="footer__info-list-item">
@@ -181,6 +182,6 @@
 				</section>
 			</div>
 		</footer>
-		{% endblock %} {% include 'scripts.twig' %}
+		{% endblock %}{% block callback %}{% endblock %}{% include 'scripts.twig' %}
 	</body>
 </html>

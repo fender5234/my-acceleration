@@ -1,5 +1,9 @@
 .advantages {
   padding-top: 120px;
+
+  @media ($tablet-mobile) {
+    padding-top: 80px;
+  }
 }
 
 .advantages ul {
@@ -16,6 +20,11 @@
   border: 1px solid #e5e5e5;
   padding: 93px 45px 69px;
   min-height: 300px;
+
+  @media ($tablet-mobile) {
+    padding: 93px 43px 39px;
+    min-height: 360px;
+  }
 
   &::before {
     content: "";
@@ -86,6 +95,10 @@
   line-height: 34px;
   font-weight: 400;
   color: $color-deep-sky-blue;
+
+  @media ($tablet-mobile) {
+    margin: 0 0 3px 0;
+  }
 }
 
 .advantages p {
