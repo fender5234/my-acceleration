@@ -4,6 +4,10 @@
   @media ($tablet-mobile) {
     padding: 76px 0 80px 175px;
   }
+
+  @media ($mobile) {
+    padding: 0;
+  }
 }
 
 .description h2 {
@@ -15,6 +19,11 @@
   color: $color-black-pearl;
   margin: 0 0 12px;
   padding: 0;
+
+  @media ($mobile) {
+    font-size: 28px;
+    line-height: 40px;
+  }
 
   &::before {
     content: "";
@@ -29,6 +38,10 @@
       top: 4px;
       left: -179px;
     }
+
+    @media ($mobile) {
+      display: none;
+    }
   }
 }
 
@@ -40,6 +53,11 @@
 
   @media ($tablet-mobile) {
     margin: 0 0 19px 0;
+  }
+
+  @media ($mobile) {
+    font-size: 14px;
+    line-height: 18px;
   }
 
   &:last-of-type {

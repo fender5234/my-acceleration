@@ -21,6 +21,10 @@
   @media ($tablet-mobile) {
     padding: 20px 0 35px;
   }
+
+  @media ($mobile) {
+    padding: 15px 0 35px;
+  }
 }
 
 .header__nav-list {
@@ -44,7 +48,7 @@
 
   &--mail {
     &::before {
-      top: 0;
+      // top: 0;
       left: -35px;
       mask-image: url(../img/sprite/icon-mail.svg);
     }
@@ -52,7 +56,7 @@
 
   &--phone {
     &::before {
-      top: 0;
+      // top: 0;
       left: -35px;
       mask-image: url(../img/sprite/icon-phone.svg);
     }
@@ -70,6 +74,15 @@
   @media ($tablet-mobile) {
     margin-left: 31px;
     padding: 10px 15px;
+  }
+
+  @media ($mobile) {
+    margin-left: 31px;
+    padding: 5px 15px;
+
+    &:last-child {
+      margin: 0;
+    }
   }
 }
 

@@ -18,5 +18,9 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
+
+    @media ($mobile) {
+      display: block;
+    }
   }
 }
