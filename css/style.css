@@ -743,14 +743,12 @@ input[type=number] {
 }
 
 .header__nav-link--mail::before {
-  top: 0;
   left: -35px;
   -webkit-mask-image: url(../img/sprite/icon-mail.svg);
   mask-image: url(../img/sprite/icon-mail.svg);
 }
 
 .header__nav-link--phone::before {
-  top: 0;
   left: -35px;
   -webkit-mask-image: url(../img/sprite/icon-phone.svg);
   mask-image: url(../img/sprite/icon-phone.svg);
@@ -1308,6 +1306,14 @@ body {
   font-style: normal;
 }
 
+.mobile-hidden {
+  display: none;
+}
+
+.mobile-visible {
+  display: none;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1348,6 +1354,12 @@ body {
     }
   }
 */
+
+@media (min-width: 767px) {
+  .mobile-hidden {
+    display: block;
+  }
+}
 
 @media (max-width: 1023px) {
   .container--footer {
@@ -1529,6 +1541,10 @@ body {
     padding: 0 25px;
   }
 
+  .container--footer {
+    display: block;
+  }
+
   .modal__wrapper {
     padding: 60px 16px;
   }
@@ -1540,6 +1556,98 @@ body {
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .header__top {
+    padding: 15px 0 35px;
+  }
+
+  .header__nav-list-item {
+    margin-left: 31px;
+    padding: 5px 15px;
+  }
+
+  .header__nav-list-item:last-child {
+    margin: 0;
+  }
+
+  .promo h2 {
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 4px;
+    margin: 0;
+  }
+
+  .promo p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .promo button {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .advantages ul {
+    display: block;
+  }
+
+  .advantages h3 {
+    font-size: 20px;
+  }
+
+  .advantages p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .description {
+    padding: 0;
+  }
+
+  .description h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .description h2::before {
+    display: none;
+  }
+
+  .description p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .service h3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .service a {
+    font-size: 18px;
+  }
+
+  .form h3 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .form p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .form fieldset {
+    display: block;
+  }
+
+  .footer__social {
+    display: block;
+  }
+
+  .mobile-visible {
+    display: block;
   }
 }
 

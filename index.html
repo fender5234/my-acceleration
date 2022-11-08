@@ -36,15 +36,12 @@
             href="index.html"
             class="header__logo logo-link"
             aria-label="Переход на главную страницу">
-            <svg
-              class="header-logo logo"
-              width="215"
-              height="55"
-              viewBox="0 0 215 55"
-              focusable="false"
-              xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/logo-full.svg#logo-full"></use>
-            </svg>
+            <picture>
+              <source media="(min-width:770px)" srcset="img/logo-full.svg" />
+              <img
+                src="img/logo-small.svg"
+                alt="Логотип компании Smart Device." />
+            </picture>
           </a>
           <nav class="header__nav">
             <ul class="header__nav-list">
@@ -81,7 +78,12 @@
               производство и монтаж, поставка комплектующих,<br />
               блоков и модулей
             </p>
-            <button type="button">получить бесплатную консультацию</button>
+            <button type="button">
+              <span class="mobile-hidden"
+                >получить бесплатную консультацию</span
+              >
+              <span class="mobile-visible">бесплатная консультация</span>
+            </button>
           </div>
         </div>
       </section>
@@ -149,7 +151,12 @@
       </div>
       <section class="service">
         <div class="container">
-          <h3>Smart Device предлагает следующие товары и услуги</h3>
+          <h3>
+            <span class="mobile-hidden">
+              Smart Device предлагает следующие товары и услуги
+            </span>
+            <span class="mobile-visible"> Товары и услуги Smart Device </span>
+          </h3>
           <ul>
             <li>
               <a href="#">
