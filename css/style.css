@@ -812,6 +812,7 @@ body {
   font-size: 22px;
   line-height: 155%;
   color: #f2f5f7;
+  padding-right: 400px;
 }
 
 .promo button {
@@ -1401,6 +1402,7 @@ body {
 
   .promo p {
     margin: 0 0 58px 0;
+    padding-right: 60px;
   }
 
   .promo button {
@@ -1421,7 +1423,7 @@ body {
   }
 
   .advantages h3 {
-    margin: 0 0 3px 0;
+    margin: 0 0 6px 0;
   }
 
   .description {
@@ -1480,6 +1482,10 @@ body {
   .form-container {
     width: auto;
     padding: 0;
+  }
+
+  .form-container::after {
+    display: none;
   }
 
   .form fieldset {
@@ -1563,33 +1569,83 @@ body {
   }
 
   .header__nav-list-item {
-    margin-left: 31px;
     padding: 5px 15px;
-  }
-
-  .header__nav-list-item:last-child {
-    margin: 0;
+    margin: 0 -6px 0 31px;
   }
 
   .promo h2 {
     font-size: 36px;
     line-height: 42px;
     letter-spacing: 4px;
-    margin: 0;
+    margin: 0 0 8px 0;
   }
 
   .promo p {
+    padding: 0;
     font-size: 14px;
     line-height: 22px;
+    margin: 0 0 44px 0;
   }
 
   .promo button {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 34px;
     font-size: 14px;
     line-height: 16px;
   }
 
+  .promo__container {
+    padding: 150px 0 190px 0px;
+  }
+
+  .advantages {
+    padding-top: 50px;
+  }
+
   .advantages ul {
     display: block;
+  }
+
+  .advantages li {
+    padding: 74px 30px 39px;
+    min-height: 340px;
+    margin-bottom: 30px;
+  }
+
+  .advantages li::after {
+    width: 30px;
+    height: 30px;
+    -webkit-mask-size: 30px 30px;
+    mask-size: 30px 30px;
+  }
+
+  .advantages li:nth-of-type(1)::after {
+    top: 30px;
+    left: 30px;
+  }
+
+  .advantages li:nth-of-type(2)::after {
+    top: 30px;
+    left: 30px;
+  }
+
+  .advantages li:nth-of-type(3) {
+    min-height: 326px;
+  }
+
+  .advantages li:nth-of-type(3)::after {
+    top: 30px;
+    left: 30px;
+  }
+
+  .advantages li:nth-of-type(4) {
+    min-height: 326px;
+  }
+
+  .advantages li:nth-of-type(4)::after {
+    top: 27px;
+    left: 30px;
   }
 
   .advantages h3 {
@@ -1598,16 +1654,17 @@ body {
 
   .advantages p {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 19px;
   }
 
   .description {
-    padding: 0;
+    padding: 15px 0 79px 0;
   }
 
   .description h2 {
     font-size: 28px;
     line-height: 40px;
+    margin: 0 0 14px;
   }
 
   .description h2::before {
@@ -1617,15 +1674,49 @@ body {
   .description p {
     font-size: 14px;
     line-height: 18px;
+    margin: 0 0 24px 0;
+  }
+
+  .description button {
+    padding: 9px 16px 9px 13px;
+    margin-top: -15px;
+    min-width: 160px;
+  }
+
+  .service {
+    padding: 46px 0 45px;
   }
 
   .service h3 {
     font-size: 28px;
     line-height: 40px;
+    padding-right: 10px;
+  }
+
+  .service ul {
+    display: block;
+    padding-top: 28px;
   }
 
   .service a {
     font-size: 18px;
+    padding: 25px 30px;
+  }
+
+  .service a::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .service a::after {
+    -webkit-mask-size: 7px 7px;
+    mask-size: 7px 7px;
+    bottom: 9px;
+    right: 16px;
+  }
+
+  .form {
+    display: none;
   }
 
   .form h3 {
