@@ -6,7 +6,7 @@
   }
 
   @media ($mobile) {
-    padding: 0;
+    padding: 15px 0 79px 0;
   }
 }
 
@@ -23,6 +23,7 @@
   @media ($mobile) {
     font-size: 28px;
     line-height: 40px;
+    margin: 0 0 14px;
   }
 
   &::before {
@@ -58,6 +59,7 @@
   @media ($mobile) {
     font-size: 14px;
     line-height: 18px;
+    margin: 0 0 24px 0;
   }
 
   &:last-of-type {
@@ -82,5 +84,11 @@
 
   @media ($tablet-mobile) {
     margin-top: -3px;
+  }
+
+  @media ($mobile) {
+    padding: 9px 16px 9px 13px;
+    margin-top: -15px;
+    min-width: 160px;
   }
 }

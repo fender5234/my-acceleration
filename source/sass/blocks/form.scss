@@ -8,6 +8,10 @@
     padding: 46px 0 123px;
   }
 
+  @media ($mobile) {
+    display: none;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -78,6 +82,10 @@
     height: 285px;
     background-image: url(../img/airplane.png);
     background-repeat: no-repeat;
+
+    @media ($tablet-mobile) {
+      display: none;
+    }
   }
 }
 

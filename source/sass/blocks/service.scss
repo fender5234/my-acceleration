@@ -5,6 +5,10 @@
   @media ($tablet-mobile) {
     padding: 56px 0 45px;
   }
+
+  @media ($mobile) {
+    padding: 46px 0 45px;
+  }
 }
 
 .service h3 {
@@ -15,9 +19,10 @@
   line-height: 50px;
   margin: 0;
 
-  @media($mobile) {
+  @media ($mobile) {
     font-size: 28px;
     line-height: 40px;
+    padding-right: 10px;
   }
 }
 
@@ -29,9 +34,14 @@
   padding: 0;
   list-style: none;
 
-  @media($tablet-mobile) {
+  @media ($tablet-mobile) {
     display: block;
     padding-top: 39px;
+  }
+
+  @media ($mobile) {
+    display: block;
+    padding-top: 28px;
   }
 }
 
@@ -46,13 +56,14 @@
   line-height: 30px;
   min-height: 650px;
 
-  @media($tablet-mobile) {
+  @media ($tablet-mobile) {
     padding: 36px 44px;
     min-height: 250px;
   }
 
-  @media($mobile) {
+  @media ($mobile) {
     font-size: 18px;
+    padding: 25px 30px;
   }
 
   &::before {
@@ -64,6 +75,11 @@
     height: 60px;
     background-color: $color-deep-sky-blue;
     border-radius: 3px 0px 0px 0px;
+
+    @media ($mobile) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &::after {
@@ -76,11 +92,16 @@
     background-color: $color-default-white;
     mask-repeat: no-repeat;
     mask-image: url(../img/sprite/icon-arrow.svg);
+
+    @media ($mobile) {
+      mask-size: 7px 7px;
+      bottom: 9px;
+      right: 16px;
+    }
   }
 }
 
 .service li {
-
   &:nth-child(1) {
     & a {
       background-image: url("../img/background-card-desktop-1.jpg");
@@ -100,11 +121,10 @@
   }
 }
 
-
 .service li {
   padding-top: 54px;
 
-  @media($tablet-mobile) {
+  @media ($tablet-mobile) {
     margin-bottom: 30px;
     padding: 0;
   }

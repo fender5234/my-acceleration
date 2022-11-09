@@ -27,7 +27,7 @@
     font-size: 36px;
     line-height: 42px;
     letter-spacing: 4px;
-    margin: 0;
+    margin: 0 0 8px 0;
   }
 }
 
@@ -36,14 +36,18 @@
   font-size: 22px;
   line-height: 155%;
   color: $color-alice-blue;
+  padding-right: 400px;
 
   @media ($tablet-mobile) {
     margin: 0 0 58px 0;
+    padding-right: 60px;
   }
 
   @media ($mobile) {
+    padding: 0;
     font-size: 14px;
     line-height: 22px;
+    margin: 0 0 44px 0;
   }
 }
 
@@ -66,6 +70,9 @@
   }
 
   @media ($mobile) {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 34px;
     font-size: 14px;
     line-height: 16px;
   }
@@ -76,5 +83,9 @@
 
   @media ($tablet-mobile) {
     padding: 179px 0 205px 0px;
+  }
+
+  @media ($mobile) {
+    padding: 150px 0 190px 0px;
   }
 }
