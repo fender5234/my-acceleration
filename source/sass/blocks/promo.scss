@@ -1,8 +1,23 @@
 .promo {
+  position: relative;
   background-color: $color-black-pearl;
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),url("../img/background-desktop.jpg");
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
+  @include adaptive-bg("background-desktop");
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(25, 32, 36, 0.7) 71.72%,
+      rgba(25, 32, 36, 0) 100%
+    );
+  }
 }
 
 .promo h2 {
@@ -79,6 +94,7 @@
 }
 
 .promo__container {
+  position: relative;
   padding: 304px 0 280px 125px;
 
   @media ($tablet-mobile) {

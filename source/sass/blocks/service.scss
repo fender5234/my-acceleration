@@ -55,6 +55,7 @@
   font-size: 20px;
   line-height: 30px;
   min-height: 650px;
+  background-size: 350px 650px;
 
   @media ($tablet-mobile) {
     padding: 36px 44px;
@@ -104,19 +105,19 @@
 .service li {
   &:nth-child(1) {
     & a {
-      background-image: url("../img/background-card-desktop-1.jpg");
+      @include adaptive-bg("../img/background-card-desktop-1");
     }
   }
 
   &:nth-child(2) {
     & a {
-      background-image: url("../img/background-card-desktop-2.jpg");
+      @include adaptive-bg("../img/background-card-desktop-2");
     }
   }
 
   &:nth-child(3) {
     & a {
-      background-image: url("../img/background-card-desktop-3.jpg");
+      @include adaptive-bg("../img/background-card-desktop-3");
     }
   }
 }
