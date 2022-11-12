@@ -791,10 +791,32 @@ body {
 }
 
 .promo {
+  position: relative;
   background-color: #041827;
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-desktop.jpg");
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
+}
+
+@supports not (background-image: url("../img/background-desktop.webp")) {
+  .promo {
+    background-image: url("../img/background-desktop.jpg");
+  }
+}
+
+@supports (background-image: url("../img/background-desktop.webp")) {
+  .promo {
+    background-image: url("../img/background-desktop.webp");
+  }
+}
+
+.promo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
 }
 
 .promo h2 {
@@ -833,6 +855,7 @@ body {
 }
 
 .promo__container {
+  position: relative;
   padding: 304px 0 280px 125px;
 }
 
@@ -1015,6 +1038,7 @@ body {
   font-size: 20px;
   line-height: 30px;
   min-height: 650px;
+  background-size: 350px 650px;
 }
 
 .service a::before {
@@ -1042,16 +1066,40 @@ body {
   mask-image: url(../img/sprite/icon-arrow.svg);
 }
 
-.service li:nth-child(1) a {
-  background-image: url("../img/background-card-desktop-1.jpg");
+@supports not (background-image: url("../img/../img/background-card-desktop-1.webp")) {
+  .service li:nth-child(1) a {
+    background-image: url("../img/../img/background-card-desktop-1.jpg");
+  }
 }
 
-.service li:nth-child(2) a {
-  background-image: url("../img/background-card-desktop-2.jpg");
+@supports (background-image: url("../img/../img/background-card-desktop-1.webp")) {
+  .service li:nth-child(1) a {
+    background-image: url("../img/../img/background-card-desktop-1.webp");
+  }
 }
 
-.service li:nth-child(3) a {
-  background-image: url("../img/background-card-desktop-3.jpg");
+@supports not (background-image: url("../img/../img/background-card-desktop-2.webp")) {
+  .service li:nth-child(2) a {
+    background-image: url("../img/../img/background-card-desktop-2.jpg");
+  }
+}
+
+@supports (background-image: url("../img/../img/background-card-desktop-2.webp")) {
+  .service li:nth-child(2) a {
+    background-image: url("../img/../img/background-card-desktop-2.webp");
+  }
+}
+
+@supports not (background-image: url("../img/../img/background-card-desktop-3.webp")) {
+  .service li:nth-child(3) a {
+    background-image: url("../img/../img/background-card-desktop-3.jpg");
+  }
+}
+
+@supports (background-image: url("../img/../img/background-card-desktop-3.webp")) {
+  .service li:nth-child(3) a {
+    background-image: url("../img/../img/background-card-desktop-3.webp");
+  }
 }
 
 .service li {
@@ -1822,4 +1870,54 @@ body {
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
   }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@supports not (background-image: url("../img/background-desktop@2x.webp")) {
+    .promo {
+      background-image: url("../img/background-desktop@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-desktop@2x.webp")) {
+    .promo {
+      background-image: url("../img/background-desktop@2x.webp");
+    }
+}
+
+@supports not (background-image: url("../img/../img/background-card-desktop-1@2x.webp")) {
+    .service li:nth-child(1) a {
+      background-image: url("../img/../img/background-card-desktop-1@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/../img/background-card-desktop-1@2x.webp")) {
+    .service li:nth-child(1) a {
+      background-image: url("../img/../img/background-card-desktop-1@2x.webp");
+    }
+}
+
+@supports not (background-image: url("../img/../img/background-card-desktop-2@2x.webp")) {
+    .service li:nth-child(2) a {
+      background-image: url("../img/../img/background-card-desktop-2@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/../img/background-card-desktop-2@2x.webp")) {
+    .service li:nth-child(2) a {
+      background-image: url("../img/../img/background-card-desktop-2@2x.webp");
+    }
+}
+
+@supports not (background-image: url("../img/../img/background-card-desktop-3@2x.webp")) {
+    .service li:nth-child(3) a {
+      background-image: url("../img/../img/background-card-desktop-3@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/../img/background-card-desktop-3@2x.webp")) {
+    .service li:nth-child(3) a {
+      background-image: url("../img/../img/background-card-desktop-3@2x.webp");
+    }
+}
 }
