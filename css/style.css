@@ -259,8 +259,6 @@ fieldset {
 */
 
 legend {
-  display: table;
-  /* 1 */
   box-sizing: border-box;
   /* 1 */
   max-width: 100%;
@@ -724,9 +722,11 @@ input[type=number] {
 .header__nav-list {
   display: flex;
   flex-wrap: wrap;
+  padding-right: 16px;
 }
 
 .header__nav-link {
+  display: block;
   position: relative;
   font-size: 16px;
   line-height: 18px;
@@ -743,12 +743,14 @@ input[type=number] {
 }
 
 .header__nav-link--mail::before {
+  top: 0;
   left: -35px;
   -webkit-mask-image: url(../img/sprite/icon-mail.svg);
   mask-image: url(../img/sprite/icon-mail.svg);
 }
 
 .header__nav-link--phone::before {
+  top: 0;
   left: -35px;
   -webkit-mask-image: url(../img/sprite/icon-phone.svg);
   mask-image: url(../img/sprite/icon-phone.svg);
@@ -774,7 +776,7 @@ input[type=number] {
   border: 1px solid #f2f5f7;
   border-radius: 3px;
   align-self: baseline;
-  margin: 5px 0 0 157px;
+  margin: 5px 0 0 140px;
   padding: 11px 13px;
   letter-spacing: 1px;
   flex-shrink: 0;
@@ -835,7 +837,7 @@ body {
 }
 
 .advantages {
-  padding-top: 120px;
+  padding-top: 123px;
 }
 
 .advantages ul {
@@ -939,7 +941,7 @@ body {
   font-size: 36px;
   line-height: 50px;
   color: #041827;
-  margin: 0 0 12px;
+  margin: 0 0 9px;
   padding: 0;
 }
 
@@ -1160,11 +1162,6 @@ body {
   color: #ffffff;
 }
 
-.form__text-area {
-  grid-column: 1/-1;
-  margin-bottom: 35px;
-}
-
 .form button {
   font-family: "Roboto-Condensed";
   font-weight: 700;
@@ -1219,6 +1216,11 @@ body {
 .form__checkbox-label span {
   display: block;
   padding: 15px 0 0 36px;
+}
+
+.form__text-area {
+  grid-column: 1/-1;
+  margin-bottom: 35px;
 }
 
 .footer {
@@ -1372,8 +1374,21 @@ body {
     padding: 20px 0 35px;
   }
 
+  .header__nav-link {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+
+  .header__nav-link::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
   .header__nav-list-item {
-    margin-left: 31px;
+    margin-left: 10px;
     padding: 10px 15px;
   }
 
@@ -1501,8 +1516,17 @@ body {
     left: -1px;
   }
 
+  .form__checkbox {
+    top: 31px;
+    left: 6px;
+  }
+
   .form__checkbox-label span {
     padding: 9px 0 0 24px;
+  }
+
+  .form__checkbox-label span {
+    padding: 24px 0 0 31px;
   }
 
   .footer__social-list {
@@ -1533,6 +1557,14 @@ body {
 
   .footer__contacts {
     padding: 33px 0 0 15px;
+  }
+
+  .footer__contacts {
+    padding: 44px 0 0 0;
+  }
+
+  .footer__contacts-list {
+    padding: 20px 0 0 0;
   }
 
   .footer__social {
@@ -1568,9 +1600,21 @@ body {
     padding: 15px 0 35px;
   }
 
+  .header__nav-list {
+    padding: 0;
+  }
+
+  .header__logo {
+    margin-right: auto;
+  }
+
+  .header__nav-list-item:nth-last-child {
+    margin: 0;
+  }
+
   .header__nav-list-item {
-    padding: 5px 15px;
-    margin: 0 -6px 0 31px;
+    padding: 5px 20px;
+    margin: 0;
   }
 
   .promo h2 {
@@ -1684,7 +1728,7 @@ body {
   }
 
   .service {
-    padding: 46px 0 45px;
+    padding: 46px 0 56px;
   }
 
   .service h3 {
@@ -1716,25 +1760,57 @@ body {
   }
 
   .form {
-    display: none;
+    padding: 46px 0 83px;
   }
 
   .form h3 {
     font-size: 30px;
     line-height: 42px;
+    margin: 0 0 10px 0;
   }
 
   .form p {
     font-size: 14px;
     line-height: 18px;
+    margin: 0 0 34px 0;
   }
 
   .form fieldset {
     display: block;
   }
 
+  .form textarea {
+    min-height: 180px;
+    padding: 23px 15px;
+  }
+
+  .form button {
+    display: block;
+    margin: 30px auto 0;
+    width: 270px;
+    padding: 16px 25px 11px;
+  }
+
+  .footer {
+    padding: 35px 0 0;
+  }
+
+  .footer ul {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .footer__social-list {
+    padding: 9px 0 0 17px;
+  }
+
+  .footer__info {
+    padding: 46px 0 0 0;
+  }
+
   .footer__social {
     display: block;
+    padding-left: 25px;
   }
 
   .mobile-visible {
