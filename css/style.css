@@ -797,18 +797,6 @@ body {
   background-position: center;
 }
 
-@supports not (background-image: url("../img/background-desktop.webp")) {
-  .promo {
-    background-image: url("../img/background-desktop.jpg");
-  }
-}
-
-@supports (background-image: url("../img/background-desktop.webp")) {
-  .promo {
-    background-image: url("../img/background-desktop.webp");
-  }
-}
-
 .promo::before {
   content: "";
   position: absolute;
@@ -1038,7 +1026,7 @@ body {
   font-size: 20px;
   line-height: 30px;
   min-height: 650px;
-  background-size: 350px 650px;
+  background-repeat: no-repeat;
 }
 
 .service a::before {
@@ -1064,42 +1052,6 @@ body {
   mask-repeat: no-repeat;
   -webkit-mask-image: url(../img/sprite/icon-arrow.svg);
   mask-image: url(../img/sprite/icon-arrow.svg);
-}
-
-@supports not (background-image: url("../img/../img/background-card-desktop-1.webp")) {
-  .service li:nth-child(1) a {
-    background-image: url("../img/../img/background-card-desktop-1.jpg");
-  }
-}
-
-@supports (background-image: url("../img/../img/background-card-desktop-1.webp")) {
-  .service li:nth-child(1) a {
-    background-image: url("../img/../img/background-card-desktop-1.webp");
-  }
-}
-
-@supports not (background-image: url("../img/../img/background-card-desktop-2.webp")) {
-  .service li:nth-child(2) a {
-    background-image: url("../img/../img/background-card-desktop-2.jpg");
-  }
-}
-
-@supports (background-image: url("../img/../img/background-card-desktop-2.webp")) {
-  .service li:nth-child(2) a {
-    background-image: url("../img/../img/background-card-desktop-2.webp");
-  }
-}
-
-@supports not (background-image: url("../img/../img/background-card-desktop-3.webp")) {
-  .service li:nth-child(3) a {
-    background-image: url("../img/../img/background-card-desktop-3.jpg");
-  }
-}
-
-@supports (background-image: url("../img/../img/background-card-desktop-3.webp")) {
-  .service li:nth-child(3) a {
-    background-image: url("../img/../img/background-card-desktop-3.webp");
-  }
 }
 
 .service li {
@@ -1407,9 +1359,231 @@ body {
 */
 
 @media (min-width: 767px) {
+  .promo {
+    background-size: 770px 640px;
+  }
+
+@supports not (background-image: url("../img/background-tablet.webp")) {
+    .promo {
+      background-image: url("../img/background-tablet.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-tablet.webp")) {
+    .promo {
+      background-image: url("../img/background-tablet.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-card-tablet-1.webp")) {
+    .service li:nth-child(1) a {
+      background-image: url("../img/background-card-tablet-1.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-tablet-1.webp")) {
+    .service li:nth-child(1) a {
+      background-image: url("../img/background-card-tablet-1.webp");
+    }
+}
+
+  .service li:nth-child(2) a {
+    background-size: 670px 250px;
+  }
+
+@supports not (background-image: url("../img/background-card-tablet-2.webp")) {
+    .service li:nth-child(2) a {
+      background-image: url("../img/background-card-tablet-2.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-tablet-2.webp")) {
+    .service li:nth-child(2) a {
+      background-image: url("../img/background-card-tablet-2.webp");
+    }
+}
+
+  .service li:nth-child(3) a {
+    background-size: 670px 250px;
+  }
+
+@supports not (background-image: url("../img/background-card-tablet-3.webp")) {
+    .service li:nth-child(3) a {
+      background-image: url("../img/background-card-tablet-3.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-tablet-3.webp")) {
+    .service li:nth-child(3) a {
+      background-image: url("../img/background-card-tablet-3.webp");
+    }
+}
+
   .mobile-hidden {
     display: block;
   }
+}
+
+@media (min-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 767px) and (min-resolution: 144dpi), (min-width: 767px) and (min-resolution: 1.5dppx) {
+@supports not (background-image: url("../img/background-tablet@2x.webp")) {
+    .promo {
+      background-image: url("../img/background-tablet@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-tablet@2x.webp")) {
+    .promo {
+      background-image: url("../img/background-tablet@2x.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-card-tablet-1@2x.webp")) {
+    .service li:nth-child(1) a {
+      background-image: url("../img/background-card-tablet-1@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-tablet-1@2x.webp")) {
+    .service li:nth-child(1) a {
+      background-image: url("../img/background-card-tablet-1@2x.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-card-tablet-2@2x.webp")) {
+    .service li:nth-child(2) a {
+      background-image: url("../img/background-card-tablet-2@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-tablet-2@2x.webp")) {
+    .service li:nth-child(2) a {
+      background-image: url("../img/background-card-tablet-2@2x.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-card-tablet-3@2x.webp")) {
+    .service li:nth-child(3) a {
+      background-image: url("../img/background-card-tablet-3@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-tablet-3@2x.webp")) {
+    .service li:nth-child(3) a {
+      background-image: url("../img/background-card-tablet-3@2x.webp");
+    }
+}
+}
+
+@media (min-width: 1023px) {
+  .promo {
+    background-size: 1920px 880px;
+  }
+
+@supports not (background-image: url("../img/background-desktop.webp")) {
+    .promo {
+      background-image: url("../img/background-desktop.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-desktop.webp")) {
+    .promo {
+      background-image: url("../img/background-desktop.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-card-desktop-1.webp")) {
+    .service li:nth-child(1) a {
+      background-image: url("../img/background-card-desktop-1.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-desktop-1.webp")) {
+    .service li:nth-child(1) a {
+      background-image: url("../img/background-card-desktop-1.webp");
+    }
+}
+
+  .service li:nth-child(2) a {
+    background-size: 350px 650px;
+  }
+
+@supports not (background-image: url("../img/background-card-desktop-2.webp")) {
+    .service li:nth-child(2) a {
+      background-image: url("../img/background-card-desktop-2.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-desktop-2.webp")) {
+    .service li:nth-child(2) a {
+      background-image: url("../img/background-card-desktop-2.webp");
+    }
+}
+
+  .service li:nth-child(3) a {
+    background-size: 350px 650px;
+  }
+
+@supports not (background-image: url("../img/background-card-desktop-3.webp")) {
+    .service li:nth-child(3) a {
+      background-image: url("../img/background-card-desktop-3.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-desktop-3.webp")) {
+    .service li:nth-child(3) a {
+      background-image: url("../img/background-card-desktop-3.webp");
+    }
+}
+}
+
+@media (min-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1023px) and (min-resolution: 144dpi), (min-width: 1023px) and (min-resolution: 1.5dppx) {
+@supports not (background-image: url("../img/background-desktop@2x.webp")) {
+    .promo {
+      background-image: url("../img/background-desktop@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-desktop@2x.webp")) {
+    .promo {
+      background-image: url("../img/background-desktop@2x.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-card-desktop-1@2x.webp")) {
+    .service li:nth-child(1) a {
+      background-image: url("../img/background-card-desktop-1@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-desktop-1@2x.webp")) {
+    .service li:nth-child(1) a {
+      background-image: url("../img/background-card-desktop-1@2x.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-card-desktop-2@2x.webp")) {
+    .service li:nth-child(2) a {
+      background-image: url("../img/background-card-desktop-2@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-desktop-2@2x.webp")) {
+    .service li:nth-child(2) a {
+      background-image: url("../img/background-card-desktop-2@2x.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-card-desktop-3@2x.webp")) {
+    .service li:nth-child(3) a {
+      background-image: url("../img/background-card-desktop-3@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-desktop-3@2x.webp")) {
+    .service li:nth-child(3) a {
+      background-image: url("../img/background-card-desktop-3@2x.webp");
+    }
+}
 }
 
 @media (max-width: 1023px) {
@@ -1870,54 +2044,4 @@ body {
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
   }
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-@supports not (background-image: url("../img/background-desktop@2x.webp")) {
-    .promo {
-      background-image: url("../img/background-desktop@2x.jpg");
-    }
-}
-
-@supports (background-image: url("../img/background-desktop@2x.webp")) {
-    .promo {
-      background-image: url("../img/background-desktop@2x.webp");
-    }
-}
-
-@supports not (background-image: url("../img/../img/background-card-desktop-1@2x.webp")) {
-    .service li:nth-child(1) a {
-      background-image: url("../img/../img/background-card-desktop-1@2x.jpg");
-    }
-}
-
-@supports (background-image: url("../img/../img/background-card-desktop-1@2x.webp")) {
-    .service li:nth-child(1) a {
-      background-image: url("../img/../img/background-card-desktop-1@2x.webp");
-    }
-}
-
-@supports not (background-image: url("../img/../img/background-card-desktop-2@2x.webp")) {
-    .service li:nth-child(2) a {
-      background-image: url("../img/../img/background-card-desktop-2@2x.jpg");
-    }
-}
-
-@supports (background-image: url("../img/../img/background-card-desktop-2@2x.webp")) {
-    .service li:nth-child(2) a {
-      background-image: url("../img/../img/background-card-desktop-2@2x.webp");
-    }
-}
-
-@supports not (background-image: url("../img/../img/background-card-desktop-3@2x.webp")) {
-    .service li:nth-child(3) a {
-      background-image: url("../img/../img/background-card-desktop-3@2x.jpg");
-    }
-}
-
-@supports (background-image: url("../img/../img/background-card-desktop-3@2x.webp")) {
-    .service li:nth-child(3) a {
-      background-image: url("../img/../img/background-card-desktop-3@2x.webp");
-    }
-}
 }
