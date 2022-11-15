@@ -795,6 +795,7 @@ body {
   background-color: #041827;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .promo::before {
@@ -1026,7 +1027,7 @@ body {
   font-size: 20px;
   line-height: 30px;
   min-height: 650px;
-  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .service a::before {
@@ -1359,10 +1360,6 @@ body {
 */
 
 @media (min-width: 767px) {
-  .promo {
-    background-size: 770px 640px;
-  }
-
 @supports not (background-image: url("../img/background-tablet.webp")) {
     .promo {
       background-image: url("../img/background-tablet.jpg");
@@ -1475,10 +1472,6 @@ body {
 }
 
 @media (min-width: 1023px) {
-  .promo {
-    background-size: 1920px 880px;
-  }
-
 @supports not (background-image: url("../img/background-desktop.webp")) {
     .promo {
       background-image: url("../img/background-desktop.jpg");
@@ -1738,17 +1731,8 @@ body {
     left: -1px;
   }
 
-  .form__checkbox {
-    top: 31px;
-    left: 6px;
-  }
-
   .form__checkbox-label span {
     padding: 9px 0 0 24px;
-  }
-
-  .form__checkbox-label span {
-    padding: 24px 0 0 31px;
   }
 
   .footer__social-list {
@@ -1838,6 +1822,18 @@ body {
     padding: 5px 20px;
     margin: 0;
   }
+
+@supports not (background-image: url("../img/background-mobile.webp")) {
+    .promo {
+      background-image: url("../img/background-mobile.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-mobile.webp")) {
+    .promo {
+      background-image: url("../img/background-mobile.webp");
+    }
+}
 
   .promo h2 {
     font-size: 36px;
@@ -1981,6 +1977,42 @@ body {
     right: 16px;
   }
 
+@supports not (background-image: url("../img/background-card-mobile-1.webp")) {
+    .service li:nth-child(1) a {
+      background-image: url("../img/background-card-mobile-1.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-mobile-1.webp")) {
+    .service li:nth-child(1) a {
+      background-image: url("../img/background-card-mobile-1.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-card-mobile-2.webp")) {
+    .service li:nth-child(2) a {
+      background-image: url("../img/background-card-mobile-2.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-mobile-2.webp")) {
+    .service li:nth-child(2) a {
+      background-image: url("../img/background-card-mobile-2.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-card-mobile-3.webp")) {
+    .service li:nth-child(3) a {
+      background-image: url("../img/background-card-mobile-3.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-mobile-3.webp")) {
+    .service li:nth-child(3) a {
+      background-image: url("../img/background-card-mobile-3.webp");
+    }
+}
+
   .form {
     padding: 46px 0 83px;
   }
@@ -2013,6 +2045,15 @@ body {
     padding: 16px 25px 11px;
   }
 
+  .form__checkbox {
+    top: 31px;
+    left: 6px;
+  }
+
+  .form__checkbox-label span {
+    padding: 24px 0 0 31px;
+  }
+
   .footer {
     padding: 35px 0 0;
   }
@@ -2038,6 +2079,56 @@ body {
   .mobile-visible {
     display: block;
   }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+@supports not (background-image: url("../img/background-mobile@2x.webp")) {
+    .promo {
+      background-image: url("../img/background-mobile@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-mobile@2x.webp")) {
+    .promo {
+      background-image: url("../img/background-mobile@2x.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-card-mobile-1@2x.webp")) {
+    .service li:nth-child(1) a {
+      background-image: url("../img/background-card-mobile-1@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-mobile-1@2x.webp")) {
+    .service li:nth-child(1) a {
+      background-image: url("../img/background-card-mobile-1@2x.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-card-mobile-2@2x.webp")) {
+    .service li:nth-child(2) a {
+      background-image: url("../img/background-card-mobile-2@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-mobile-2@2x.webp")) {
+    .service li:nth-child(2) a {
+      background-image: url("../img/background-card-mobile-2@2x.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-card-mobile-3@2x.webp")) {
+    .service li:nth-child(3) a {
+      background-image: url("../img/background-card-mobile-3@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-mobile-3@2x.webp")) {
+    .service li:nth-child(3) a {
+      background-image: url("../img/background-card-mobile-3@2x.webp");
+    }
+}
 }
 
 @media (hover: hover) {
