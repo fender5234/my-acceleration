@@ -3,15 +3,18 @@
   background-color: $color-black-pearl;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 
   @media ($desktop) {
-    background-size: 1920px 880px;
     @include adaptive-bg("background-desktop");
   }
 
   @media ($tablet-desktop) {
-    background-size: 770px 640px;
     @include adaptive-bg("background-tablet");
+  }
+
+  @media ($mobile) {
+    @include adaptive-bg("background-mobile");
   }
 
   &::before {

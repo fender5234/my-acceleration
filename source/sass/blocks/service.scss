@@ -55,7 +55,7 @@
   font-size: 20px;
   line-height: 30px;
   min-height: 650px;
-  background-repeat: no-repeat;
+  background-size: cover;
 
   @media ($tablet-mobile) {
     padding: 36px 44px;
@@ -112,6 +112,10 @@
       @media ($tablet-desktop) {
         @include adaptive-bg("background-card-tablet-1");
       }
+
+      @media ($mobile) {
+        @include adaptive-bg("background-card-mobile-1");
+      }
     }
   }
 
@@ -126,6 +130,10 @@
         background-size: 670px 250px;
         @include adaptive-bg("background-card-tablet-2");
       }
+
+      @media ($mobile) {
+        @include adaptive-bg("background-card-mobile-2");
+      }
     }
   }
 
@@ -139,6 +147,10 @@
       @media ($tablet-desktop) {
         background-size: 670px 250px;
         @include adaptive-bg("background-card-tablet-3");
+      }
+
+      @media ($mobile) {
+        @include adaptive-bg("background-card-mobile-3");
       }
     }
   }
