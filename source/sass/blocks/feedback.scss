@@ -1,0 +1,56 @@
+.feedback {
+  position: relative;
+  padding: 166px 0 242px 0;
+  background-color: $color-deep-sky-blue;
+  color: $color-default-white;
+
+  @media ($tablet-mobile) {
+    padding: 46px 0 123px;
+  }
+
+  @media ($mobile) {
+    padding: 46px 0 83px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -137px;
+    bottom: 0;
+    width: 59%;
+    background-color: rgba(4, 24, 39, 0.5);
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+
+    @media ($tablet-mobile) {
+      display: none;
+    }
+  }
+}
+
+.feedback__container {
+  position: relative;
+  width: 50%;
+  margin-left: auto;
+  padding: 0 10px 0 15px;
+
+  @media ($tablet-mobile) {
+    width: auto;
+    padding: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 116%;
+    bottom: 68px;
+    width: 510px;
+    height: 285px;
+    background-image: url(../img/airplane.png);
+    background-repeat: no-repeat;
+
+    @media ($tablet-mobile) {
+      display: none;
+    }
+  }
+}

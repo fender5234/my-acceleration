@@ -5,6 +5,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   min-width: 320px;
   font-size: $fz_default;
   line-height: 1.34375;

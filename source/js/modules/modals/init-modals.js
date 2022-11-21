@@ -28,9 +28,12 @@ const settings = {
 
 const initModals = () => {
   const modalElements = document.querySelectorAll('.modal');
-  modalElements.forEach((el) => {
+  modalElements.forEach((modalElement) => {
+    console.log(modalElement);
+    modalElement.removeAttribute('hidden');
+
     setTimeout(() => {
-      el.classList.remove('modal--preload');
+      modalElement.classList.remove('modal--preload');
     }, 100);
   });
   modals = new Modals(settings);

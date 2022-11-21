@@ -1,6 +1,6 @@
 {
+  "bracketSpacing": false,
   "singleQuote": true,
-  "trailingComma": "none",
   "overrides": [
     {
       "files": "*.html",
@@ -10,6 +10,12 @@
     },
     {
       "files": "*.scss",
+      "options": {
+        "singleQuote": false
+      }
+    },
+    {
+      "files": "*.twig",
       "options": {
         "singleQuote": false
       }
