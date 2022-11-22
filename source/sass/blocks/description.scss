@@ -62,9 +62,13 @@
     margin: 0 0 24px 0;
   }
 
-  &:last-of-type {
-    display: none;
-  }
+  // &:last-of-type {
+  //   display: none;
+  // }
+}
+
+p[data-nojs="show-text"] {
+  display: none;
 }
 
 .description button {

@@ -81,6 +81,7 @@
   }
 
   @media ($mobile) {
+    position: relative;
     padding: 22px 25px;
     border-top: 1px solid $color-alice-blue;
     border-bottom: 1px solid $color-alice-blue;
@@ -124,6 +125,7 @@
   }
 
   @media ($mobile) {
+    position: relative;
     padding: 22px 25px 4px;
     border-bottom: 1px solid $color-alice-blue;
   }
@@ -159,5 +161,22 @@
   @media ($mobile) {
     display: block;
     padding: 0 50px 24px;
+  }
+}
+
+.footer__contacts-button {
+  display: none;
+
+  @media ($mobile) {
+    position: absolute;
+    top: 20px;
+    right: 26px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    background-image: url("../img/sprite/icon-plus.svg");
+    background-repeat: no-repeat;
+    border: none;
   }
 }
