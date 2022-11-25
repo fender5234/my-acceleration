@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import { show } from './modules/modals/show-text';
+import { accordeonToggle } from './modules/modals/accordeon';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -18,6 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     show();
+    accordeonToggle();
   });
 });
 
