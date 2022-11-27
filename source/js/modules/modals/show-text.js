@@ -1,15 +1,14 @@
-const show = function () {
-  const showButton = document.querySelector('.show-text-button');
-  const hideText = document.querySelector('.hide-text');
-  hideText.setAttribute('data-js', 'hide-text');
+const showText = function () {
+  const Textsection = document.querySelector('[data-description]');
+  const togglerButton = section.querySelector('[data-button]');
+  const textBlock = section.querySelector('[data-text]');
+  textBlock.classList.add('is-hide-text');
 
-  showButton.addEventListener('click', () => {
-    if (hideText.hasAttribute('data-js')) {
-      hideText.removeAttribute('data-js');
-    } else {
-      hideText.setAttribute('data-js', 'hide-text');
+  Textsection.addEventListener('click', (event) => {
+    if (togglerButton === event.target) {
+      textBlock.classList.toggle('is-hide-text');
     }
   });
 };
 
-export {show};
+export {showText};

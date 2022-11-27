@@ -61,13 +61,9 @@
     line-height: 18px;
     margin: 0 0 24px 0;
   }
-
-  // &:last-of-type {
-  //   display: none;
-  // }
 }
 
-p[data-js="hide-text"] {
+.description .is-hide-text {
   display: none;
 }
 

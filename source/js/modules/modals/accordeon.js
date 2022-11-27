@@ -1,4 +1,5 @@
 // Не показывать кнопки аккордеона без JS.
+//(Кнопки включаться тока если загрузится JS)
 
 import {data} from 'autoprefixer';
 
@@ -16,26 +17,8 @@ const accordeonToggle = function () {
   accordeonSection.forEach((element) => {
     element.setAttribute('data-js', '');
   });
-  //
 
-  //Аккордеоны тогляться но все сразу надо как то разделить...
-  //   accordeonSection.forEach((section) => {
-  //     section.addEventListener('click', (event) => {
-  //       accordeonButton.forEach((element) => {
-  //         if (element === event.target) {
-  //           accordeonList.forEach((item) => {
-  //             if (item.closest('section')) {
-  //               item.toggleAttribute('data-js');
-  //             }
-  //           });
-  //         }
-  //       });
-  //     });
-  //   });
-  // };
-  //
-
-  //Аккордеоны тогляться но все сразу надо как то разделить...
+  //Функция для тогла аккордеонов
   accordeonSection.forEach((section) => {
     section.addEventListener('click', (event) => {
       accordeonButton.forEach((element) => {
