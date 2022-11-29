@@ -179,7 +179,22 @@
   }
 }
 
-.is-hidden-list {
+.shows-button.is-active {
+  @media ($mobile) {
+    position: absolute;
+    top: 20px;
+    right: 26px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    background-image: url("../img/sprite/icon-minus.svg");
+    background-repeat: no-repeat;
+    border: none;
+  }
+}
+
+.footer ul.is-hidden-list {
   @media ($mobile) {
     display: none;
   }
