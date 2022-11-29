@@ -164,7 +164,7 @@
   display: none;
 }
 
-.footer__button[data-js="show-button"] {
+.shows-button {
   @media ($mobile) {
     position: absolute;
     top: 20px;
@@ -179,13 +179,8 @@
   }
 }
 
-.footer-accordeon[data-js] {
-  .footer-accordeon-list {
-    @media ($mobile) {
-      display: none;
-      }
+.is-hidden-list {
+  @media ($mobile) {
+    display: none;
   }
 }
-
-
-

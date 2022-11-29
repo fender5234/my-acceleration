@@ -18,8 +18,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
-    showText();
     accordeonToggle();
+    document.querySelectorAll('[data-section-text]').forEach(showText);
   });
 });
 

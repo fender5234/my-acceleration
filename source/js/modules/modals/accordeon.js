@@ -3,33 +3,30 @@
 
 import {data} from 'autoprefixer';
 
-const accordeonButton = document.querySelectorAll('.footer__button');
+const accordeonSection = document.querySelectorAll('[data-accordeon-section]');
+const accordeonList = document.querySelectorAll('[data-accordeon-list]');
+const accordeonButton = document.querySelectorAll('[data-accordeon-button]');
 accordeonButton.forEach((element) => {
-  element.setAttribute('data-js', 'show-button');
+  element.classList.add('shows-button');
 });
 //
-
+// Свернуть списки аккордеонов
 const accordeonToggle = function () {
-  // Свернуть списки аккордеонов
-  const accordeonSection = document.querySelectorAll('.footer-accordeon');
-  const accordeonList = document.querySelectorAll('.footer-accordeon-list');
-
-  accordeonSection.forEach((element) => {
-    element.setAttribute('data-js', '');
+  accordeonList.forEach((element) => {
+    element.classList.add('is-hidden-list');
   });
 
-  //Функция для тогла аккордеонов
+// Тоглл для аккордеонов
   accordeonSection.forEach((section) => {
     section.addEventListener('click', (event) => {
       accordeonButton.forEach((element) => {
         const currentElement = element.closest('section');
+        const childList = currentElement.querySelector('ul');
         if (element === event.target) {
-          if (currentElement.hasAttribute('data-js')) {
-            accordeonSection.forEach(accordeonToggle);
-            currentElement.removeAttribute('data-js');
-          } else {
-            currentElement.setAttribute('data-js','');
-          }
+          accordeonList.forEach((item) => {
+            item.classList.add('is-hidden-list');
+          });
+          childList.classList.remove('is-hidden-list');
         }
       });
     });

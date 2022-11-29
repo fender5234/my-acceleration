@@ -5,6 +5,11 @@
   right: 0;
   z-index: 1;
   background: linear-gradient(180deg, #041827 80.9%, rgba(4, 24, 39, 0) 100%);
+
+
+  @media ($tablet-mobile) {
+    position: absolute;
+  }
 }
 
 .header__nav-list {
