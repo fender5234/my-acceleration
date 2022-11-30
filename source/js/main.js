@@ -2,6 +2,8 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import { showText } from './modules/modals/show-text';
 import { accordeonToggle } from './modules/modals/accordeon';
+import  initContentSection  from './modules/content-section';
+import initForm from './modules/form';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -10,16 +12,18 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-
   // Modules
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    initModals();
+    const contentElements = document.querySelectorAll('[data-content-section]');
+    contentElements.forEach(initContentSection);
     accordeonToggle();
     document.querySelectorAll('[data-section-text]').forEach(showText);
+    document.querySelectorAll('[data-form]').forEach(initForm);
+    initModals();
   });
 });
 
