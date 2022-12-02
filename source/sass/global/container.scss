@@ -9,19 +9,4 @@
   @media ($mobile) {
     padding: 0 25px;
   }
-
-  &--footer {
-    display: grid;
-    grid-template-columns: 30% 1fr 1fr;
-
-    @media ($tablet-mobile) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-
-    @media ($mobile) {
-      display: block;
-      padding: 0 0 35px 0;
-    }
-  }
 }

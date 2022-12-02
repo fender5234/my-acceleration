@@ -1,6 +1,7 @@
 {
   "bracketSpacing": false,
   "singleQuote": true,
+  "printWidth": 140,
   "overrides": [
     {
       "files": "*.html",
@@ -10,12 +11,6 @@
     },
     {
       "files": "*.scss",
-      "options": {
-        "singleQuote": false
-      }
-    },
-    {
-      "files": "*.twig",
       "options": {
         "singleQuote": false
       }

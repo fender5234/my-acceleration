@@ -33,7 +33,7 @@
 .footer__social-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 25px 0 0 9px;
+  padding: 31px 0 0 9px;
 
   @media ($tablet-mobile) {
     padding: 7px 0 0 0px;
@@ -181,21 +181,34 @@
 
 .shows-button.is-active {
   @media ($mobile) {
-    position: absolute;
-    top: 20px;
-    right: 26px;
-    display: block;
-    width: 15px;
-    height: 15px;
-    background-color: transparent;
     background-image: url("../img/sprite/icon-minus.svg");
-    background-repeat: no-repeat;
-    border: none;
   }
 }
 
 .footer ul.is-hidden-list {
   @media ($mobile) {
     display: none;
+  }
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: 30% 1fr 1fr;
+
+  @media ($tablet-mobile) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media ($mobile) {
+    display: block;
+    padding: 0 0 35px 0;
+  }
+}
+
+.footer__logo {
+  @media ($mobile) {
+    display: block;
+    margin-bottom: 6px;
   }
 }

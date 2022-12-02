@@ -91,6 +91,8 @@
   margin-right: 49px;
 
   @media ($mobile) {
+    width: 37px;
+    overflow: hidden;
     margin-right: auto;
   }
 }
@@ -154,5 +156,11 @@
 .header__nav {
   @media ($tablet-mobile) {
     margin-left: auto;
+  }
+}
+
+.header__logo-image {
+  @media ($mobile) {
+    max-width: 140px;
   }
 }
