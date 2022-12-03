@@ -1,7 +1,7 @@
-.mobile-hidden{
+.mobile-hidden {
   display: none;
 
-  @media($tablet-desktop) {
+  @media ($tablet-desktop) {
     display: block;
   }
 }

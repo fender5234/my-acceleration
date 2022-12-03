@@ -1,8 +1,6 @@
 // Не показывать кнопки аккордеона без JS.
 //(Кнопки включаться тока если загрузится JS)
 
-import {data} from 'autoprefixer';
-
 const accordeonSection = document.querySelectorAll('[data-accordeon-section]');
 const accordeonList = document.querySelectorAll('[data-accordeon-list]');
 const accordeonButton = document.querySelectorAll('[data-accordeon-button]');

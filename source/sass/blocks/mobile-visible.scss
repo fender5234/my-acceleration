@@ -1,7 +1,7 @@
 .mobile-visible {
   display: none;
 
-  @media($mobile) {
+  @media ($mobile) {
     display: block;
   }
 }

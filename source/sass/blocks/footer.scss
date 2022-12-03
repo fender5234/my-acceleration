@@ -9,7 +9,7 @@
 
 .footer-title {
   margin: 0;
-  font-family: "Roboto-Condensed";
+  font-family: $ff-roboto-condensed;
   font-weight: 400;
   font-size: 15px;
   line-height: 16px;
@@ -33,14 +33,14 @@
 .footer__social-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 31px 0 0 9px;
+  padding: 31px 0 9px;
 
   @media ($tablet-mobile) {
-    padding: 7px 0 0 0px;
+    padding: 7px 0 0;
   }
 
   @media ($mobile) {
-    padding: 9px 0 0 17px;
+    padding: 9px 0 17px;
   }
 }
 
@@ -52,15 +52,15 @@
   border-radius: 50%;
 
   &--ok {
-    background-image: url(../img/sprite/icon-ok.svg);
+    background-image: url("../img/sprite/icon-ok.svg");
   }
 
   &--vk {
-    background-image: url(../img/sprite/icon-vk.svg);
+    background-image: url("../img/sprite/icon-vk.svg");
   }
 
   &--pin {
-    background-image: url(../img/sprite/icon-pint.svg);
+    background-image: url("../img/sprite/icon-pint.svg");
   }
 }
 
@@ -74,10 +74,10 @@
 }
 
 .footer__info {
-  padding: 10px 0 0 10px;
+  padding: 10px 0 10px;
 
   @media ($tablet-mobile) {
-    padding: 33px 0 0 0;
+    padding: 33px 0 0;
   }
 
   @media ($mobile) {
@@ -92,21 +92,21 @@
   margin: 0 30px 10px 0;
 
   @media ($tablet-mobile) {
-    margin: 0 0px 8px 0;
+    margin-bottom: 0 0 8px;
   }
 
   &:last-child {
     margin: 0 30px 44px 0;
 
     @media ($tablet-mobile) {
-      margin: 0 0px 8px 0;
+      margin: 0 0 8px;
     }
   }
 }
 
 .footer__info-list {
   column-count: 2;
-  padding: 20px 0 0 0;
+  padding: 20px 0 0;
 
   @media ($tablet-mobile) {
     column-count: 1;
@@ -117,7 +117,7 @@
   padding: 8px 0 0 20px;
 
   @media ($tablet-mobile) {
-    padding: 33px 0 0 15px;
+    padding: 33px 0 15px;
   }
 
   @media ($mobile) {
@@ -131,7 +131,7 @@
   padding: 23px 0 0;
 
   @media ($tablet-mobile) {
-    padding: 20px 0 0 0;
+    padding: 20px 0 0;
   }
 }
 

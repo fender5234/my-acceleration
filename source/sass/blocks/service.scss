@@ -12,12 +12,13 @@
 }
 
 .service h3 {
-  font-family: "Roboto-Condensed";
+  font-family: $ff-roboto-condensed;
   font-weight: 400;
   font-size: 36px;
   color: $color-default-white;
   line-height: 50px;
   margin: 0;
+  letter-spacing: -2px;
 
   @media ($mobile) {
     font-size: 28px;
@@ -49,7 +50,7 @@
   position: relative;
   display: block;
   padding: 50px 40px;
-  font-family: "Roboto-Condensed";
+  font-family: $ff-roboto-condensed;
   color: $color-default-white;
   font-weight: 400;
   font-size: 20px;

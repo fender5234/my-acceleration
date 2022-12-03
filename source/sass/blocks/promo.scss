@@ -24,11 +24,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(
-      180deg,
-      rgba(25, 32, 36, 0.7) 71.72%,
-      rgba(25, 32, 36, 0) 100%
-    );
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
   }
 }
 
@@ -37,11 +33,11 @@
   padding: 0;
   font-size: 80px;
   line-height: 94px;
-  font-family: "Roboto-Condensed";
+  font-family: $ff-roboto-condensed;
   font-weight: 700;
   text-transform: uppercase;
   color: $color-alice-blue;
-  letter-spacing: 6px;
+  letter-spacing: -4px;
 
   @media ($tablet-mobile) {
     font-size: 64px;
@@ -80,8 +76,8 @@
 
 .promo a {
   display: inline-block;
-  padding: 17px 25px;
-  font-family: "Roboto-Condensed";
+  padding: 17px 10px;
+  font-family: $ff-roboto-condensed;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -91,7 +87,6 @@
   color: #f2f5f6;
   cursor: pointer;
   text-transform: uppercase;
-  letter-spacing: 1px;
 
   @media ($tablet-mobile) {
     margin-left: 45px;
@@ -111,10 +106,10 @@
   padding: 304px 0 280px 125px;
 
   @media ($tablet-mobile) {
-    padding: 179px 0 205px 0px;
+    padding: 179px 0 205px;
   }
 
   @media ($mobile) {
-    padding: 150px 0 190px 0px;
+    padding: 150px 0 190px;
   }
 }

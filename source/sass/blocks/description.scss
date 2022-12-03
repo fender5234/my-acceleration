@@ -12,7 +12,7 @@
 
 .description h2 {
   position: relative;
-  font-family: "Roboto-Condensed";
+  font-family: $ff-roboto-condensed;
   font-weight: 400;
   font-size: 36px;
   line-height: 50px;
@@ -68,7 +68,7 @@
 }
 
 .description button {
-  font-family: "Roboto-Condensed";
+  font-family: $ff-roboto-condensed;
   font-weight: 700;
   line-height: 16px;
   color: $color-deep-sky-blue;
