@@ -23,7 +23,7 @@
   @media ($mobile) {
     font-size: 28px;
     line-height: 40px;
-    padding-right: 10px;
+    padding-right: 20px;
   }
 }
 
@@ -57,6 +57,7 @@
   line-height: 30px;
   min-height: 650px;
   background-size: cover;
+  background-color: $color-deep-sky-blue;
 
   @media ($tablet-mobile) {
     padding: 36px 44px;
@@ -76,7 +77,7 @@
     width: 60px;
     height: 60px;
     background-color: $color-deep-sky-blue;
-    border-radius: 3px 0px 0px 0px;
+    border-radius: 3px 0 0 0;
 
     @media ($mobile) {
       width: 40px;
@@ -93,7 +94,7 @@
     height: 14px;
     background-color: $color-default-white;
     mask-repeat: no-repeat;
-    mask-image: url(../img/sprite/icon-arrow.svg);
+    mask-image: url("../img/sprite/icon-arrow.svg");
 
     @media ($mobile) {
       mask-size: 7px 7px;
@@ -104,6 +105,13 @@
 }
 
 .service li {
+  padding-top: 54px;
+
+  @media ($tablet-mobile) {
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
   &:nth-child(1) {
     & a {
       @media ($desktop) {
@@ -124,11 +132,13 @@
     & a {
       @media ($desktop) {
         background-size: 350px 650px;
+
         @include adaptive-bg("background-card-desktop-2");
       }
 
       @media ($tablet-desktop) {
         background-size: 670px 250px;
+
         @include adaptive-bg("background-card-tablet-2");
       }
 
@@ -142,11 +152,13 @@
     & a {
       @media ($desktop) {
         background-size: 350px 650px;
+
         @include adaptive-bg("background-card-desktop-3");
       }
 
       @media ($tablet-desktop) {
         background-size: 670px 250px;
+
         @include adaptive-bg("background-card-tablet-3");
       }
 
@@ -157,11 +169,11 @@
   }
 }
 
-.service li {
-  padding-top: 54px;
+// .service li {
+//   padding-top: 54px;
 
-  @media ($tablet-mobile) {
-    margin-bottom: 30px;
-    padding: 0;
-  }
-}
+//   @media ($tablet-mobile) {
+//     margin-bottom: 30px;
+//     padding: 0;
+//   }
+// }

@@ -1,13 +1,12 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import { showText } from './modules/modals/show-text';
-import { accordeonToggle } from './modules/modals/accordeon';
-import  initContentSection  from './modules/content-section';
+import {showText} from './modules/modals/show-text';
+import {accordeonToggle} from './modules/modals/accordeon';
+import initContentSection from './modules/content-section';
 import initForm from './modules/form';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-
   // Utils
   // ---------------------------------
 

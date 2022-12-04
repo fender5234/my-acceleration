@@ -29,7 +29,6 @@ const settings = {
 const initModals = () => {
   const modalElements = document.querySelectorAll('.modal');
   modalElements.forEach((modalElement) => {
-    console.log(modalElement);
     modalElement.removeAttribute('hidden');
 
     setTimeout(() => {

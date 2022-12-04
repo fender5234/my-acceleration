@@ -5,9 +5,7 @@
   background-position: center;
   background-size: cover;
 
-  @media ($desktop) {
-    @include adaptive-bg("background-desktop");
-  }
+  @include adaptive-bg("background-desktop");
 
   @media ($tablet-desktop) {
     @include adaptive-bg("background-tablet");
@@ -42,14 +40,14 @@
   @media ($tablet-mobile) {
     font-size: 64px;
     line-height: 75px;
-    letter-spacing: 4px;
+    letter-spacing: -3px;
     margin: 0;
   }
 
   @media ($mobile) {
     font-size: 36px;
     line-height: 42px;
-    letter-spacing: 4px;
+    letter-spacing: -2px;
     margin: 0 0 8px 0;
   }
 }
@@ -95,7 +93,7 @@
   @media ($mobile) {
     display: block;
     margin: 0 auto;
-    padding: 12px 34px;
+    padding: 12px 15px;
     font-size: 14px;
     line-height: 16px;
   }

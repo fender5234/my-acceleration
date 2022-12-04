@@ -52,3 +52,19 @@
     display: none;
   }
 }
+
+.mobile-visible {
+  display: none;
+
+  @media ($mobile) {
+    display: block;
+  }
+}
+
+.mobile-hidden {
+  display: none;
+
+  @media ($tablet-desktop) {
+    display: block;
+  }
+}

@@ -1,5 +1,5 @@
 // Не показывать кнопки аккордеона без JS.
-//(Кнопки включаться тока если загрузится JS)
+// (Кнопки включаться тока если загрузится JS)
 
 const accordeonSection = document.querySelectorAll('[data-accordeon-section]');
 const accordeonList = document.querySelectorAll('[data-accordeon-list]');
@@ -8,6 +8,7 @@ accordeonButton.forEach((element) => {
   element.classList.add('shows-button');
 });
 //
+
 // Свернуть списки аккордеонов
 const accordeonToggle = function () {
   accordeonList.forEach((element) => {
@@ -24,11 +25,7 @@ const accordeonToggle = function () {
           const currentElement = element.closest('section');
           const childList = currentElement.querySelector('ul');
           const currentButton = element;
-          console.log(currentButton);
-          // тут внизу форыч скрывает добавляет класс скрывания списков всех сразу
-          accordeonList.forEach((item) => {
-            item.classList.add('is-hidden-list');
-          });
+          accordeonToggle();
           // а тут нужный список который выше был добавлен в переменную открываеться
           childList.classList.remove('is-hidden-list');
           currentButton.classList.add('is-active');

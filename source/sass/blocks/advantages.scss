@@ -10,7 +10,7 @@
   }
 }
 
-.advantages ul {
+.advantages__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
@@ -23,14 +23,14 @@
   }
 }
 
-.advantages li {
+.advantages__list-item {
   position: relative;
   border: 1px solid #e5e5e5;
-  padding: 93px 45px 69px;
+  padding: 93px 40px 0 45px;
   min-height: 300px;
 
   @media ($tablet-mobile) {
-    padding: 93px 43px 39px;
+    padding: 93px 43px 0 39px;
     min-height: 360px;
   }
 
@@ -126,12 +126,12 @@
     &::after {
       background-color: #f2f5f6;
     }
-  }
-}
 
-.advantages li:hover h3,
-.advantages li:hover p {
-  color: #f2f5f6;
+    h3,
+    p {
+      color: #f2f5f6;
+    }
+  }
 }
 
 .advantages h3 {
