@@ -132,7 +132,8 @@ module.exports = {
           'include',
           'content',
           'rules',
-          'each'
+          'each',
+          'if'
         ]
       }
     ],

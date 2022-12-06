@@ -7,7 +7,7 @@
 
   @include adaptive-bg("background-desktop");
 
-  @media ($tablet-desktop) {
+  @media ($tablet-mobile) {
     @include adaptive-bg("background-tablet");
   }
 

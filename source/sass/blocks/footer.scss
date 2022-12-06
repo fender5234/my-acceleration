@@ -68,8 +68,13 @@
   margin-right: 15px;
 
   @media ($tablet-mobile) {
-    margin-right: -21px;
-    margin-left: 36px;
+    margin-right: -6px;
+    margin-left: 21px;
+  }
+
+  @media ($mobile) {
+    margin-right: -19px;
+    margin-left: 35px;
   }
 }
 
@@ -77,7 +82,7 @@
   padding: 10px 0 0 10px;
 
   @media ($tablet-mobile) {
-    padding: 33px 0 0;
+    padding: 40px 0 0;
   }
 
   @media ($mobile) {
@@ -117,7 +122,7 @@
   padding: 8px 0 0 20px;
 
   @media ($tablet-mobile) {
-    padding: 33px 0 15px;
+    padding: 40px 0 0 15px;
   }
 
   @media ($mobile) {

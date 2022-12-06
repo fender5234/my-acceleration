@@ -114,11 +114,9 @@
 
   &:nth-child(1) {
     & a {
-      @media ($desktop) {
-        @include adaptive-bg("background-card-desktop-1");
-      }
+      @include adaptive-bg("background-card-desktop-1");
 
-      @media ($tablet-desktop) {
+      @media ($tablet-mobile) {
         @include adaptive-bg("background-card-tablet-1");
       }
 
@@ -130,15 +128,9 @@
 
   &:nth-child(2) {
     & a {
-      @media ($desktop) {
-        background-size: 350px 650px;
+      @include adaptive-bg("background-card-desktop-2");
 
-        @include adaptive-bg("background-card-desktop-2");
-      }
-
-      @media ($tablet-desktop) {
-        background-size: 670px 250px;
-
+      @media ($tablet-mobile) {
         @include adaptive-bg("background-card-tablet-2");
       }
 
@@ -150,15 +142,9 @@
 
   &:nth-child(3) {
     & a {
-      @media ($desktop) {
-        background-size: 350px 650px;
+      @include adaptive-bg("background-card-desktop-3");
 
-        @include adaptive-bg("background-card-desktop-3");
-      }
-
-      @media ($tablet-desktop) {
-        background-size: 670px 250px;
-
+      @media ($tablet-mobile) {
         @include adaptive-bg("background-card-tablet-3");
       }
 
@@ -168,12 +154,3 @@
     }
   }
 }
-
-// .service li {
-//   padding-top: 54px;
-
-//   @media ($tablet-mobile) {
-//     margin-bottom: 30px;
-//     padding: 0;
-//   }
-// }

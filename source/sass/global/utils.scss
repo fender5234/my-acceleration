@@ -62,9 +62,9 @@
 }
 
 .mobile-hidden {
-  display: none;
+  display: block;
 
-  @media ($tablet-desktop) {
-    display: block;
+  @media ($mobile) {
+    display: none;
   }
 }

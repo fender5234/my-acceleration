@@ -4,6 +4,7 @@
   font-weight: 400;
   line-height: 50px;
   font-size: 32px;
+  letter-spacing: 0;
 
   @media ($tablet-mobile) {
     margin: 0 0 7px 0;
@@ -13,6 +14,7 @@
     font-size: 30px;
     line-height: 42px;
     margin: 0 0 10px 0;
+    letter-spacing: -2px;
   }
 }
 
@@ -34,7 +36,7 @@
   }
 }
 
-.form fieldset {
+.form__fieldset {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 0 31px;
@@ -42,6 +44,10 @@
   margin: 0;
   padding: 0 0 0 4px;
   border: none;
+
+  &--modal {
+    grid-template-columns: 1fr;
+  }
 
   @media ($tablet-mobile) {
     padding: 0;
@@ -110,6 +116,11 @@
   width: 266px;
   letter-spacing: 1px;
   cursor: pointer;
+  margin-top: 20px;
+
+  @media ($tablet-mobile) {
+    margin-top: 20px;
+  }
 
   @media ($mobile) {
     display: block;
@@ -119,23 +130,23 @@
   }
 }
 
-.form__checkbox-label {
+.form label [type="checkbox"] {
   position: relative;
 }
 
-.form__checkbox {
+.form [type="checkbox"] {
   position: absolute;
-  top: 22px;
+  top: 29px;
   left: 9px;
   appearance: none;
 
   @media ($tablet-mobile) {
-    top: 17px;
+    top: 25px;
     left: -1px;
   }
 
   @media ($mobile) {
-    top: 31px;
+    top: 19px;
     left: 6px;
   }
 
@@ -164,20 +175,20 @@
   }
 }
 
-.form__checkbox-label span {
+.form span {
   display: block;
-  padding: 15px 0 0 36px;
+  padding: 13px 0 0 36px;
 
   @media ($tablet-mobile) {
     padding: 9px 0 0 24px;
   }
 
   @media ($mobile) {
-    padding: 24px 0 0 31px;
+    padding: 4px 0 0 31px;
   }
 }
 
 .form__text-area {
   grid-column: 1/-1;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
