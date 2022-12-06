@@ -574,7 +574,7 @@ input[type=number] {
 }
 
 .mobile-hidden {
-  display: none;
+  display: block;
 }
 
 .container {
@@ -691,6 +691,10 @@ input[type=number] {
   pointer-events: auto;
 }
 
+.modal__content h2 {
+  font-size: 30px;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -765,7 +769,7 @@ input[type=number] {
   border: 1px solid #f2f5f7;
   border-radius: 3px;
   align-self: baseline;
-  margin: 5px 0 0 155px;
+  margin: 5px 0 0 141px;
   padding: 11px 11px;
   flex-shrink: 0;
   cursor: pointer;
@@ -1054,9 +1058,45 @@ input[type=number] {
   padding-top: 54px;
 }
 
+@supports not (background-image: url("../img/background-card-desktop-1.webp")) {
+  .service li:nth-child(1) a {
+    background-image: url("../img/background-card-desktop-1.jpg");
+  }
+}
+
+@supports (background-image: url("../img/background-card-desktop-1.webp")) {
+  .service li:nth-child(1) a {
+    background-image: url("../img/background-card-desktop-1.webp");
+  }
+}
+
+@supports not (background-image: url("../img/background-card-desktop-2.webp")) {
+  .service li:nth-child(2) a {
+    background-image: url("../img/background-card-desktop-2.jpg");
+  }
+}
+
+@supports (background-image: url("../img/background-card-desktop-2.webp")) {
+  .service li:nth-child(2) a {
+    background-image: url("../img/background-card-desktop-2.webp");
+  }
+}
+
+@supports not (background-image: url("../img/background-card-desktop-3.webp")) {
+  .service li:nth-child(3) a {
+    background-image: url("../img/background-card-desktop-3.jpg");
+  }
+}
+
+@supports (background-image: url("../img/background-card-desktop-3.webp")) {
+  .service li:nth-child(3) a {
+    background-image: url("../img/background-card-desktop-3.webp");
+  }
+}
+
 .feedback {
   position: relative;
-  padding: 166px 0 242px 0;
+  padding: 166px 0 245px 0;
   background-color: #00b2ff;
   color: #ffffff;
 }
@@ -1084,7 +1124,7 @@ input[type=number] {
   content: "";
   position: absolute;
   right: 116%;
-  bottom: 68px;
+  bottom: 65px;
   width: 510px;
   height: 285px;
   background-image: url("../img/airplane.png");
@@ -1101,6 +1141,7 @@ input[type=number] {
   font-weight: 400;
   line-height: 50px;
   font-size: 32px;
+  letter-spacing: 0;
 }
 
 .form p {
@@ -1110,7 +1151,7 @@ input[type=number] {
   line-height: 22px;
 }
 
-.form fieldset {
+.form__fieldset {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 0 31px;
@@ -1118,6 +1159,10 @@ input[type=number] {
   margin: 0;
   padding: 0 0 0 4px;
   border: none;
+}
+
+.form__fieldset--modal {
+  grid-template-columns: 1fr;
 }
 
 .form input:not([type=checkbox]) {
@@ -1175,22 +1220,23 @@ input[type=number] {
   width: 266px;
   letter-spacing: 1px;
   cursor: pointer;
+  margin-top: 20px;
 }
 
-.form__checkbox-label {
+.form label [type=checkbox] {
   position: relative;
 }
 
-.form__checkbox {
+.form [type=checkbox] {
   position: absolute;
-  top: 22px;
+  top: 29px;
   left: 9px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-.form__checkbox::before {
+.form [type=checkbox]::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1201,7 +1247,7 @@ input[type=number] {
   border-radius: 2px;
 }
 
-.form__checkbox:checked::after {
+.form [type=checkbox]:checked::after {
   content: "";
   position: absolute;
   top: 4px;
@@ -1213,14 +1259,18 @@ input[type=number] {
   background-color: #ffffff;
 }
 
-.form__checkbox-label span {
+.form span {
   display: block;
-  padding: 15px 0 0 36px;
+  padding: 13px 0 0 36px;
 }
 
 .form__text-area {
   grid-column: 1/-1;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
+}
+
+.check-box {
+  padding: 0 0 0 0;
 }
 
 .footer {
@@ -1360,202 +1410,6 @@ input[type=number] {
   }
 */
 
-@media (min-width: 767px) {
-  .mobile-hidden {
-    display: block;
-  }
-
-@supports not (background-image: url("../img/background-tablet.webp")) {
-    .promo {
-      background-image: url("../img/background-tablet.jpg");
-    }
-}
-
-@supports (background-image: url("../img/background-tablet.webp")) {
-    .promo {
-      background-image: url("../img/background-tablet.webp");
-    }
-}
-
-@supports not (background-image: url("../img/background-card-tablet-1.webp")) {
-    .service li:nth-child(1) a {
-      background-image: url("../img/background-card-tablet-1.jpg");
-    }
-}
-
-@supports (background-image: url("../img/background-card-tablet-1.webp")) {
-    .service li:nth-child(1) a {
-      background-image: url("../img/background-card-tablet-1.webp");
-    }
-}
-
-  .service li:nth-child(2) a {
-    background-size: 670px 250px;
-  }
-
-@supports not (background-image: url("../img/background-card-tablet-2.webp")) {
-    .service li:nth-child(2) a {
-      background-image: url("../img/background-card-tablet-2.jpg");
-    }
-}
-
-@supports (background-image: url("../img/background-card-tablet-2.webp")) {
-    .service li:nth-child(2) a {
-      background-image: url("../img/background-card-tablet-2.webp");
-    }
-}
-
-  .service li:nth-child(3) a {
-    background-size: 670px 250px;
-  }
-
-@supports not (background-image: url("../img/background-card-tablet-3.webp")) {
-    .service li:nth-child(3) a {
-      background-image: url("../img/background-card-tablet-3.jpg");
-    }
-}
-
-@supports (background-image: url("../img/background-card-tablet-3.webp")) {
-    .service li:nth-child(3) a {
-      background-image: url("../img/background-card-tablet-3.webp");
-    }
-}
-}
-
-@media (min-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 767px) and (min-resolution: 144dpi), (min-width: 767px) and (min-resolution: 1.5dppx) {
-@supports not (background-image: url("../img/background-tablet@2x.webp")) {
-    .promo {
-      background-image: url("../img/background-tablet@2x.jpg");
-    }
-}
-
-@supports (background-image: url("../img/background-tablet@2x.webp")) {
-    .promo {
-      background-image: url("../img/background-tablet@2x.webp");
-    }
-}
-
-@supports not (background-image: url("../img/background-card-tablet-1@2x.webp")) {
-    .service li:nth-child(1) a {
-      background-image: url("../img/background-card-tablet-1@2x.jpg");
-    }
-}
-
-@supports (background-image: url("../img/background-card-tablet-1@2x.webp")) {
-    .service li:nth-child(1) a {
-      background-image: url("../img/background-card-tablet-1@2x.webp");
-    }
-}
-
-@supports not (background-image: url("../img/background-card-tablet-2@2x.webp")) {
-    .service li:nth-child(2) a {
-      background-image: url("../img/background-card-tablet-2@2x.jpg");
-    }
-}
-
-@supports (background-image: url("../img/background-card-tablet-2@2x.webp")) {
-    .service li:nth-child(2) a {
-      background-image: url("../img/background-card-tablet-2@2x.webp");
-    }
-}
-
-@supports not (background-image: url("../img/background-card-tablet-3@2x.webp")) {
-    .service li:nth-child(3) a {
-      background-image: url("../img/background-card-tablet-3@2x.jpg");
-    }
-}
-
-@supports (background-image: url("../img/background-card-tablet-3@2x.webp")) {
-    .service li:nth-child(3) a {
-      background-image: url("../img/background-card-tablet-3@2x.webp");
-    }
-}
-}
-
-@media (min-width: 1023px) {
-@supports not (background-image: url("../img/background-card-desktop-1.webp")) {
-    .service li:nth-child(1) a {
-      background-image: url("../img/background-card-desktop-1.jpg");
-    }
-}
-
-@supports (background-image: url("../img/background-card-desktop-1.webp")) {
-    .service li:nth-child(1) a {
-      background-image: url("../img/background-card-desktop-1.webp");
-    }
-}
-
-  .service li:nth-child(2) a {
-    background-size: 350px 650px;
-  }
-
-@supports not (background-image: url("../img/background-card-desktop-2.webp")) {
-    .service li:nth-child(2) a {
-      background-image: url("../img/background-card-desktop-2.jpg");
-    }
-}
-
-@supports (background-image: url("../img/background-card-desktop-2.webp")) {
-    .service li:nth-child(2) a {
-      background-image: url("../img/background-card-desktop-2.webp");
-    }
-}
-
-  .service li:nth-child(3) a {
-    background-size: 350px 650px;
-  }
-
-@supports not (background-image: url("../img/background-card-desktop-3.webp")) {
-    .service li:nth-child(3) a {
-      background-image: url("../img/background-card-desktop-3.jpg");
-    }
-}
-
-@supports (background-image: url("../img/background-card-desktop-3.webp")) {
-    .service li:nth-child(3) a {
-      background-image: url("../img/background-card-desktop-3.webp");
-    }
-}
-}
-
-@media (min-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1023px) and (min-resolution: 144dpi), (min-width: 1023px) and (min-resolution: 1.5dppx) {
-@supports not (background-image: url("../img/background-card-desktop-1@2x.webp")) {
-    .service li:nth-child(1) a {
-      background-image: url("../img/background-card-desktop-1@2x.jpg");
-    }
-}
-
-@supports (background-image: url("../img/background-card-desktop-1@2x.webp")) {
-    .service li:nth-child(1) a {
-      background-image: url("../img/background-card-desktop-1@2x.webp");
-    }
-}
-
-@supports not (background-image: url("../img/background-card-desktop-2@2x.webp")) {
-    .service li:nth-child(2) a {
-      background-image: url("../img/background-card-desktop-2@2x.jpg");
-    }
-}
-
-@supports (background-image: url("../img/background-card-desktop-2@2x.webp")) {
-    .service li:nth-child(2) a {
-      background-image: url("../img/background-card-desktop-2@2x.webp");
-    }
-}
-
-@supports not (background-image: url("../img/background-card-desktop-3@2x.webp")) {
-    .service li:nth-child(3) a {
-      background-image: url("../img/background-card-desktop-3@2x.jpg");
-    }
-}
-
-@supports (background-image: url("../img/background-card-desktop-3@2x.webp")) {
-    .service li:nth-child(3) a {
-      background-image: url("../img/background-card-desktop-3@2x.webp");
-    }
-}
-}
-
 @media (min-width: 1024px) {
   .modal--dev .modal__content {
     margin-top: 146px;
@@ -1605,6 +1459,18 @@ input[type=number] {
   .header__nav {
     margin-left: auto;
   }
+
+@supports not (background-image: url("../img/background-tablet.webp")) {
+    .promo {
+      background-image: url("../img/background-tablet.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-tablet.webp")) {
+    .promo {
+      background-image: url("../img/background-tablet.webp");
+    }
+}
 
   .promo h2 {
     font-size: 64px;
@@ -1675,6 +1541,42 @@ input[type=number] {
     padding: 0;
   }
 
+@supports not (background-image: url("../img/background-card-tablet-1.webp")) {
+    .service li:nth-child(1) a {
+      background-image: url("../img/background-card-tablet-1.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-tablet-1.webp")) {
+    .service li:nth-child(1) a {
+      background-image: url("../img/background-card-tablet-1.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-card-tablet-2.webp")) {
+    .service li:nth-child(2) a {
+      background-image: url("../img/background-card-tablet-2.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-tablet-2.webp")) {
+    .service li:nth-child(2) a {
+      background-image: url("../img/background-card-tablet-2.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-card-tablet-3.webp")) {
+    .service li:nth-child(3) a {
+      background-image: url("../img/background-card-tablet-3.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-tablet-3.webp")) {
+    .service li:nth-child(3) a {
+      background-image: url("../img/background-card-tablet-3.webp");
+    }
+}
+
   .feedback {
     padding: 46px 0 123px;
   }
@@ -1692,6 +1594,10 @@ input[type=number] {
     display: none;
   }
 
+  .feedback h2 {
+    letter-spacing: 0;
+  }
+
   .form h2 {
     margin: 0 0 7px 0;
   }
@@ -1701,7 +1607,7 @@ input[type=number] {
     padding: 0;
   }
 
-  .form fieldset {
+  .form__fieldset {
     padding: 0;
   }
 
@@ -1709,12 +1615,16 @@ input[type=number] {
     padding: 29px 15px;
   }
 
-  .form__checkbox {
-    top: 17px;
+  .form [type=submit] {
+    margin-top: 20px;
+  }
+
+  .form [type=checkbox] {
+    top: 25px;
     left: -1px;
   }
 
-  .form__checkbox-label span {
+  .form span {
     padding: 9px 0 0 24px;
   }
 
@@ -1723,12 +1633,12 @@ input[type=number] {
   }
 
   .footer__social-list-item {
-    margin-right: -21px;
-    margin-left: 36px;
+    margin-right: -6px;
+    margin-left: 21px;
   }
 
   .footer__info {
-    padding: 33px 0 0;
+    padding: 40px 0 0;
   }
 
   .footer__info-list-item {
@@ -1745,7 +1655,7 @@ input[type=number] {
   }
 
   .footer__contacts {
-    padding: 33px 0 15px;
+    padding: 40px 0 0 15px;
   }
 
   .footer__contacts-list {
@@ -1768,9 +1678,63 @@ input[type=number] {
   }
 }
 
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+@supports not (background-image: url("../img/background-tablet@2x.webp")) {
+    .promo {
+      background-image: url("../img/background-tablet@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-tablet@2x.webp")) {
+    .promo {
+      background-image: url("../img/background-tablet@2x.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-card-tablet-1@2x.webp")) {
+    .service li:nth-child(1) a {
+      background-image: url("../img/background-card-tablet-1@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-tablet-1@2x.webp")) {
+    .service li:nth-child(1) a {
+      background-image: url("../img/background-card-tablet-1@2x.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-card-tablet-2@2x.webp")) {
+    .service li:nth-child(2) a {
+      background-image: url("../img/background-card-tablet-2@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-tablet-2@2x.webp")) {
+    .service li:nth-child(2) a {
+      background-image: url("../img/background-card-tablet-2@2x.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-card-tablet-3@2x.webp")) {
+    .service li:nth-child(3) a {
+      background-image: url("../img/background-card-tablet-3@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-tablet-3@2x.webp")) {
+    .service li:nth-child(3) a {
+      background-image: url("../img/background-card-tablet-3@2x.webp");
+    }
+}
+}
+
 @media (max-width: 767px) {
   .mobile-visible {
     display: block;
+  }
+
+  .mobile-hidden {
+    display: none;
   }
 
   .container {
@@ -2011,6 +1975,7 @@ input[type=number] {
     font-size: 30px;
     line-height: 42px;
     margin: 0 0 10px 0;
+    letter-spacing: -2px;
   }
 
   .form p {
@@ -2019,7 +1984,7 @@ input[type=number] {
     margin: 0 0 34px 0;
   }
 
-  .form fieldset {
+  .form__fieldset {
     display: block;
   }
 
@@ -2035,13 +2000,13 @@ input[type=number] {
     padding: 16px 25px 11px;
   }
 
-  .form__checkbox {
-    top: 31px;
+  .form [type=checkbox] {
+    top: 19px;
     left: 6px;
   }
 
-  .form__checkbox-label span {
-    padding: 24px 0 0 31px;
+  .form span {
+    padding: 4px 0 0 31px;
   }
 
   .footer {
@@ -2055,6 +2020,11 @@ input[type=number] {
 
   .footer__social-list {
     padding: 9px 0 17px;
+  }
+
+  .footer__social-list-item {
+    margin-right: -19px;
+    margin-left: 35px;
   }
 
   .footer__info {
@@ -2185,6 +2155,42 @@ input[type=number] {
 @supports (background-image: url("../img/background-desktop@2x.webp")) {
     .promo {
       background-image: url("../img/background-desktop@2x.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-card-desktop-1@2x.webp")) {
+    .service li:nth-child(1) a {
+      background-image: url("../img/background-card-desktop-1@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-desktop-1@2x.webp")) {
+    .service li:nth-child(1) a {
+      background-image: url("../img/background-card-desktop-1@2x.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-card-desktop-2@2x.webp")) {
+    .service li:nth-child(2) a {
+      background-image: url("../img/background-card-desktop-2@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-desktop-2@2x.webp")) {
+    .service li:nth-child(2) a {
+      background-image: url("../img/background-card-desktop-2@2x.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-card-desktop-3@2x.webp")) {
+    .service li:nth-child(3) a {
+      background-image: url("../img/background-card-desktop-3@2x.jpg");
+    }
+}
+
+@supports (background-image: url("../img/background-card-desktop-3@2x.webp")) {
+    .service li:nth-child(3) a {
+      background-image: url("../img/background-card-desktop-3@2x.webp");
     }
 }
 }
