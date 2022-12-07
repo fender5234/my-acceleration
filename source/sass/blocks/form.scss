@@ -1,4 +1,4 @@
-.form h2 {
+.form__header {
   margin: 0 0 12px 0;
   font-family: $ff-roboto-condensed;
   font-weight: 400;
@@ -16,11 +16,16 @@
     margin: 0 0 10px 0;
     letter-spacing: -2px;
   }
+
+  &--modal {
+    font-size: 30px;
+    line-height: 42px;
+  }
 }
 
 .form p {
   margin: 0 0 35px 0;
-  padding-left: 4px;
+  padding: 0 0 0 4px;
   font-size: 16px;
   line-height: 22px;
 
@@ -36,7 +41,7 @@
   }
 }
 
-.form__fieldset {
+.form fieldset {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 0 31px;
@@ -44,10 +49,6 @@
   margin: 0;
   padding: 0 0 0 4px;
   border: none;
-
-  &--modal {
-    grid-template-columns: 1fr;
-  }
 
   @media ($tablet-mobile) {
     padding: 0;
@@ -82,12 +83,13 @@
   font-size: 16px;
   line-height: 22px;
   color: $color-default-white;
-  width: 100%;
   min-height: 155px;
   background-color: #019bdf;
   border: none;
   border-radius: 3px;
   padding: 22px 15px;
+  margin-bottom: 15px;
+  width: 100%;
 
   @media ($tablet-mobile) {
     padding: 29px 15px;
@@ -96,6 +98,7 @@
   @media ($mobile) {
     min-height: 180px;
     padding: 23px 15px;
+    margin: 0;
   }
 
   &::placeholder {
@@ -114,7 +117,7 @@
   border-radius: 3px;
   padding: 13px 25px;
   width: 266px;
-  letter-spacing: 1px;
+  letter-spacing: -1px;
   cursor: pointer;
   margin-top: 20px;
 
@@ -188,7 +191,6 @@
   }
 }
 
-.form__text-area {
+.form__group {
   grid-column: 1/-1;
-  margin-bottom: 15px;
 }
