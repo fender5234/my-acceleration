@@ -691,10 +691,6 @@ input[type=number] {
   pointer-events: auto;
 }
 
-.modal__content h2 {
-  font-size: 30px;
-}
-
 .header {
   position: fixed;
   top: 0;
@@ -952,6 +948,7 @@ input[type=number] {
   color: #041827;
   margin: 0 0 9px;
   padding: 0;
+  letter-spacing: -2px;
 }
 
 .description h2::before {
@@ -1135,7 +1132,7 @@ input[type=number] {
   letter-spacing: -2px;
 }
 
-.form h2 {
+.form__header {
   margin: 0 0 12px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
@@ -1144,14 +1141,19 @@ input[type=number] {
   letter-spacing: 0;
 }
 
+.form__header--modal {
+  font-size: 30px;
+  line-height: 42px;
+}
+
 .form p {
   margin: 0 0 35px 0;
-  padding-left: 4px;
+  padding: 0 0 0 4px;
   font-size: 16px;
   line-height: 22px;
 }
 
-.form__fieldset {
+.form fieldset {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 0 31px;
@@ -1159,10 +1161,6 @@ input[type=number] {
   margin: 0;
   padding: 0 0 0 4px;
   border: none;
-}
-
-.form__fieldset--modal {
-  grid-template-columns: 1fr;
 }
 
 .form input:not([type=checkbox]) {
@@ -1191,12 +1189,13 @@ input[type=number] {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-  width: 100%;
   min-height: 155px;
   background-color: #019bdf;
   border: none;
   border-radius: 3px;
   padding: 22px 15px;
+  margin-bottom: 15px;
+  width: 100%;
 }
 
 .form textarea::-moz-placeholder {
@@ -1218,7 +1217,7 @@ input[type=number] {
   border-radius: 3px;
   padding: 13px 25px;
   width: 266px;
-  letter-spacing: 1px;
+  letter-spacing: -1px;
   cursor: pointer;
   margin-top: 20px;
 }
@@ -1264,9 +1263,8 @@ input[type=number] {
   padding: 13px 0 0 36px;
 }
 
-.form__text-area {
+.form__group {
   grid-column: 1/-1;
-  margin-bottom: 15px;
 }
 
 .check-box {
@@ -1598,7 +1596,7 @@ input[type=number] {
     letter-spacing: 0;
   }
 
-  .form h2 {
+  .form__header {
     margin: 0 0 7px 0;
   }
 
@@ -1607,7 +1605,7 @@ input[type=number] {
     padding: 0;
   }
 
-  .form__fieldset {
+  .form fieldset {
     padding: 0;
   }
 
@@ -1971,7 +1969,7 @@ input[type=number] {
     padding: 46px 0 83px;
   }
 
-  .form h2 {
+  .form__header {
     font-size: 30px;
     line-height: 42px;
     margin: 0 0 10px 0;
@@ -1984,13 +1982,14 @@ input[type=number] {
     margin: 0 0 34px 0;
   }
 
-  .form__fieldset {
+  .form fieldset {
     display: block;
   }
 
   .form textarea {
     min-height: 180px;
     padding: 23px 15px;
+    margin: 0;
   }
 
   .form [type=submit] {
