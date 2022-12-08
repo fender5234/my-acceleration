@@ -18,13 +18,15 @@
   }
 
   &--modal {
+    margin: 0;
     font-size: 30px;
     line-height: 42px;
+    letter-spacing: -1px;
   }
 }
 
-.form p {
-  margin: 0 0 35px 0;
+.form__text {
+  margin: 0 0 39px 0;
   padding: 0 0 0 4px;
   font-size: 16px;
   line-height: 22px;
@@ -39,24 +41,17 @@
     line-height: 18px;
     margin: 0 0 34px 0;
   }
+
+  &--modal {
+    padding: 0 20px 0 0;
+  }
 }
 
 .form fieldset {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 0 31px;
-  align-items: start;
   margin: 0;
-  padding: 0 0 0 4px;
+  padding: 0;
   border: none;
-
-  @media ($tablet-mobile) {
-    padding: 0;
-  }
-
-  @media ($mobile) {
-    display: block;
-  }
 }
 
 .form input:not([type="checkbox"]) {
@@ -192,5 +187,27 @@
 }
 
 .form__group {
-  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 31px;
+  align-items: start;
+  margin: 0;
+  padding: 0 0 0 4px;
+  border: none;
+
+  @media ($tablet-mobile) {
+    padding: 0;
+  }
+
+  @media ($mobile) {
+    display: block;
+  }
+}
+
+.form__group-alter {
+  margin: 0;
+
+  &--text {
+    grid-template-columns: 1fr;
+  }
 }

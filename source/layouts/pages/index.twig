@@ -92,32 +92,36 @@
 		<div class="container">
 			<div class="feedback__container form">
 				<h2 class="form__header">Остались вопросы? Задайте их нам!</h2>
-				<p>Мы проконсультируем Вас бесплатно</p>
+				<p class="form__text">Мы проконсультируем Вас бесплатно</p>
 				<form action="https://echo.htmlacademy.ru/courses" method="get" data-form="">
 					<fieldset>
 						<legend class="visually-hidden">Форма обратной связи.</legend>
-						<label>
-							<span class="visually-hidden">Введите ваше имя.</span>
-							<input type="text" placeholder="Имя" name="name" pattern="^[A-Za-zА-Яа-яЁё\- ]+$" required />
-						</label>
-						<label>
-							<span class="visually-hidden">Введите ваш номер телефона.</span>
-							<input type="tel" placeholder="Телефон" name="phone" pattern="^\+7\(\d{3}\)\d{7}$" data-mask="+7(###)#######" required />
-						</label>
-						<div class="form__group">
+						<p class="form__group">
+							<label>
+								<span class="visually-hidden">Введите ваше имя.</span>
+								<input type="text" placeholder="Имя" name="name" pattern="^[A-Za-zА-Яа-яЁё\- ]+$" required />
+							</label>
+							<label>
+								<span class="visually-hidden">Введите ваш номер телефона.</span>
+								<input type="tel" placeholder="Телефон" name="phone" pattern="^\+7\(\d{3}\)\d{7}$" data-mask="+7(###)#######" required />
+							</label>
+						</p>
+						<p class="form__group-alter">
 							<label>
 								<span class="visually-hidden">Введите ваш вопрос.</span>
 								<textarea placeholder="Ваш вопрос" name="message"></textarea>
 							</label>
-						</div>
+						</p>
 					</fieldset>
 					<fieldset>
 						<legend class="visually-hidden">Согласие на обработку персональных данных</legend>
-						<button type="submit">задать вопрос</button>
-						<label>
-							<input name="agreement" type="checkbox" checked required />
-							<span>Я согласен на обработку персональных данных</span>
-						</label>
+						<p class="form__group">
+							<button type="submit">задать вопрос</button>
+							<label>
+								<input name="agreement" type="checkbox" checked required />
+								<span>Я согласен на обработку персональных данных</span>
+							</label>
+						</p>
 					</fieldset>
 				</form>
 			</div>
@@ -128,30 +132,34 @@
 <div class="modal" data-modal="callback" hidden>
 	<div class="modal__content form">
 		<h2 class="form__header form__header--modal">Закажите звонок</h2>
-		<p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+		<p class="form__text form__text--modal">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
 		<form action="https://echo.htmlacademy.ru/courses" method="get">
-			<fieldset class="modal__fieldset">
+			<fieldset>
 				<legend class="visually-hidden">Форма обратной связи.</legend>
-				<label>
-					<span class="visually-hidden">Введите ваше имя.</span>
-					<input type="text" placeholder="Имя" name="name" pattern="^[A-Za-zА-Яа-яЁё\- ]+$" required />
-				</label>
-				<label>
-					<span class="visually-hidden">Введите ваше номер телефона.</span>
-					<input type="tel" placeholder="Телефон" name="phone" pattern="^\+7\(\d{3}\)\d{7}$" data-mask="+7(###)#######" required />
-				</label>
-				<label class="form__text-area">
-					<span class="visually-hidden">Введите ваш вопрос.</span>
-					<textarea placeholder="Ваш вопрос" name="user_text"></textarea>
-				</label>
+				<p class="form__group-alter">
+					<label>
+						<span class="visually-hidden">Введите ваше имя.</span>
+						<input type="text" placeholder="Имя" name="name" pattern="^[A-Za-zА-Яа-яЁё\- ]+$" required />
+					</label>
+					<label>
+						<span class="visually-hidden">Введите ваше номер телефона.</span>
+						<input type="tel" placeholder="Телефон" name="phone" pattern="^\+7\(\d{3}\)\d{7}$" data-mask="+7(###)#######" required />
+					</label>
+					<label>
+						<span class="visually-hidden">Введите ваш вопрос.</span>
+						<textarea placeholder="Ваш вопрос" name="user_text"></textarea>
+					</label>
+				</p>
 			</fieldset>
-			<fieldset class="modal__fieldset">
+			<fieldset>
 				<legend class="visually-hidden">Согласие на обработку персональных данных</legend>
-				<button class="modal__button" type="submit">Отправить</button>
-				<label>
-					<input type="checkbox" checked name="agreement" />
-					<span>Я согласен на обработку персональных данных</span>
-				</label>
+				<p class="form__group-alter--bottom">
+					<button type="submit">Отправить</button>
+					<label>
+						<input type="checkbox" checked name="agreement" />
+						<span>Я согласен на обработку персональных данных</span>
+					</label>
+				</p>
 			</fieldset>
 		</form>
 		<button class="modal__close-btn" type="button" data-close-modal="callback">

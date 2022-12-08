@@ -54,11 +54,3 @@
     }
   }
 }
-
-.feedback h2 {
-  letter-spacing: -2px;
-
-  @media ($tablet-mobile) {
-    letter-spacing: 0;
-  }
-}
