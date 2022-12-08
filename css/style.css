@@ -630,7 +630,7 @@ input[type=number] {
 .modal__content {
   position: relative;
   max-width: 500px;
-  margin: auto;
+  margin: 146px auto;
   padding: 40px;
   color: #ffffff;
   background-color: #00b2ff;
@@ -1128,10 +1128,6 @@ input[type=number] {
   background-repeat: no-repeat;
 }
 
-.feedback h2 {
-  letter-spacing: -2px;
-}
-
 .form__header {
   margin: 0 0 12px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1142,24 +1138,27 @@ input[type=number] {
 }
 
 .form__header--modal {
+  margin: 0;
   font-size: 30px;
   line-height: 42px;
+  letter-spacing: -1px;
 }
 
-.form p {
-  margin: 0 0 35px 0;
+.form__text {
+  margin: 0 0 39px 0;
   padding: 0 0 0 4px;
   font-size: 16px;
   line-height: 22px;
 }
 
+.form__text--modal {
+  padding: 0 20px 0 0;
+}
+
 .form fieldset {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 0 31px;
-  align-items: start;
   margin: 0;
-  padding: 0 0 0 4px;
+  padding: 0;
   border: none;
 }
 
@@ -1264,7 +1263,21 @@ input[type=number] {
 }
 
 .form__group {
-  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 31px;
+  align-items: start;
+  margin: 0;
+  padding: 0 0 0 4px;
+  border: none;
+}
+
+.form__group-alter {
+  margin: 0;
+}
+
+.form__group-alter--text {
+  grid-template-columns: 1fr;
 }
 
 .check-box {
@@ -1592,20 +1605,12 @@ input[type=number] {
     display: none;
   }
 
-  .feedback h2 {
-    letter-spacing: 0;
-  }
-
   .form__header {
     margin: 0 0 7px 0;
   }
 
-  .form p {
+  .form__text {
     margin: 0 0 25px 0;
-    padding: 0;
-  }
-
-  .form fieldset {
     padding: 0;
   }
 
@@ -1624,6 +1629,10 @@ input[type=number] {
 
   .form span {
     padding: 9px 0 0 24px;
+  }
+
+  .form__group {
+    padding: 0;
   }
 
   .footer__social-list {
@@ -1976,14 +1985,10 @@ input[type=number] {
     letter-spacing: -2px;
   }
 
-  .form p {
+  .form__text {
     font-size: 14px;
     line-height: 18px;
     margin: 0 0 34px 0;
-  }
-
-  .form fieldset {
-    display: block;
   }
 
   .form textarea {
@@ -2006,6 +2011,10 @@ input[type=number] {
 
   .form span {
     padding: 4px 0 0 31px;
+  }
+
+  .form__group {
+    display: block;
   }
 
   .footer {
