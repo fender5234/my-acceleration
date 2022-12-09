@@ -1205,7 +1205,7 @@ input[type=number] {
   color: #ffffff;
 }
 
-.form [type=submit] {
+.form__group [type=submit] {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -1278,6 +1278,31 @@ input[type=number] {
 
 .form__group-alter--text {
   grid-template-columns: 1fr;
+}
+
+.form__group-alter--bottom [type=submit] {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  background-color: #041827;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 14px 25px 13px 25px;
+  width: 100%;
+  letter-spacing: -1px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form__group-alter--bottom span {
+  padding: 0 0 0 36px;
+}
+
+.form__group-alter--bottom [type=checkbox] {
+  top: 7px;
+  left: 9px;
 }
 
 .check-box {
@@ -1618,7 +1643,7 @@ input[type=number] {
     padding: 29px 15px;
   }
 
-  .form [type=submit] {
+  .form__group [type=submit] {
     margin-top: 20px;
   }
 
@@ -1997,7 +2022,7 @@ input[type=number] {
     margin: 0;
   }
 
-  .form [type=submit] {
+  .form__group [type=submit] {
     display: block;
     margin: 30px auto 0;
     width: 270px;
