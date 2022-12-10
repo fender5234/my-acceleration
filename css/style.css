@@ -802,7 +802,7 @@ input[type=number] {
 }
 
 .promo h2 {
-  margin: 0 0 32px 0;
+  margin: 0 0 32px;
   padding: 0;
   font-size: 80px;
   line-height: 94px;
@@ -814,7 +814,7 @@ input[type=number] {
 }
 
 .promo p {
-  margin: 0 0 47px 0;
+  margin: 0 0 47px;
   font-size: 22px;
   line-height: 155%;
   color: #f2f5f7;
@@ -918,7 +918,7 @@ input[type=number] {
 }
 
 .advantages h3 {
-  margin: 0 0 15px 0;
+  margin: 0 0 15px;
   padding: 0;
   font-size: 24px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -964,7 +964,7 @@ input[type=number] {
 .description p {
   font-size: 16px;
   line-height: 22px;
-  margin: 0 0 21px 0;
+  margin: 0 0 21px;
   padding: 0;
 }
 
@@ -1128,8 +1128,28 @@ input[type=number] {
   background-repeat: no-repeat;
 }
 
+.feedback [type=submit] {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  background-color: #041827;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 13px 25px;
+  width: 100%;
+  letter-spacing: -1px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.feedback span {
+  padding: 0 0 0 36px;
+}
+
 .form__header {
-  margin: 0 0 12px 0;
+  margin: 0 0 12px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   line-height: 50px;
@@ -1145,14 +1165,14 @@ input[type=number] {
 }
 
 .form__text {
-  margin: 0 0 39px 0;
+  margin: 0 0 39px;
   padding: 0 0 0 4px;
   font-size: 16px;
   line-height: 22px;
 }
 
 .form__text--modal {
-  padding: 0 20px 0 0;
+  padding: 0 20px 0;
 }
 
 .form fieldset {
@@ -1306,7 +1326,7 @@ input[type=number] {
 }
 
 .check-box {
-  padding: 0 0 0 0;
+  padding: 0;
 }
 
 .footer {
@@ -1516,7 +1536,7 @@ input[type=number] {
   }
 
   .promo p {
-    margin: 0 0 58px 0;
+    margin: 0 0 58px;
     padding-right: 60px;
   }
 
@@ -1538,7 +1558,7 @@ input[type=number] {
   }
 
   .advantages h3 {
-    margin: 0 0 6px 0;
+    margin: 0 0 6px;
   }
 
   .description {
@@ -1551,7 +1571,7 @@ input[type=number] {
   }
 
   .description p {
-    margin: 0 0 19px 0;
+    margin: 0 0 19px;
   }
 
   .description button {
@@ -1631,11 +1651,11 @@ input[type=number] {
   }
 
   .form__header {
-    margin: 0 0 7px 0;
+    margin: 0 0 7px;
   }
 
   .form__text {
-    margin: 0 0 25px 0;
+    margin: 0 0 25px;
     padding: 0;
   }
 
@@ -1705,7 +1725,6 @@ input[type=number] {
   }
 
   .footer__container {
-    display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -1825,14 +1844,14 @@ input[type=number] {
     font-size: 36px;
     line-height: 42px;
     letter-spacing: -2px;
-    margin: 0 0 8px 0;
+    margin: 0 0 8px;
   }
 
   .promo p {
     padding: 0;
     font-size: 14px;
     line-height: 22px;
-    margin: 0 0 44px 0;
+    margin: 0 0 44px;
   }
 
   .promo a {
@@ -1922,7 +1941,7 @@ input[type=number] {
   .description p {
     font-size: 14px;
     line-height: 18px;
-    margin: 0 0 24px 0;
+    margin: 0 0 24px;
   }
 
   .description button {
@@ -2006,14 +2025,14 @@ input[type=number] {
   .form__header {
     font-size: 30px;
     line-height: 42px;
-    margin: 0 0 10px 0;
+    margin: 0 0 10px;
     letter-spacing: -2px;
   }
 
   .form__text {
     font-size: 14px;
     line-height: 18px;
-    margin: 0 0 34px 0;
+    margin: 0 0 34px;
   }
 
   .form textarea {
@@ -2101,7 +2120,7 @@ input[type=number] {
 
   .footer__container {
     display: block;
-    padding: 0 0 35px 0;
+    padding: 0 0 35px;
   }
 
   .footer__logo {
