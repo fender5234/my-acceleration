@@ -27,7 +27,7 @@
 }
 
 .promo h2 {
-  margin: 0 0 32px 0;
+  margin: 0 0 32px;
   padding: 0;
   font-size: 80px;
   line-height: 94px;
@@ -48,19 +48,19 @@
     font-size: 36px;
     line-height: 42px;
     letter-spacing: -2px;
-    margin: 0 0 8px 0;
+    margin: 0 0 8px;
   }
 }
 
 .promo p {
-  margin: 0 0 47px 0;
+  margin: 0 0 47px;
   font-size: 22px;
   line-height: 155%;
   color: $color-alice-blue;
   padding-right: 400px;
 
   @media ($tablet-mobile) {
-    margin: 0 0 58px 0;
+    margin: 0 0 58px;
     padding-right: 60px;
   }
 
@@ -68,7 +68,7 @@
     padding: 0;
     font-size: 14px;
     line-height: 22px;
-    margin: 0 0 44px 0;
+    margin: 0 0 44px;
   }
 }
 

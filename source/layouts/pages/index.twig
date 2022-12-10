@@ -1,170 +1,164 @@
-{% extends '../common/layout.twig' %} {% block main %}
-<main>
-	<section class="promo">
-		<div class="container">
-			<div class="promo__container">
-				<h2>печатные платы</h2>
-				<p>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
-				<a href="#feedback">
-					<span class="mobile-hidden">получить бесплатную консультацию</span>
-					<span class="mobile-visible">бесплатная консультация</span>
-				</a>
+{% extends '../common/layout.twig' %}
+
+{% block main %}
+	<main>
+		<section class="promo">
+			<div class="container">
+				<div class="promo__container">
+					<h2>печатные платы</h2>
+					<p>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
+					<a href="#feedback">
+						<span class="mobile-hidden">получить бесплатную консультацию</span>
+						<span class="mobile-visible">бесплатная консультация</span>
+					</a>
+				</div>
 			</div>
-		</div>
-	</section>
-	<section class="advantages">
-		<div class="container">
-			<ul class="advantages__list">
-				<li class="advantages__list-item fast">
-					<h3>Оперативные сроки</h3>
-					<p>
-						Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и
-						комплектующих в самые короткие сроки
-					</p>
-				</li>
-				<li class="advantages__list-item big-suppler">
-					<h3>Крупные поставщики</h3>
-					<p>
-						Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими
-						компаниями обеспечивает хорошее качество нашей продукции.
-					</p>
-				</li>
-				<li class="advantages__list-item confidential">
-					<h3>Полная конфиденциальность</h3>
-					<p>По желанию клиента мы обеспечиваем полную конфиденциальность.</p>
-				</li>
-				<li class="advantages__list-item personalisation">
-					<h3>Персонализация стоимости</h3>
-					<p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
-				</li>
-			</ul>
-		</div>
-	</section>
-	<div class="container">
-		<section class="description" data-section-text>
-			<h2>О компании</h2>
-			<p>
-				Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые&nbsp;технологии с 1997 года. Выполняем
-				срочные заказы и пилотные образцы до 10 дней.
-			</p>
-			<p>
-				Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-				<span class="mobile-hidden">
-					Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ,
-					АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
-				</span>
-			</p>
-			<p data-text>
-				Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по
-				сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия. Мы стремимся к постоянному
-				развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает
-				экономить деньги и время наших клиентов
-			</p>
-			<button type="button" data-button>подробнее</button>
 		</section>
-	</div>
-	<section class="service">
-		<div class="container">
-			<h3>
-				<span class="mobile-hidden"> Smart Device предлагает следующие товары и услуги </span>
-				<span class="mobile-visible">Товары и услуги Smart Device</span>
-			</h3>
-			<ul>
-				<li>
-					<a href="#">
-						<span>Производство<br />печатных плат</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span>Монтаж печатных<br />плат</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span>Комплектующие<br />для светотехники</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</section>
-	<section class="feedback" id="feedback">
-		<div class="container">
-			<div class="feedback__container form">
-				<h2 class="form__header">Остались вопросы? Задайте их нам!</h2>
-				<p class="form__text">Мы проконсультируем Вас бесплатно</p>
-				<form action="https://echo.htmlacademy.ru/courses" method="get" data-form="">
-					<fieldset>
-						<legend class="visually-hidden">Форма обратной связи.</legend>
-						<p class="form__group">
-							<label>
-								<span class="visually-hidden">Введите ваше имя.</span>
-								<input type="text" placeholder="Имя" name="name" pattern="^[A-Za-zА-Яа-яЁё\- ]+$" required />
-							</label>
-							<label>
-								<span class="visually-hidden">Введите ваш номер телефона.</span>
-								<input type="tel" placeholder="Телефон" name="phone" pattern="^\+7\(\d{3}\)\d{7}$" data-mask="+7(###)#######" required />
-							</label>
+		<section class="advantages">
+			<div class="container">
+				<ul class="advantages__list">
+					<li class="advantages__list-item fast">
+						<h3>Оперативные сроки</h3>
+						<p>
+							Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и
+																				комплектующих в самые короткие сроки
 						</p>
-						<p class="form__group-alter">
-							<label>
-								<span class="visually-hidden">Введите ваш вопрос.</span>
-								<textarea placeholder="Ваш вопрос" name="message"></textarea>
-							</label>
+					</li>
+					<li class="advantages__list-item big-suppler">
+						<h3>Крупные поставщики</h3>
+						<p>
+							Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими
+																				компаниями обеспечивает хорошее качество нашей продукции.
 						</p>
-					</fieldset>
-					<fieldset>
-						<legend class="visually-hidden">Согласие на обработку персональных данных</legend>
-						<p class="form__group">
-							<button type="submit">задать вопрос</button>
-							<label>
-								<input name="agreement" type="checkbox" checked required />
-								<span>Я согласен на обработку персональных данных</span>
-							</label>
-						</p>
-					</fieldset>
-				</form>
+					</li>
+					<li class="advantages__list-item confidential">
+						<h3>Полная конфиденциальность</h3>
+						<p>По желанию клиента мы обеспечиваем полную конфиденциальность.</p>
+					</li>
+					<li class="advantages__list-item personalisation">
+						<h3>Персонализация стоимости</h3>
+						<p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+					</li>
+				</ul>
 			</div>
+		</section>
+		<div class="container">
+			<section class="description" data-section-text>
+				<h2>О компании</h2>
+				<p>
+					Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые&nbsp;технологии с 1997 года. Выполняем
+														срочные заказы и пилотные образцы до 10 дней.
+				</p>
+				<p>
+					Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+					<span class="mobile-hidden">
+						Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ,
+																	АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
+					</span>
+				</p>
+				<p data-text>
+					Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по
+														сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия. Мы стремимся к постоянному
+														развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает
+														экономить деньги и время наших клиентов
+				</p>
+				<button type="button" data-button>подробнее</button>
+			</section>
 		</div>
-	</section>
-</main>
-{% endblock %} {% block modal %}
-<div class="modal" data-modal="callback" hidden>
-	<div class="modal__content form">
-		<h2 class="form__header form__header--modal">Закажите звонок</h2>
-		<p class="form__text form__text--modal">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-		<form action="https://echo.htmlacademy.ru/courses" method="get">
-			<fieldset>
-				<legend class="visually-hidden">Форма обратной связи.</legend>
-				<p class="form__group-alter">
-					<label>
-						<span class="visually-hidden">Введите ваше имя.</span>
-						<input type="text" placeholder="Имя" name="name" pattern="^[A-Za-zА-Яа-яЁё\- ]+$" required />
-					</label>
-					<label>
-						<span class="visually-hidden">Введите ваше номер телефона.</span>
-						<input type="tel" placeholder="Телефон" name="phone" pattern="^\+7\(\d{3}\)\d{7}$" data-mask="+7(###)#######" required />
-					</label>
-					<label>
-						<span class="visually-hidden">Введите ваш вопрос.</span>
-						<textarea placeholder="Ваш вопрос" name="user_text"></textarea>
-					</label>
-				</p>
-			</fieldset>
-			<fieldset>
-				<legend class="visually-hidden">Согласие на обработку персональных данных</legend>
-				<p class="form__group-alter form__group-alter--bottom">
-					<button type="submit">Отправить</button>
-					<label>
-						<input type="checkbox" checked name="agreement" />
-						<span>Я согласен на обработку персональных данных</span>
-					</label>
-				</p>
-			</fieldset>
-		</form>
-		<button class="modal__close-btn" type="button" data-close-modal="callback">
-			<span class="visually-hidden">Закрыть.</span>
-		</button>
+		<section class="service">
+			<div class="container">
+				<h3>
+					<span class="mobile-hidden">
+						Smart Device предлагает следующие товары и услуги
+					</span>
+					<span class="mobile-visible">Товары и услуги Smart Device</span>
+				</h3>
+				<ul>
+					<li><a href="#"><span>Производство<br/>печатных плат</span></a></li>
+					<li><a href="#"><span>Монтаж печатных<br/>плат</span></a></li>
+					<li><a href="#"><span>Комплектующие<br/>для светотехники</span></a></li>
+				</ul>
+			</div>
+		</section>
+		<section class="feedback" id="feedback">
+			<div class="container">
+				<div class="feedback__container form">
+					<h2 class="form__header">Остались вопросы? Задайте их нам!</h2>
+					<p class="form__text">Мы проконсультируем Вас бесплатно</p>
+					<form action="https://echo.htmlacademy.ru/courses" method="get" data-form="">
+						<fieldset>
+							<legend class="visually-hidden">Форма обратной связи.</legend>
+							<p class="form__group">
+								<label>
+									<span class="visually-hidden">Введите ваше имя.</span>
+									<input type="text" placeholder="Имя" name="name" pattern="^[A-Za-zА-Яа-яЁё\- ]+$" required/>
+								</label>
+								<label>
+									<span class="visually-hidden">Введите ваш номер телефона.</span>
+									<input type="tel" placeholder="Телефон" name="phone" pattern="^\+7\(\d{3}\)\d{7}$" data-mask="+7(###)#######" required/>
+								</label>
+							</p>
+							<p class="form__group-alter">
+								<label>
+									<span class="visually-hidden">Введите ваш вопрос.</span>
+									<textarea placeholder="Ваш вопрос" name="message"></textarea>
+								</label>
+							</p>
+						</fieldset>
+						<fieldset>
+							<legend class="visually-hidden">Согласие на обработку персональных данных</legend>
+							<p class="form__group">
+								<button type="submit">задать вопрос</button>
+								<label>
+									<input name="agreement" type="checkbox" checked required/>
+									<span>Я согласен на обработку персональных данных</span>
+								</label>
+							</p>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+{% endblock %}
+
+{% block modal %}
+	<div class="modal" data-modal="callback" hidden>
+		<div class="modal__content form">
+			<h2 class="form__header form__header--modal">Закажите звонок</h2>
+			<p class="form__text form__text--modal">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+			<form action="https://echo.htmlacademy.ru/courses" method="get">
+				<fieldset>
+					<legend class="visually-hidden">Форма обратной связи.</legend>
+					<p class="form__group-alter">
+						<label>
+							<span class="visually-hidden">Введите ваше имя.</span>
+							<input type="text" placeholder="Имя" name="name" pattern="^[A-Za-zА-Яа-яЁё\- ]+$" required/>
+						</label>
+						<label>
+							<span class="visually-hidden">Введите ваше номер телефона.</span>
+							<input type="tel" placeholder="Телефон" name="phone" pattern="^\+7\(\d{3}\)\d{7}$" data-mask="+7(###)#######" required/>
+						</label>
+						<label>
+							<span class="visually-hidden">Введите ваш вопрос.</span>
+							<textarea placeholder="Ваш вопрос" name="user_text"></textarea>
+						</label>
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend class="visually-hidden">Согласие на обработку персональных данных</legend>
+					<p class="form__group-alter form__group-alter--bottom">
+						<button type="submit">Отправить</button>
+						<label>
+							<input type="checkbox" checked name="agreement"/>
+							<span>Я согласен на обработку персональных данных</span>
+						</label>
+					</p>
+				</fieldset>
+			</form>
+			<button class="modal__close-btn" type="button" data-close-modal="callback">
+				<span class="visually-hidden">Закрыть.</span>
+			</button>
+		</div>
 	</div>
-</div>
 {% endblock %}

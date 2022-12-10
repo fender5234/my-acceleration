@@ -1,5 +1,5 @@
 .form__header {
-  margin: 0 0 12px 0;
+  margin: 0 0 12px;
   font-family: $ff-roboto-condensed;
   font-weight: 400;
   line-height: 50px;
@@ -7,13 +7,13 @@
   letter-spacing: 0;
 
   @media ($tablet-mobile) {
-    margin: 0 0 7px 0;
+    margin: 0 0 7px;
   }
 
   @media ($mobile) {
     font-size: 30px;
     line-height: 42px;
-    margin: 0 0 10px 0;
+    margin: 0 0 10px;
     letter-spacing: -2px;
   }
 
@@ -26,24 +26,24 @@
 }
 
 .form__text {
-  margin: 0 0 39px 0;
+  margin: 0 0 39px;
   padding: 0 0 0 4px;
   font-size: 16px;
   line-height: 22px;
 
   @media ($tablet-mobile) {
-    margin: 0 0 25px 0;
+    margin: 0 0 25px;
     padding: 0;
   }
 
   @media ($mobile) {
     font-size: 14px;
     line-height: 18px;
-    margin: 0 0 34px 0;
+    margin: 0 0 34px;
   }
 
   &--modal {
-    padding: 0 20px 0 0;
+    padding: 0 20px 0;
   }
 }
 

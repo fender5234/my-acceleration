@@ -54,3 +54,23 @@
     }
   }
 }
+
+.feedback [type="submit"] {
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 16px;
+  color: $color-default-white;
+  border: none;
+  background-color: $color-black-pearl;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 13px 25px;
+  width: 100%;
+  letter-spacing: -1px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.feedback span {
+  padding: 0 0 0 36px;
+}
