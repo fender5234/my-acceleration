@@ -57,7 +57,7 @@
   line-height: 30px;
   min-height: 650px;
   background-size: cover;
-  background-color: $color-deep-sky-blue;
+  background-color: $color-black-pearl-dark;
 
   @media ($tablet-mobile) {
     padding: 36px 44px;
@@ -111,46 +111,42 @@
     margin-bottom: 30px;
     padding: 0;
   }
+}
 
-  &:nth-child(1) {
-    & a {
-      @include adaptive-bg("background-card-desktop-1");
+.service__link {
+  &--production {
+    @include adaptive-bg("background-card-desktop-1");
 
-      @media ($tablet-mobile) {
-        @include adaptive-bg("background-card-tablet-1");
-      }
+    @media ($tablet-mobile) {
+      @include adaptive-bg("background-card-tablet-1");
+    }
 
-      @media ($mobile) {
-        @include adaptive-bg("background-card-mobile-1");
-      }
+    @media ($mobile) {
+      @include adaptive-bg("background-card-mobile-1");
     }
   }
 
-  &:nth-child(2) {
-    & a {
-      @include adaptive-bg("background-card-desktop-2");
+  &--assembly {
+    @include adaptive-bg("background-card-desktop-2");
 
-      @media ($tablet-mobile) {
-        @include adaptive-bg("background-card-tablet-2");
-      }
+    @media ($tablet-mobile) {
+      @include adaptive-bg("background-card-tablet-2");
+    }
 
-      @media ($mobile) {
-        @include adaptive-bg("background-card-mobile-2");
-      }
+    @media ($mobile) {
+      @include adaptive-bg("background-card-mobile-2");
     }
   }
 
-  &:nth-child(3) {
-    & a {
-      @include adaptive-bg("background-card-desktop-3");
+  &--kit {
+    @include adaptive-bg("background-card-desktop-3");
 
-      @media ($tablet-mobile) {
-        @include adaptive-bg("background-card-tablet-3");
-      }
+    @media ($tablet-mobile) {
+      @include adaptive-bg("background-card-tablet-3");
+    }
 
-      @media ($mobile) {
-        @include adaptive-bg("background-card-mobile-3");
-      }
+    @media ($mobile) {
+      @include adaptive-bg("background-card-mobile-3");
     }
   }
 }

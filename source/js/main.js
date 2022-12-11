@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {showText} from './modules/modals/show-text';
-import {accordeonToggle} from './modules/modals/accordeon';
+import {showText} from './modules/show-text';
+import {accordeonToggle} from './modules/accordeon';
 import initContentSection from './modules/content-section';
 import initForm from './modules/form';
 // ---------------------------------

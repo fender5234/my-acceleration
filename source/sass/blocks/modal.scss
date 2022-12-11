@@ -81,12 +81,11 @@
       }
     }
   }
+}
 
-  &.is-active {
-    transform: scale(1);
-    visibility: visible;
-    opacity: 1;
-
-    pointer-events: auto;
-  }
+.modal.is-active {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
 }

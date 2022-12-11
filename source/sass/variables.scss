@@ -28,12 +28,9 @@ $gradient-black-pearl-to-transparent: linear-gradient(
 // ---------------------------------
 
 // переменная, используемая в html для подключения скейлинга
-$fz-default: 16px;
+$fz-default: 14px;
 
-// у некоторых шрифтов в ios возникают проблемы с символом рубля
-// https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-rouble: "Rouble", "Arial", sans-serif;
-
+$ff-ptmono: "PT Mono", "Arial", sans-serif;
 $ff-roboto-condensed: "Roboto Condensed", "Arial", sans-serif;
 
 // Animation

@@ -74,7 +74,9 @@
 
 .promo a {
   display: inline-block;
-  padding: 17px 10px;
+  vertical-align: baseline;
+  padding: 17px 25px;
+  letter-spacing: -1px;
   font-family: $ff-roboto-condensed;
   font-weight: 700;
   font-size: 18px;
