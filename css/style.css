@@ -398,7 +398,7 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "PTMono-Regular";
+  font-family: "PT Mono";
   font-display: swap;
   src: url("../fonts/PTMono-Regular.woff2") format("woff2"), url("../fonts/PTMono-Regular.woff") format("woff");
 }
@@ -420,9 +420,9 @@ template {
 html {
   scroll-behavior: smooth;
   min-width: 320px;
-  font-size: 16px;
+  font-size: 14px;
+  font-family: "PT Mono", "Arial", sans-serif;
   line-height: 1.34375;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -431,9 +431,6 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "PTMono-Regular", "Arial", "Helvetica", sans-serif;
 }
 
 a {
@@ -488,6 +485,12 @@ select {
   border-radius: 0;
 }
 
+input {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
 input::-ms-clear,
 input::-ms-reveal {
   display: none;
@@ -511,12 +514,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
   -webkit-appearance: none;
   appearance: none;
-}
-
-input[type=number] {
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
-  appearance: textfield;
 }
 
 .wrapper {
@@ -747,6 +744,7 @@ input[type=number] {
 
 .header__logo {
   margin-right: 49px;
+  flex-shrink: 0;
 }
 
 .header__nav-list-item {
@@ -823,7 +821,9 @@ input[type=number] {
 
 .promo a {
   display: inline-block;
-  padding: 17px 10px;
+  vertical-align: baseline;
+  padding: 17px 25px;
+  letter-spacing: -1px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -883,23 +883,23 @@ input[type=number] {
   background-color: #00b2ff;
 }
 
-.advantages__list-item:nth-of-type(1)::after {
+.advantages__list-item--fast::after {
   -webkit-mask-image: url("../img/sprite/icon-watch.svg");
   mask-image: url("../img/sprite/icon-watch.svg");
 }
 
-.advantages__list-item:nth-of-type(2)::after {
+.advantages__list-item--big-suppler::after {
   -webkit-mask-image: url("../img/sprite/icon-people.svg");
   mask-image: url("../img/sprite/icon-people.svg");
 }
 
-.advantages__list-item:nth-of-type(3)::after {
+.advantages__list-item--confidential::after {
   left: 40px;
   -webkit-mask-image: url("../img/sprite/icon-spy.svg");
   mask-image: url("../img/sprite/icon-spy.svg");
 }
 
-.advantages__list-item:nth-of-type(4)::after {
+.advantages__list-item--personalisation::after {
   -webkit-mask-image: url("../img/sprite/icon-price.svg");
   mask-image: url("../img/sprite/icon-price.svg");
 }
@@ -1023,7 +1023,7 @@ input[type=number] {
   line-height: 30px;
   min-height: 650px;
   background-size: cover;
-  background-color: #00b2ff;
+  background-color: #03101b;
 }
 
 .service a::before {
@@ -1056,37 +1056,37 @@ input[type=number] {
 }
 
 @supports not (background-image: url("../img/background-card-desktop-1.webp")) {
-  .service li:nth-child(1) a {
+  .service__link--production {
     background-image: url("../img/background-card-desktop-1.jpg");
   }
 }
 
 @supports (background-image: url("../img/background-card-desktop-1.webp")) {
-  .service li:nth-child(1) a {
+  .service__link--production {
     background-image: url("../img/background-card-desktop-1.webp");
   }
 }
 
 @supports not (background-image: url("../img/background-card-desktop-2.webp")) {
-  .service li:nth-child(2) a {
+  .service__link--assembly {
     background-image: url("../img/background-card-desktop-2.jpg");
   }
 }
 
 @supports (background-image: url("../img/background-card-desktop-2.webp")) {
-  .service li:nth-child(2) a {
+  .service__link--assembly {
     background-image: url("../img/background-card-desktop-2.webp");
   }
 }
 
 @supports not (background-image: url("../img/background-card-desktop-3.webp")) {
-  .service li:nth-child(3) a {
+  .service__link--kit {
     background-image: url("../img/background-card-desktop-3.jpg");
   }
 }
 
 @supports (background-image: url("../img/background-card-desktop-3.webp")) {
-  .service li:nth-child(3) a {
+  .service__link--kit {
     background-image: url("../img/background-card-desktop-3.webp");
   }
 }
@@ -1165,7 +1165,7 @@ input[type=number] {
 }
 
 .form__text {
-  margin: 0 0 39px;
+  margin: 0 0 36px;
   padding: 0 0 0 4px;
   font-size: 16px;
   line-height: 22px;
@@ -1598,37 +1598,37 @@ input[type=number] {
   }
 
 @supports not (background-image: url("../img/background-card-tablet-1.webp")) {
-    .service li:nth-child(1) a {
+    .service__link--production {
       background-image: url("../img/background-card-tablet-1.jpg");
     }
 }
 
 @supports (background-image: url("../img/background-card-tablet-1.webp")) {
-    .service li:nth-child(1) a {
+    .service__link--production {
       background-image: url("../img/background-card-tablet-1.webp");
     }
 }
 
 @supports not (background-image: url("../img/background-card-tablet-2.webp")) {
-    .service li:nth-child(2) a {
+    .service__link--assembly {
       background-image: url("../img/background-card-tablet-2.jpg");
     }
 }
 
 @supports (background-image: url("../img/background-card-tablet-2.webp")) {
-    .service li:nth-child(2) a {
+    .service__link--assembly {
       background-image: url("../img/background-card-tablet-2.webp");
     }
 }
 
 @supports not (background-image: url("../img/background-card-tablet-3.webp")) {
-    .service li:nth-child(3) a {
+    .service__link--kit {
       background-image: url("../img/background-card-tablet-3.jpg");
     }
 }
 
 @supports (background-image: url("../img/background-card-tablet-3.webp")) {
-    .service li:nth-child(3) a {
+    .service__link--kit {
       background-image: url("../img/background-card-tablet-3.webp");
     }
 }
@@ -1743,37 +1743,37 @@ input[type=number] {
 }
 
 @supports not (background-image: url("../img/background-card-tablet-1@2x.webp")) {
-    .service li:nth-child(1) a {
+    .service__link--production {
       background-image: url("../img/background-card-tablet-1@2x.jpg");
     }
 }
 
 @supports (background-image: url("../img/background-card-tablet-1@2x.webp")) {
-    .service li:nth-child(1) a {
+    .service__link--production {
       background-image: url("../img/background-card-tablet-1@2x.webp");
     }
 }
 
 @supports not (background-image: url("../img/background-card-tablet-2@2x.webp")) {
-    .service li:nth-child(2) a {
+    .service__link--assembly {
       background-image: url("../img/background-card-tablet-2@2x.jpg");
     }
 }
 
 @supports (background-image: url("../img/background-card-tablet-2@2x.webp")) {
-    .service li:nth-child(2) a {
+    .service__link--assembly {
       background-image: url("../img/background-card-tablet-2@2x.webp");
     }
 }
 
 @supports not (background-image: url("../img/background-card-tablet-3@2x.webp")) {
-    .service li:nth-child(3) a {
+    .service__link--kit {
       background-image: url("../img/background-card-tablet-3@2x.jpg");
     }
 }
 
 @supports (background-image: url("../img/background-card-tablet-3@2x.webp")) {
-    .service li:nth-child(3) a {
+    .service__link--kit {
       background-image: url("../img/background-card-tablet-3@2x.webp");
     }
 }
@@ -1887,30 +1887,30 @@ input[type=number] {
     mask-size: 30px 30px;
   }
 
-  .advantages__list-item:nth-of-type(1)::after {
+  .advantages__list-item--fast::after {
     top: 30px;
     left: 30px;
   }
 
-  .advantages__list-item:nth-of-type(2)::after {
+  .advantages__list-item--big-suppler::after {
     top: 30px;
     left: 30px;
   }
 
-  .advantages__list-item:nth-of-type(3) {
+  .advantages__list-item--confidential {
     min-height: 326px;
   }
 
-  .advantages__list-item:nth-of-type(3)::after {
+  .advantages__list-item--confidential::after {
     top: 30px;
     left: 30px;
   }
 
-  .advantages__list-item:nth-of-type(4) {
+  .advantages__list-item--personalisation {
     min-height: 326px;
   }
 
-  .advantages__list-item:nth-of-type(4)::after {
+  .advantages__list-item--personalisation::after {
     top: 27px;
     left: 30px;
   }
@@ -1983,37 +1983,37 @@ input[type=number] {
   }
 
 @supports not (background-image: url("../img/background-card-mobile-1.webp")) {
-    .service li:nth-child(1) a {
+    .service__link--production {
       background-image: url("../img/background-card-mobile-1.jpg");
     }
 }
 
 @supports (background-image: url("../img/background-card-mobile-1.webp")) {
-    .service li:nth-child(1) a {
+    .service__link--production {
       background-image: url("../img/background-card-mobile-1.webp");
     }
 }
 
 @supports not (background-image: url("../img/background-card-mobile-2.webp")) {
-    .service li:nth-child(2) a {
+    .service__link--assembly {
       background-image: url("../img/background-card-mobile-2.jpg");
     }
 }
 
 @supports (background-image: url("../img/background-card-mobile-2.webp")) {
-    .service li:nth-child(2) a {
+    .service__link--assembly {
       background-image: url("../img/background-card-mobile-2.webp");
     }
 }
 
 @supports not (background-image: url("../img/background-card-mobile-3.webp")) {
-    .service li:nth-child(3) a {
+    .service__link--kit {
       background-image: url("../img/background-card-mobile-3.jpg");
     }
 }
 
 @supports (background-image: url("../img/background-card-mobile-3.webp")) {
-    .service li:nth-child(3) a {
+    .service__link--kit {
       background-image: url("../img/background-card-mobile-3.webp");
     }
 }
@@ -2071,7 +2071,7 @@ input[type=number] {
   }
 
   .footer__social-list {
-    padding: 9px 0 17px;
+    padding: 16px 0 17px;
   }
 
   .footer__social-list-item {
@@ -2143,37 +2143,37 @@ input[type=number] {
 }
 
 @supports not (background-image: url("../img/background-card-mobile-1@2x.webp")) {
-    .service li:nth-child(1) a {
+    .service__link--production {
       background-image: url("../img/background-card-mobile-1@2x.jpg");
     }
 }
 
 @supports (background-image: url("../img/background-card-mobile-1@2x.webp")) {
-    .service li:nth-child(1) a {
+    .service__link--production {
       background-image: url("../img/background-card-mobile-1@2x.webp");
     }
 }
 
 @supports not (background-image: url("../img/background-card-mobile-2@2x.webp")) {
-    .service li:nth-child(2) a {
+    .service__link--assembly {
       background-image: url("../img/background-card-mobile-2@2x.jpg");
     }
 }
 
 @supports (background-image: url("../img/background-card-mobile-2@2x.webp")) {
-    .service li:nth-child(2) a {
+    .service__link--assembly {
       background-image: url("../img/background-card-mobile-2@2x.webp");
     }
 }
 
 @supports not (background-image: url("../img/background-card-mobile-3@2x.webp")) {
-    .service li:nth-child(3) a {
+    .service__link--kit {
       background-image: url("../img/background-card-mobile-3@2x.jpg");
     }
 }
 
 @supports (background-image: url("../img/background-card-mobile-3@2x.webp")) {
-    .service li:nth-child(3) a {
+    .service__link--kit {
       background-image: url("../img/background-card-mobile-3@2x.webp");
     }
 }
@@ -2211,37 +2211,37 @@ input[type=number] {
 }
 
 @supports not (background-image: url("../img/background-card-desktop-1@2x.webp")) {
-    .service li:nth-child(1) a {
+    .service__link--production {
       background-image: url("../img/background-card-desktop-1@2x.jpg");
     }
 }
 
 @supports (background-image: url("../img/background-card-desktop-1@2x.webp")) {
-    .service li:nth-child(1) a {
+    .service__link--production {
       background-image: url("../img/background-card-desktop-1@2x.webp");
     }
 }
 
 @supports not (background-image: url("../img/background-card-desktop-2@2x.webp")) {
-    .service li:nth-child(2) a {
+    .service__link--assembly {
       background-image: url("../img/background-card-desktop-2@2x.jpg");
     }
 }
 
 @supports (background-image: url("../img/background-card-desktop-2@2x.webp")) {
-    .service li:nth-child(2) a {
+    .service__link--assembly {
       background-image: url("../img/background-card-desktop-2@2x.webp");
     }
 }
 
 @supports not (background-image: url("../img/background-card-desktop-3@2x.webp")) {
-    .service li:nth-child(3) a {
+    .service__link--kit {
       background-image: url("../img/background-card-desktop-3@2x.jpg");
     }
 }
 
 @supports (background-image: url("../img/background-card-desktop-3@2x.webp")) {
-    .service li:nth-child(3) a {
+    .service__link--kit {
       background-image: url("../img/background-card-desktop-3@2x.webp");
     }
 }
