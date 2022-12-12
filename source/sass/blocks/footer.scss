@@ -165,26 +165,27 @@
   }
 }
 
-.footer__button {
+.footer__accordeon-button {
+  position: absolute;
+  top: 20px;
+  right: 26px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  background-image: url("../img/sprite/icon-plus.svg");
+  background-repeat: no-repeat;
+  border: none;
   display: none;
 }
 
-.shows-button {
+.footer__accordeon-button.shows-button {
   @media ($mobile) {
-    position: absolute;
-    top: 20px;
-    right: 26px;
     display: block;
-    width: 15px;
-    height: 15px;
-    background-color: transparent;
-    background-image: url("../img/sprite/icon-plus.svg");
-    background-repeat: no-repeat;
-    border: none;
   }
 }
 
-.shows-button.is-active {
+.footer__accordeon-button.is-active {
   @media ($mobile) {
     background-image: url("../img/sprite/icon-minus.svg");
   }
