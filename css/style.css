@@ -624,6 +624,33 @@ input::-webkit-inner-spin-button {
   pointer-events: none;
 }
 
+.modal--responsive .modal__content {
+  width: 100%;
+}
+
+.modal--fit-content .modal__content {
+  width: auto;
+}
+
+.modal--no-scale {
+  transform: none;
+}
+
+.modal--preload {
+  transition: none;
+}
+
+.modal--dev {
+  position: absolute;
+}
+
+.modal.is-active {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .modal__content {
   position: relative;
   max-width: 500px;
@@ -659,33 +686,6 @@ input::-webkit-inner-spin-button {
   .modal__close-btn.focus-visible:focus {
     opacity: 0.8;
   }
-}
-
-.modal--responsive .modal__content {
-  width: 100%;
-}
-
-.modal--fit-content .modal__content {
-  width: auto;
-}
-
-.modal--no-scale {
-  transform: none;
-}
-
-.modal--preload {
-  transition: none;
-}
-
-.modal--dev {
-  position: absolute;
-}
-
-.modal.is-active {
-  transform: scale(1);
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
 }
 
 .header {
@@ -1467,7 +1467,7 @@ input::-webkit-inner-spin-button {
 */
 
 @media (min-width: 1024px) {
-  .modal--dev .modal__content {
+  .modal__content {
     margin-top: 146px;
     transform: translateX(-8px);
   }
@@ -1792,12 +1792,12 @@ input::-webkit-inner-spin-button {
     padding: 0 25px;
   }
 
-  .modal__content {
-    padding: 20px;
-  }
-
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .modal__content {
+    padding: 20px;
   }
 
   .header__top {
