@@ -15,38 +15,6 @@
   transition: opacity $trans-modal, transform $trans-modal, visibility $trans-modal;
   pointer-events: none;
 
-  &__content {
-    position: relative;
-    max-width: 500px;
-    margin: 146px auto;
-    padding: 40px;
-    color: $color-default-white;
-    background-color: $color-deep-sky-blue;
-
-    @include vp-767 {
-      padding: 20px;
-    }
-  }
-
-  &__close-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    z-index: 1;
-    width: 40px;
-    height: 40px;
-    color: inherit;
-    background-color: $color-transparent;
-    background-image: url("../img/sprite_auto.svg#icon-close");
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 20px;
-    border: none;
-    cursor: pointer;
-
-    @include default-interactive;
-  }
-
   &--responsive {
     .modal__content {
       width: 100%;
@@ -73,13 +41,6 @@
 
   &--dev {
     position: absolute;
-
-    .modal__content {
-      @media (min-width: 1024px) {
-        margin-top: 146px; // Pixelperfect
-        transform: translateX(-8px); // Pixelperfect
-      }
-    }
   }
 }
 
@@ -88,4 +49,41 @@
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.modal__content {
+  @media (min-width: 1024px) {
+    margin-top: 146px; // Pixelperfect
+    transform: translateX(-8px); // Pixelperfect
+  }
+
+  position: relative;
+  max-width: 500px;
+  margin: 146px auto;
+  padding: 40px;
+  color: $color-default-white;
+  background-color: $color-deep-sky-blue;
+
+  @include vp-767 {
+    padding: 20px;
+  }
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  color: inherit;
+  background-color: $color-transparent;
+  background-image: url("../img/sprite_auto.svg#icon-close");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 20px;
+  border: none;
+  cursor: pointer;
+
+  @include default-interactive;
 }
