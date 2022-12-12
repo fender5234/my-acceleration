@@ -11,157 +11,162 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <header class="header" data-fix-block="">
-      <div class="container">
-        <div class="header__top">
-          <h1 class="visually-hidden">Компания Smart Device.</h1>
-          <a href="index.html" class="header__logo logo-link" aria-label="Переход на главную страницу">
-            <img class="header__logo-image" src="img/logo-full.svg" height="55" width="215" alt="Логотип компании Smart Device." />
-          </a>
-          <nav class="header__nav">
-            <ul class="header__nav-list">
-              <li class="header__nav-list-item">
-                <a href="mailto:info@sd.ru" class="header__nav-link header__nav-link--mail" aria-label="Адрес электронной почты для связи">
-                  <span class="header__nav-link-text">info@sd.ru</span>
-                </a>
-              </li>
-              <li class="header__nav-list-item">
-                <a href="tel:+74950005252" class="header__nav-link header__nav-link--phone" aria-label="Номер телефона для связи">
-                  <span class="header__nav-link-text">+7 (495) 000 52 52</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <a href="callback.html" class="header__callback-button" data-open-modal="callback">заказать звонок</a>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section class="feedback" id="feedback">
+    <div class="page">
+      <header class="header" data-fix-block="">
         <div class="container">
-          <div class="feedback__container form">
-            <h2 class="form__header">Остались вопросы? Задайте их нам!</h2>
-            <p class="form__text">Мы проконсультируем Вас бесплатно</p>
-            <form action="https://echo.htmlacademy.ru/courses" method="get" data-form="">
-              <fieldset>
-                <legend class="visually-hidden">Форма обратной связи.</legend>
-                <p class="form__group">
-                  <label>
-                    <span class="visually-hidden">Введите ваше имя.</span>
-                    <input type="text" placeholder="Имя" name="name" pattern="^[A-Za-zА-Яа-яЁё\- ]+$" required="" />
-                  </label>
-                  <label>
-                    <span class="visually-hidden">Введите ваш номер телефона.</span>
-                    <input
-                      type="tel"
-                      placeholder="Телефон"
-                      name="phone"
-                      pattern="^\+7\(\d{3}\)\d{7}$"
-                      data-mask="+7(###)#######"
-                      required="" />
-                  </label>
-                </p>
-                <p class="form__group-alter">
-                  <label>
-                    <span class="visually-hidden">Введите ваш вопрос.</span>
-                    <textarea placeholder="Ваш вопрос" name="message"></textarea>
-                  </label>
-                </p>
-              </fieldset>
-              <fieldset>
-                <legend class="visually-hidden">Согласие на обработку персональных данных</legend>
-                <p class="form__group">
-                  <button type="submit">задать вопрос</button>
-                  <label>
-                    <input name="agreement" type="checkbox" checked="" required="" />
-                    <span>Я согласен на обработку персональных данных</span>
-                  </label>
-                </p>
-              </fieldset>
-            </form>
+          <div class="header__top">
+            <h1 class="visually-hidden">Компания Smart Device.</h1>
+            <a href="index.html" class="header__logo logo-link" aria-label="Переход на главную страницу">
+              <img class="header__logo-image" src="img/logo-full.svg" height="55" width="215" alt="Логотип компании Smart Device." />
+            </a>
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-list-item">
+                  <a
+                    href="mailto:info@sd.ru"
+                    class="header__nav-link header__nav-link--mail"
+                    aria-label="Адрес электронной почты для связи">
+                    <span class="header__nav-link-text">info@sd.ru</span>
+                  </a>
+                </li>
+                <li class="header__nav-list-item">
+                  <a href="tel:+74950005252" class="header__nav-link header__nav-link--phone" aria-label="Номер телефона для связи">
+                    <span class="header__nav-link-text">+7 (495) 000 52 52</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <a href="callback.html" class="header__callback-button" data-open-modal="callback">заказать звонок</a>
           </div>
         </div>
-      </section>
-    </main>
+      </header>
 
-    <footer class="footer">
-      <div class="footer__container container">
-        <section class="footer__social">
-          <h2 class="visually-hidden">Компания Smart Device в социальных сетях.</h2>
-          <a href="index.html" aria-label="Переход на главную страницу">
-            <img src="img/logo-full.svg" height="55" width="215" alt="Логотип компании Smart Device." />
-          </a>
-          <ul class="footer__social-list">
-            <li class="footer__social-list-item">
-              <a href="https://ok.ru/" class="footer__social-link footer__social-link--ok" aria-label="Smart Device в Одноклассники"></a>
-            </li>
-            <li class="footer__social-list-item">
-              <a href="https://vk.com/" class="footer__social-link footer__social-link--vk" aria-label="Smart Device в В контакте"></a>
-            </li>
-            <li class="footer__social-list-item">
-              <a
-                href="https://ru.pinterest.com/"
-                class="footer__social-link footer__social-link--pin"
-                aria-label="Smart Device в Pinterest"></a>
-            </li>
-          </ul>
+      <main>
+        <section class="feedback" id="feedback">
+          <div class="container">
+            <div class="feedback__container form">
+              <h2 class="form__header">Остались вопросы? Задайте их нам!</h2>
+              <p class="form__text">Мы проконсультируем Вас бесплатно</p>
+              <form action="https://echo.htmlacademy.ru/courses" method="get" data-form="">
+                <fieldset>
+                  <legend class="visually-hidden">Форма обратной связи.</legend>
+                  <p class="form__group">
+                    <label>
+                      <span class="visually-hidden">Введите ваше имя.</span>
+                      <input type="text" placeholder="Имя" name="name" pattern="^[A-Za-zА-Яа-яЁё\- ]+$" required="" />
+                    </label>
+                    <label>
+                      <span class="visually-hidden">Введите ваш номер телефона.</span>
+                      <input
+                        type="tel"
+                        placeholder="Телефон"
+                        name="phone"
+                        pattern="^\+7\(\d{3}\)\d{7}$"
+                        data-mask="+7(###)#######"
+                        required="" />
+                    </label>
+                  </p>
+                  <p class="form__group-alter">
+                    <label>
+                      <span class="visually-hidden">Введите ваш вопрос.</span>
+                      <textarea placeholder="Ваш вопрос" name="message"></textarea>
+                    </label>
+                  </p>
+                </fieldset>
+                <fieldset>
+                  <legend class="visually-hidden">Согласие на обработку персональных данных</legend>
+                  <p class="form__group">
+                    <button type="submit">задать вопрос</button>
+                    <label>
+                      <input name="agreement" type="checkbox" checked="" required="" />
+                      <span>Я согласен на обработку персональных данных</span>
+                    </label>
+                  </p>
+                </fieldset>
+              </form>
+            </div>
+          </div>
         </section>
-        <section class="footer__info" data-accordeon-section="">
-          <h2 class="footer__title">разделы сайта</h2>
-          <ul class="footer__info-list" data-accordeon-list="">
-            <li class="footer__info-list-item">
-              <a href="#" class="footer__info-link">О компании</a>
-            </li>
-            <li class="footer__info-list-item">
-              <a href="#" class="footer__info-link">Продукты</a>
-            </li>
-            <li class="footer__info-list-item">
-              <a href="#" class="footer__info-link">
-                Производство&nbsp;печатных
-                <br />
-                плат
-              </a>
-            </li>
-            <li class="footer__info-list-item">
-              <a href="#" class="footer__info-link">Монтаж печатных плат </a>
-            </li>
-            <li class="footer__info-list-item">
-              <a href="#" class="footer__info-link">Комплектующие</a>
-            </li>
-            <li class="footer__info-list-item">
-              <a href="#" class="footer__info-link">Доставка</a>
-            </li>
-            <li class="footer__info-list-item">
-              <a href="#" class="footer__info-link">Контакты</a>
-            </li>
-          </ul>
-          <button class="footer__button" type="button" data-accordeon-button="">
-            <span class="visually-hidden">Показать полностью</span>
-          </button>
-        </section>
-        <section class="footer__contacts" data-accordeon-section="">
-          <h2 class="footer__title">наш офис</h2>
-          <ul class="footer__contacts-list" data-accordeon-list="">
-            <li class="footer__contacts-list-item">
-              <address>г. Мытищи, Олимпийский&nbsp;проспект, д.10</address>
-            </li>
-            <li class="footer__contacts-list-item">
-              <a href="tel:+74955894050" class="footer__contacts-link">+7 (495) 589-40-50</a>
-            </li>
-            <li class="footer__contacts-list-item">
-              <a href="tel:+79253895829" class="footer__contacts-link">+7 (925) 389-58-29</a>
-            </li>
-            <li class="footer__contacts-list-item">
-              <a href="tel:+79253647813" class="footer__contacts-link">+7 (925) 364-78-13</a>
-            </li>
-          </ul>
-          <button class="footer__button" type="button" data-accordeon-button="">
-            <span class="visually-hidden">Показать полностью</span>
-          </button>
-        </section>
-      </div>
-    </footer>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container container">
+          <section class="footer__social">
+            <h2 class="visually-hidden">Компания Smart Device в социальных сетях.</h2>
+            <a href="index.html" aria-label="Переход на главную страницу">
+              <img src="img/logo-full.svg" height="55" width="215" alt="Логотип компании Smart Device." />
+            </a>
+            <ul class="footer__social-list">
+              <li class="footer__social-list-item">
+                <a href="https://ok.ru/" class="footer__social-link footer__social-link--ok" aria-label="Smart Device в Одноклассники"></a>
+              </li>
+              <li class="footer__social-list-item">
+                <a href="https://vk.com/" class="footer__social-link footer__social-link--vk" aria-label="Smart Device в В контакте"></a>
+              </li>
+              <li class="footer__social-list-item">
+                <a
+                  href="https://ru.pinterest.com/"
+                  class="footer__social-link footer__social-link--pin"
+                  aria-label="Smart Device в Pinterest"></a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer__info" data-accordeon-section="">
+            <h2 class="footer__title">разделы сайта</h2>
+            <ul class="footer__info-list" data-accordeon-list="">
+              <li class="footer__info-list-item">
+                <a href="#" class="footer__info-link">О компании</a>
+              </li>
+              <li class="footer__info-list-item">
+                <a href="#" class="footer__info-link">Продукты</a>
+              </li>
+              <li class="footer__info-list-item">
+                <a href="#" class="footer__info-link">
+                  Производство&nbsp;печатных
+                  <br />
+                  плат
+                </a>
+              </li>
+              <li class="footer__info-list-item">
+                <a href="#" class="footer__info-link">Монтаж печатных плат </a>
+              </li>
+              <li class="footer__info-list-item">
+                <a href="#" class="footer__info-link">Комплектующие</a>
+              </li>
+              <li class="footer__info-list-item">
+                <a href="#" class="footer__info-link">Доставка</a>
+              </li>
+              <li class="footer__info-list-item">
+                <a href="#" class="footer__info-link">Контакты</a>
+              </li>
+            </ul>
+            <button class="footer__accordeon-button" type="button" data-accordeon-button="">
+              <span class="visually-hidden">Показать полностью</span>
+            </button>
+          </section>
+          <section class="footer__contacts" data-accordeon-section="">
+            <h2 class="footer__title">наш офис</h2>
+            <ul class="footer__contacts-list" data-accordeon-list="">
+              <li class="footer__contacts-list-item">
+                <address>г. Мытищи, Олимпийский&nbsp;проспект, д.10</address>
+              </li>
+              <li class="footer__contacts-list-item">
+                <a href="tel:+74955894050" class="footer__contacts-link">+7 (495) 589-40-50</a>
+              </li>
+              <li class="footer__contacts-list-item">
+                <a href="tel:+79253895829" class="footer__contacts-link">+7 (925) 389-58-29</a>
+              </li>
+              <li class="footer__contacts-list-item">
+                <a href="tel:+79253647813" class="footer__contacts-link">+7 (925) 364-78-13</a>
+              </li>
+            </ul>
+            <button class="footer__accordeon-button" type="button" data-accordeon-button="">
+              <span class="visually-hidden">Показать полностью</span>
+            </button>
+          </section>
+        </div>
+      </footer>
+    </div>
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

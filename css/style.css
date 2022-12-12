@@ -1416,13 +1416,29 @@ input::-webkit-inner-spin-button {
   font-style: normal;
 }
 
-.footer__button {
+.footer__accordeon-button {
+  position: absolute;
+  top: 20px;
+  right: 26px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  background-image: url("../img/sprite/icon-plus.svg");
+  background-repeat: no-repeat;
+  border: none;
   display: none;
 }
 
 .footer__container {
   display: grid;
   grid-template-columns: 30% 1fr 1fr;
+}
+
+.page {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100vh;
 }
 
 /* @mixin hover-focus {
@@ -2097,20 +2113,11 @@ input::-webkit-inner-spin-button {
     padding: 0 50px 7px;
   }
 
-  .shows-button {
-    position: absolute;
-    top: 20px;
-    right: 26px;
+  .footer__accordeon-button.shows-button {
     display: block;
-    width: 15px;
-    height: 15px;
-    background-color: transparent;
-    background-image: url("../img/sprite/icon-plus.svg");
-    background-repeat: no-repeat;
-    border: none;
   }
 
-  .shows-button.is-active {
+  .footer__accordeon-button.is-active {
     background-image: url("../img/sprite/icon-minus.svg");
   }
 
