@@ -1,3 +1,4 @@
+.dist/*.js
 build/*.js
 source/js/vendor/*.js
 gulpfile.js

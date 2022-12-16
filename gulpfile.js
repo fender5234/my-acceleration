@@ -1,3 +1,4 @@
+import {dist} from './gulp/constants.js';
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
 import del from 'del';
@@ -15,11 +16,11 @@ import {
 const server = browserSync.create();
 const streamStyles = () => compileStyles().pipe(server.stream());
 
-const clean = () => del('build');
+const clean = () => del(dist);
 
 const syncServer = () => {
   server.init({
-    server: 'build/',
+    server: `${dist}/`,
     index: 'sitemap.html',
     notify: false,
     open: true,

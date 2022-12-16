@@ -1,3 +1,4 @@
+import {isDev, dist} from './constants.js';
 import gulp from 'gulp';
 import createHtml from 'gulp-twig';
 import getData from 'gulp-data';
@@ -6,17 +7,14 @@ import processHtml from 'gulp-posthtml';
 import useCondition from 'gulp-if';
 import validateBem from 'gulp-html-bemlinter';
 
-const isDev = process.env.NODE_ENV === 'development';
 const lintMode = Boolean(process.env.LINT);
 
 const compileLayouts = () =>
   gulp
     .src('source/layouts/pages/**/*.twig')
     .pipe(
-      getData(async ({ path }) => {
-        const page = path
-          .replace(/^.*pages(\\+|\/+)(.*)\.twig$/, '$2')
-          .replace(/\\/g, '/');
+      getData(async ({path}) => {
+        const page = path.replace(/^.*pages(\\+|\/+)(.*)\.twig$/, '$2').replace(/\\/g, '/');
         const versionId = new Date().getTime();
         let commonData = {};
         let pageData = {};
@@ -38,7 +36,7 @@ const compileLayouts = () =>
           ...pageData.default,
           isDev,
           page,
-          version: isDev ? `?${versionId}` : ''
+          version: isDev ? `?${versionId}` : '',
         };
       })
     )
@@ -46,6 +44,6 @@ const compileLayouts = () =>
     .pipe(processHtml())
     .pipe(validateBem())
     .pipe(useCondition(!lintMode, prettier()))
-    .pipe(useCondition(!lintMode, gulp.dest('build')));
+    .pipe(useCondition(!lintMode, gulp.dest(dist)));
 
 export default compileLayouts;
