@@ -1,7 +1,8 @@
+import {dist} from './constants.js';
 import gulp from 'gulp';
 import imagemin from 'gulp-imagemin';
 import webp from 'gulp-webp';
-import { stacksvg } from 'gulp-stacksvg';
+import {stacksvg} from 'gulp-stacksvg';
 
 const svgo = () =>
   gulp
@@ -9,12 +10,8 @@ const svgo = () =>
     .pipe(
       imagemin([
         imagemin.svgo({
-          plugins: [
-            { removeViewBox: false },
-            { removeRasterImages: true },
-            { removeUselessStrokeAndFill: false }
-          ]
-        })
+          plugins: [{removeViewBox: false}, {removeRasterImages: true}, {removeUselessStrokeAndFill: false}],
+        }),
       ])
     )
     .pipe(gulp.dest('source/img'));
@@ -22,8 +19,8 @@ const svgo = () =>
 const sprite = () =>
   gulp
     .src('source/img/sprite/*.svg')
-    .pipe(stacksvg({ output: 'sprite_auto' }))
-    .pipe(gulp.dest('build/img'));
+    .pipe(stacksvg({output: 'sprite_auto'}))
+    .pipe(gulp.dest(`${dist}/img`));
 
 /*
   Optional tasks
@@ -40,19 +37,14 @@ const createWebp = () => {
   const root = '';
   return gulp
     .src(`source/img/${root}**/*.{png,jpg}`)
-    .pipe(webp({ quality: 90 }))
+    .pipe(webp({quality: 90}))
     .pipe(gulp.dest(`source/img/${root}`));
 };
 
 const optimizeImages = () =>
   gulp
-    .src('build/img/**/*.{png,jpg}')
-    .pipe(
-      imagemin([
-        imagemin.optipng({ optimizationLevel: 3 }),
-        imagemin.mozjpeg({ quality: 75, progressive: true })
-      ])
-    )
-    .pipe(gulp.dest('build/img'));
+    .src(`${dist}/img/**/*.{png,jpg}`)
+    .pipe(imagemin([imagemin.optipng({optimizationLevel: 3}), imagemin.mozjpeg({quality: 75, progressive: true})]))
+    .pipe(gulp.dest(`${dist}/img`));
 
-export { svgo, sprite, createWebp, optimizeImages };
+export {svgo, sprite, createWebp, optimizeImages};
