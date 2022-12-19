@@ -121,7 +121,7 @@
 
 .header__callback-button {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 17px;
   font-family: $ff-roboto-condensed;
   font-weight: 700;
   text-transform: uppercase;
@@ -131,7 +131,8 @@
   border-radius: 3px;
   align-self: baseline;
   margin: 5px 0 0 141px;
-  padding: 11px 11px;
+  padding: 9px 12px 11px 16px;
+  letter-spacing: 1px;
   flex-shrink: 0;
   cursor: pointer;
 

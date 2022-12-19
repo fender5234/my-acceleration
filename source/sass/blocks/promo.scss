@@ -35,7 +35,7 @@
   font-weight: 700;
   text-transform: uppercase;
   color: $color-alice-blue;
-  letter-spacing: -4px;
+  letter-spacing: 6px;
 
   @media ($tablet-mobile) {
     font-size: 64px;
@@ -75,8 +75,8 @@
 .promo a {
   display: inline-block;
   vertical-align: baseline;
-  padding: 17px 25px;
-  letter-spacing: -1px;
+  padding: 17px 26px 17px 25px;
+  letter-spacing: 1px;
   font-family: $ff-roboto-condensed;
   font-weight: 700;
   font-size: 18px;
