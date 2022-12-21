@@ -53,14 +53,14 @@
 
 .modal__content {
   @media (min-width: 1024px) {
-    margin-top: 146px; // Pixelperfect
+    margin: 146px auto 151px; // Pixelperfect
     transform: translateX(-8px); // Pixelperfect
   }
 
   position: relative;
   max-width: 500px;
   margin: 146px auto;
-  padding: 40px;
+  padding: 38px 40px;
   color: $color-default-white;
   background-color: $color-deep-sky-blue;
 

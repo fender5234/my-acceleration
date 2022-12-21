@@ -2,7 +2,7 @@
   padding: 120px 0 120px 250px;
 
   @media ($tablet-mobile) {
-    padding: 76px 0 83px 175px;
+    padding: 76px 0 81px 175px;
   }
 
   @media ($mobile) {
@@ -19,6 +19,10 @@
   color: $color-black-pearl;
   margin: 0 0 9px;
   padding: 0;
+
+  @media ($tablet-mobile) {
+    margin: 0 0 11px;
+  }
 
   @media ($mobile) {
     font-size: 28px;

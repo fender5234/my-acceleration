@@ -15,6 +15,7 @@
   line-height: 16px;
   color: $color-default-white;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .footer ul {
@@ -79,10 +80,10 @@
 }
 
 .footer__info {
-  padding: 10px 0 0 10px;
+  padding: 8px 0 0 9px;
 
   @media ($tablet-mobile) {
-    padding: 40px 0 0;
+    padding: 38px 0 0;
   }
 
   @media ($mobile) {
@@ -94,7 +95,7 @@
 }
 
 .footer__info-list-item {
-  margin: 0 30px 10px 0;
+  margin: 0 30px 8px 0;
 
   @media ($tablet-mobile) {
     margin-bottom: 0 0 8px;
@@ -122,7 +123,7 @@
   padding: 8px 0 0 20px;
 
   @media ($tablet-mobile) {
-    padding: 40px 0 0 15px;
+    padding: 37px 0 0 15px;
   }
 
   @media ($mobile) {
@@ -141,10 +142,10 @@
 }
 
 .footer__contacts-list-item {
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 
   @media ($tablet-mobile) {
-    margin-bottom: 14px;
+    margin-bottom: 8px;
   }
 }
 

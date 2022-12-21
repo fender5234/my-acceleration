@@ -5,7 +5,7 @@
   color: $color-default-white;
 
   @media ($tablet-mobile) {
-    padding: 46px 0 123px;
+    padding: 46px 0 126px;
   }
 
   @media ($mobile) {
@@ -69,6 +69,10 @@
   letter-spacing: -1px;
   cursor: pointer;
   margin-top: 20px;
+
+  @media ($tablet-mobile) {
+    padding: 17px 9px 9px;
+  }
 }
 
 .feedback span {
