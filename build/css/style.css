@@ -655,7 +655,7 @@ input::-webkit-inner-spin-button {
   position: relative;
   max-width: 500px;
   margin: 146px auto;
-  padding: 40px;
+  padding: 38px 40px;
   color: #ffffff;
   background-color: #00b2ff;
 }
@@ -809,7 +809,7 @@ input::-webkit-inner-spin-button {
   font-weight: 700;
   text-transform: uppercase;
   color: #f2f5f7;
-  letter-spacing: 6px;
+  letter-spacing: 0.07em;
 }
 
 .promo p {
@@ -858,7 +858,7 @@ input::-webkit-inner-spin-button {
 .advantages__list-item {
   position: relative;
   border: 1px solid #e5e5e5;
-  padding: 93px 40px 0 45px;
+  padding: 90px 56px 0 44px;
   min-height: 300px;
 }
 
@@ -1090,6 +1090,10 @@ input::-webkit-inner-spin-button {
   }
 }
 
+.service__link span {
+  display: block;
+}
+
 .feedback {
   position: relative;
   padding: 166px 0 245px 0;
@@ -1153,14 +1157,14 @@ input::-webkit-inner-spin-button {
   font-weight: 400;
   line-height: 50px;
   font-size: 32px;
-  letter-spacing: 0;
+  letter-spacing: 2px;
 }
 
 .form__header--modal {
   margin: 0;
   font-size: 30px;
   line-height: 42px;
-  letter-spacing: -1px;
+  letter-spacing: 0;
 }
 
 .form__text {
@@ -1171,7 +1175,8 @@ input::-webkit-inner-spin-button {
 }
 
 .form__text--modal {
-  padding: 0 20px 0;
+  padding: 3px 20px 0 0;
+  margin: 0 0 38px;
 }
 
 .form fieldset {
@@ -1235,7 +1240,7 @@ input::-webkit-inner-spin-button {
   border-radius: 3px;
   padding: 13px 25px;
   width: 266px;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
   cursor: pointer;
   margin-top: 20px;
 }
@@ -1308,9 +1313,9 @@ input::-webkit-inner-spin-button {
   background-color: #041827;
   text-transform: uppercase;
   border-radius: 3px;
-  padding: 14px 25px 13px 25px;
+  padding: 16px 25px 11px 25px;
   width: 100%;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
   cursor: pointer;
   margin-top: 10px;
 }
@@ -1341,6 +1346,7 @@ input::-webkit-inner-spin-button {
   line-height: 16px;
   color: #ffffff;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .footer ul {
@@ -1382,11 +1388,11 @@ input::-webkit-inner-spin-button {
 }
 
 .footer__info {
-  padding: 10px 0 0 10px;
+  padding: 8px 0 0 9px;
 }
 
 .footer__info-list-item {
-  margin: 0 30px 10px 0;
+  margin: 0 30px 8px 0;
 }
 
 .footer__info-list-item:last-child {
@@ -1408,7 +1414,7 @@ input::-webkit-inner-spin-button {
 }
 
 .footer__contacts-list-item {
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 }
 
 .footer__contacts-list-item address {
@@ -1483,7 +1489,7 @@ input::-webkit-inner-spin-button {
 
 @media (min-width: 1024px) {
   .modal__content {
-    margin-top: 146px;
+    margin: 146px auto 151px;
     transform: translateX(-8px);
   }
 }
@@ -1546,7 +1552,6 @@ input::-webkit-inner-spin-button {
   .promo h2 {
     font-size: 64px;
     line-height: 75px;
-    letter-spacing: -3px;
     margin: 0;
   }
 
@@ -1568,16 +1573,20 @@ input::-webkit-inner-spin-button {
   }
 
   .advantages__list-item {
-    padding: 93px 43px 0 39px;
+    padding: 89px 43px 0 44px;
     min-height: 360px;
   }
 
   .advantages h3 {
-    margin: 0 0 6px;
+    margin: 0 0 12px;
   }
 
   .description {
-    padding: 76px 0 83px 175px;
+    padding: 76px 0 81px 175px;
+  }
+
+  .description h2 {
+    margin: 0 0 11px;
   }
 
   .description h2::before {
@@ -1649,7 +1658,7 @@ input::-webkit-inner-spin-button {
 }
 
   .feedback {
-    padding: 46px 0 123px;
+    padding: 46px 0 126px;
   }
 
   .feedback::before {
@@ -1663,6 +1672,10 @@ input::-webkit-inner-spin-button {
 
   .feedback__container::after {
     display: none;
+  }
+
+  .feedback [type=submit] {
+    padding: 17px 9px 9px;
   }
 
   .form__header {
@@ -1705,7 +1718,7 @@ input::-webkit-inner-spin-button {
   }
 
   .footer__info {
-    padding: 40px 0 0;
+    padding: 38px 0 0;
   }
 
   .footer__info-list-item {
@@ -1722,7 +1735,7 @@ input::-webkit-inner-spin-button {
   }
 
   .footer__contacts {
-    padding: 40px 0 0 15px;
+    padding: 37px 0 0 15px;
   }
 
   .footer__contacts-list {
@@ -1730,7 +1743,7 @@ input::-webkit-inner-spin-button {
   }
 
   .footer__contacts-list-item {
-    margin-bottom: 14px;
+    margin-bottom: 8px;
   }
 
   .footer__social {
@@ -1858,7 +1871,6 @@ input::-webkit-inner-spin-button {
   .promo h2 {
     font-size: 36px;
     line-height: 42px;
-    letter-spacing: -2px;
     margin: 0 0 8px;
   }
 
@@ -1872,9 +1884,10 @@ input::-webkit-inner-spin-button {
   .promo a {
     display: block;
     margin: 0 auto;
-    padding: 12px 15px;
+    padding: 13px 15px 11px 37px;
     font-size: 14px;
     line-height: 16px;
+    letter-spacing: 0.05em;
   }
 
   .promo__container {
@@ -2041,7 +2054,7 @@ input::-webkit-inner-spin-button {
     font-size: 30px;
     line-height: 42px;
     margin: 0 0 10px;
-    letter-spacing: -2px;
+    letter-spacing: 0;
   }
 
   .form__text {
