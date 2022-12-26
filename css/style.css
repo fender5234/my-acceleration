@@ -382,7 +382,7 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "Roboto-Condensed";
+  font-family: "Roboto Condensed";
   font-display: swap;
   src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff");
 }
@@ -390,7 +390,7 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 700;
-  font-family: "Roboto-Condensed";
+  font-family: "Roboto Condensed";
   font-display: swap;
   src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
 }
@@ -431,6 +431,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
+  background-color: #ffffff;
 }
 
 a {
@@ -574,6 +575,10 @@ input::-webkit-inner-spin-button {
   display: block;
 }
 
+.js {
+  display: none;
+}
+
 .container {
   box-sizing: border-box;
   width: 100%;
@@ -652,10 +657,11 @@ input::-webkit-inner-spin-button {
 }
 
 .modal__content {
+  min-height: 610px;
   position: relative;
   max-width: 500px;
   margin: 146px auto;
-  padding: 40px;
+  padding: 38px 40px;
   color: #ffffff;
   background-color: #00b2ff;
 }
@@ -699,7 +705,8 @@ input::-webkit-inner-spin-button {
 
 .header__top {
   display: flex;
-  padding: 30px 0 35px;
+  flex-wrap: wrap;
+  padding: 30px 50px 35px 0;
 }
 
 .header__nav-list {
@@ -748,13 +755,14 @@ input::-webkit-inner-spin-button {
 }
 
 .header__nav-list-item {
+  flex-shrink: 0;
   margin-left: 136px;
   padding: 15px 10px;
 }
 
 .header__callback-button {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 17px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -763,8 +771,9 @@ input::-webkit-inner-spin-button {
   border: 1px solid #f2f5f7;
   border-radius: 3px;
   align-self: baseline;
-  margin: 5px 0 0 141px;
-  padding: 11px 11px;
+  margin: 5px 10px 0 auto;
+  padding: 10px 12px 11px 16px;
+  letter-spacing: 1px;
   flex-shrink: 0;
   cursor: pointer;
 }
@@ -808,7 +817,7 @@ input::-webkit-inner-spin-button {
   font-weight: 700;
   text-transform: uppercase;
   color: #f2f5f7;
-  letter-spacing: -4px;
+  letter-spacing: 0.07em;
 }
 
 .promo p {
@@ -822,8 +831,8 @@ input::-webkit-inner-spin-button {
 .promo a {
   display: inline-block;
   vertical-align: baseline;
-  padding: 17px 25px;
-  letter-spacing: -1px;
+  padding: 17px 26px 17px 25px;
+  letter-spacing: 1px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -857,7 +866,7 @@ input::-webkit-inner-spin-button {
 .advantages__list-item {
   position: relative;
   border: 1px solid #e5e5e5;
-  padding: 93px 40px 0 45px;
+  padding: 90px 56px 0 44px;
   min-height: 300px;
 }
 
@@ -948,7 +957,6 @@ input::-webkit-inner-spin-button {
   color: #041827;
   margin: 0 0 9px;
   padding: 0;
-  letter-spacing: -2px;
 }
 
 .description h2::before {
@@ -972,7 +980,8 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 
-.description button {
+.description__button {
+  display: none;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   line-height: 16px;
@@ -988,6 +997,10 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
 }
 
+.description__button--js {
+  display: inline-block;
+}
+
 .service {
   padding: 66px 0 140px;
   background-color: #041827;
@@ -1000,7 +1013,6 @@ input::-webkit-inner-spin-button {
   color: #ffffff;
   line-height: 50px;
   margin: 0;
-  letter-spacing: -2px;
 }
 
 .service ul {
@@ -1091,6 +1103,10 @@ input::-webkit-inner-spin-button {
   }
 }
 
+.service__link span {
+  display: block;
+}
+
 .feedback {
   position: relative;
   padding: 166px 0 245px 0;
@@ -1154,14 +1170,14 @@ input::-webkit-inner-spin-button {
   font-weight: 400;
   line-height: 50px;
   font-size: 32px;
-  letter-spacing: 0;
+  letter-spacing: 2px;
 }
 
 .form__header--modal {
   margin: 0;
   font-size: 30px;
   line-height: 42px;
-  letter-spacing: -1px;
+  letter-spacing: 0;
 }
 
 .form__text {
@@ -1172,7 +1188,8 @@ input::-webkit-inner-spin-button {
 }
 
 .form__text--modal {
-  padding: 0 20px 0;
+  padding: 3px 20px 0 0;
+  margin: 0 0 38px;
 }
 
 .form fieldset {
@@ -1236,7 +1253,7 @@ input::-webkit-inner-spin-button {
   border-radius: 3px;
   padding: 13px 25px;
   width: 266px;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
   cursor: pointer;
   margin-top: 20px;
 }
@@ -1252,6 +1269,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  cursor: pointer;
 }
 
 .form [type=checkbox]::before {
@@ -1293,6 +1311,7 @@ input::-webkit-inner-spin-button {
 }
 
 .form__group-alter {
+  padding-left: 5px;
   margin: 0;
 }
 
@@ -1309,9 +1328,9 @@ input::-webkit-inner-spin-button {
   background-color: #041827;
   text-transform: uppercase;
   border-radius: 3px;
-  padding: 14px 25px 13px 25px;
+  padding: 16px 25px 11px 25px;
   width: 100%;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
   cursor: pointer;
   margin-top: 10px;
 }
@@ -1330,7 +1349,7 @@ input::-webkit-inner-spin-button {
 }
 
 .footer {
-  padding: 48px 0 0;
+  padding: 48px 0 40px;
   background-color: #041827;
 }
 
@@ -1342,6 +1361,7 @@ input::-webkit-inner-spin-button {
   line-height: 16px;
   color: #ffffff;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .footer ul {
@@ -1383,11 +1403,11 @@ input::-webkit-inner-spin-button {
 }
 
 .footer__info {
-  padding: 10px 0 0 10px;
+  padding: 8px 0 0 9px;
 }
 
 .footer__info-list-item {
-  margin: 0 30px 10px 0;
+  margin: 0 30px 8px 0;
 }
 
 .footer__info-list-item:last-child {
@@ -1409,7 +1429,7 @@ input::-webkit-inner-spin-button {
 }
 
 .footer__contacts-list-item {
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 }
 
 .footer__contacts-list-item address {
@@ -1418,26 +1438,27 @@ input::-webkit-inner-spin-button {
 
 .footer__accordeon-button {
   position: absolute;
-  top: 20px;
-  right: 26px;
+  padding: 20px;
+  top: 8px;
+  right: 14px;
   display: block;
   width: 15px;
   height: 15px;
   background-color: transparent;
   background-image: url("../img/sprite/icon-plus.svg");
   background-repeat: no-repeat;
+  background-position: center;
   border: none;
-  display: none;
 }
 
 .footer__container {
   display: grid;
-  grid-template-columns: 30% 1fr 1fr;
+  grid-template-columns: 344fr 460fr 345fr;
 }
 
 .page {
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
+  grid-template-rows: 1fr min-content;
   min-height: 100vh;
 }
 
@@ -1484,7 +1505,8 @@ input::-webkit-inner-spin-button {
 
 @media (min-width: 1024px) {
   .modal__content {
-    margin-top: 146px;
+    align-self: flex-start;
+    margin: 146px auto 151px;
     transform: translateX(-8px);
   }
 }
@@ -1547,7 +1569,6 @@ input::-webkit-inner-spin-button {
   .promo h2 {
     font-size: 64px;
     line-height: 75px;
-    letter-spacing: -3px;
     margin: 0;
   }
 
@@ -1569,16 +1590,20 @@ input::-webkit-inner-spin-button {
   }
 
   .advantages__list-item {
-    padding: 93px 43px 0 39px;
+    padding: 89px 43px 0 44px;
     min-height: 360px;
   }
 
   .advantages h3 {
-    margin: 0 0 6px;
+    margin: 0 0 12px;
   }
 
   .description {
-    padding: 76px 0 83px 175px;
+    padding: 76px 0 81px 175px;
+  }
+
+  .description h2 {
+    margin: 0 0 11px;
   }
 
   .description h2::before {
@@ -1590,7 +1615,7 @@ input::-webkit-inner-spin-button {
     margin: 0 0 19px;
   }
 
-  .description button {
+  .description__button {
     margin-top: -3px;
   }
 
@@ -1650,7 +1675,7 @@ input::-webkit-inner-spin-button {
 }
 
   .feedback {
-    padding: 46px 0 123px;
+    padding: 46px 0 126px;
   }
 
   .feedback::before {
@@ -1664,6 +1689,10 @@ input::-webkit-inner-spin-button {
 
   .feedback__container::after {
     display: none;
+  }
+
+  .feedback [type=submit] {
+    padding: 17px 9px 9px;
   }
 
   .form__header {
@@ -1696,6 +1725,10 @@ input::-webkit-inner-spin-button {
     padding: 0;
   }
 
+  .form__group-alter {
+    padding: 0;
+  }
+
   .footer__social-list {
     padding: 7px 0 0;
   }
@@ -1706,7 +1739,7 @@ input::-webkit-inner-spin-button {
   }
 
   .footer__info {
-    padding: 40px 0 0;
+    padding: 38px 0 0;
   }
 
   .footer__info-list-item {
@@ -1723,7 +1756,7 @@ input::-webkit-inner-spin-button {
   }
 
   .footer__contacts {
-    padding: 40px 0 0 15px;
+    padding: 37px 0 0 15px;
   }
 
   .footer__contacts-list {
@@ -1731,7 +1764,7 @@ input::-webkit-inner-spin-button {
   }
 
   .footer__contacts-list-item {
-    margin-bottom: 14px;
+    margin-bottom: 8px;
   }
 
   .footer__social {
@@ -1859,7 +1892,6 @@ input::-webkit-inner-spin-button {
   .promo h2 {
     font-size: 36px;
     line-height: 42px;
-    letter-spacing: -2px;
     margin: 0 0 8px;
   }
 
@@ -1872,10 +1904,12 @@ input::-webkit-inner-spin-button {
 
   .promo a {
     display: block;
-    margin: 0 auto;
-    padding: 12px 15px;
+    margin: 0 auto 0 0;
+    width: 270px;
+    padding: 13px 15px 11px 37px;
     font-size: 14px;
     line-height: 16px;
+    letter-spacing: 0.05em;
   }
 
   .promo__container {
@@ -1932,6 +1966,7 @@ input::-webkit-inner-spin-button {
   }
 
   .advantages h3 {
+    margin: 0 0 5px;
     font-size: 20px;
   }
 
@@ -1960,7 +1995,7 @@ input::-webkit-inner-spin-button {
     margin: 0 0 24px;
   }
 
-  .description button {
+  .description__button {
     padding: 9px 16px 9px 13px;
     margin-top: -15px;
     min-width: 160px;
@@ -2042,7 +2077,7 @@ input::-webkit-inner-spin-button {
     font-size: 30px;
     line-height: 42px;
     margin: 0 0 10px;
-    letter-spacing: -2px;
+    letter-spacing: 0;
   }
 
   .form__text {
@@ -2060,7 +2095,7 @@ input::-webkit-inner-spin-button {
   .form__group [type=submit] {
     display: block;
     margin: 30px auto 0;
-    width: 270px;
+    width: 100%;
     padding: 16px 25px 11px;
   }
 
@@ -2201,6 +2236,13 @@ input::-webkit-inner-spin-button {
   .modal__close-btn:hover:active,
   .modal__close-btn.focus-visible:active {
     opacity: 0.5;
+  }
+}
+
+@media (1024px) {
+  .header {
+    position: static;
+    background: none;
   }
 }
 
