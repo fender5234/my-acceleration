@@ -52,7 +52,10 @@
 }
 
 .modal__content {
+  min-height: 610px;
+
   @media (min-width: 1024px) {
+    align-self: flex-start;
     margin: 146px auto 151px; // Pixelperfect
     transform: translateX(-8px); // Pixelperfect
   }

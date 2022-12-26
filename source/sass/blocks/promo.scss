@@ -92,7 +92,8 @@
 
   @media ($mobile) {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 0 0;
+    width: 270px;
     padding: 13px 15px 11px 37px;
     font-size: 14px;
     line-height: 16px;

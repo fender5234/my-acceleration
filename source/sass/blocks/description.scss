@@ -71,7 +71,8 @@
   display: none;
 }
 
-.description button {
+.description__button {
+  display: none;
   font-family: $ff-roboto-condensed;
   font-weight: 700;
   line-height: 16px;
@@ -95,4 +96,8 @@
     margin-top: -15px;
     min-width: 160px;
   }
+}
+
+.description__button--js {
+  display: inline-block;
 }

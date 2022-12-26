@@ -138,6 +138,7 @@
   top: 29px;
   left: 9px;
   appearance: none;
+  cursor: pointer;
 
   @media ($tablet-mobile) {
     top: 25px;
@@ -206,7 +207,12 @@
 }
 
 .form__group-alter {
+  padding-left: 5px;
   margin: 0;
+
+  @media ($tablet-mobile) {
+    padding: 0;
+  }
 
   &--text {
     grid-template-columns: 1fr;

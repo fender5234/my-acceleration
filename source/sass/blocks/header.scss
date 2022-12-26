@@ -9,11 +9,17 @@
   @media ($tablet-mobile) {
     position: absolute;
   }
+
+  @media ($vp-1024) {
+    position: static;
+    background: none;
+  }
 }
 
 .header__top {
   display: flex;
-  padding: 30px 0 35px;
+  flex-wrap: wrap;
+  padding: 30px 50px 35px 0;
 
   @media ($tablet-mobile) {
     padding: 20px 0 35px;
@@ -99,6 +105,7 @@
 }
 
 .header__nav-list-item {
+  flex-shrink: 0;
   margin-left: 136px;
   padding: 15px 10px;
 
@@ -130,8 +137,8 @@
   border: 1px solid $color-alice-blue;
   border-radius: 3px;
   align-self: baseline;
-  margin: 5px 0 0 141px;
-  padding: 9px 12px 11px 16px;
+  margin: 5px 10px 0 auto;
+  padding: 10px 12px 11px 16px;
   letter-spacing: 1px;
   flex-shrink: 0;
   cursor: pointer;

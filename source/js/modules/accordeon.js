@@ -27,8 +27,8 @@ const accordeonToggle = function () {
           const currentButton = element;
           accordeonToggle();
           // а тут нужный список который выше был добавлен в переменную открываеться
-          childList.classList.remove('is-hidden-list');
-          currentButton.classList.add('is-active');
+          childList.classList.toggle('is-hidden-list');
+          currentButton.classList.toggle('is-active');
         }
       });
     });
