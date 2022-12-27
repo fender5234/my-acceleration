@@ -723,6 +723,17 @@ input::-webkit-inner-spin-button {
   position: relative;
   font-size: 16px;
   line-height: 18px;
+  transition: opacity 0.3s ease;
+}
+
+.header__nav-link:focus-visible {
+  opacity: 0.8;
+}
+
+@supports not selector(:focus-visible) {
+  .header__nav-link.focus-visible:focus {
+    opacity: 0.8;
+  }
 }
 
 .header__nav-link::before {
@@ -776,6 +787,17 @@ input::-webkit-inner-spin-button {
   letter-spacing: 1px;
   flex-shrink: 0;
   cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.header__callback-button:focus-visible {
+  opacity: 0.8;
+}
+
+@supports not selector(:focus-visible) {
+  .header__callback-button.focus-visible:focus {
+    opacity: 0.8;
+  }
 }
 
 .promo {
@@ -995,6 +1017,17 @@ input::-webkit-inner-spin-button {
   padding: 15px 15px 12px 15px;
   min-width: 180px;
   cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.description__button:focus-visible {
+  opacity: 0.8;
+}
+
+@supports not selector(:focus-visible) {
+  .description__button.focus-visible:focus {
+    opacity: 0.8;
+  }
 }
 
 .description__button--js {
@@ -1109,7 +1142,7 @@ input::-webkit-inner-spin-button {
 
 .feedback {
   position: relative;
-  padding: 166px 0 245px 0;
+  padding: 166px 0 241px 0;
   background-color: #00b2ff;
   color: #ffffff;
 }
@@ -1256,31 +1289,42 @@ input::-webkit-inner-spin-button {
   letter-spacing: 1px;
   cursor: pointer;
   margin-top: 20px;
+  transition: opacity 0.3s ease;
 }
 
-.form label [type=checkbox] {
-  position: relative;
+.form__group [type=submit]:focus-visible {
+  opacity: 0.8;
+}
+
+@supports not selector(:focus-visible) {
+  .form__group [type=submit].focus-visible:focus {
+    opacity: 0.8;
+  }
 }
 
 .form [type=checkbox] {
-  position: absolute;
-  top: 29px;
-  left: 9px;
+  position: relative;
+  top: 41px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  transition: opacity 0.3s ease;
 }
 
-.form [type=checkbox]::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 15px;
-  height: 15px;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
+.form [type=checkbox]:focus-visible {
+  opacity: 0.8;
+}
+
+@supports not selector(:focus-visible) {
+  .form [type=checkbox].focus-visible:focus {
+    opacity: 0.8;
+  }
 }
 
 .form [type=checkbox]:checked::after {
@@ -1349,7 +1393,7 @@ input::-webkit-inner-spin-button {
 }
 
 .footer {
-  padding: 48px 0 40px;
+  padding: 50px 0 40px;
   background-color: #041827;
 }
 
@@ -1384,6 +1428,17 @@ input::-webkit-inner-spin-button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  transition: opacity 0.3s ease;
+}
+
+.footer__social-link:focus-visible {
+  opacity: 0.8;
+}
+
+@supports not selector(:focus-visible) {
+  .footer__social-link.focus-visible:focus {
+    opacity: 0.8;
+  }
 }
 
 .footer__social-link--ok {
@@ -1454,6 +1509,34 @@ input::-webkit-inner-spin-button {
 .footer__container {
   display: grid;
   grid-template-columns: 344fr 460fr 345fr;
+}
+
+.footer__info-link {
+  transition: opacity 0.3s ease;
+}
+
+.footer__info-link:focus-visible {
+  opacity: 0.8;
+}
+
+@supports not selector(:focus-visible) {
+  .footer__info-link.focus-visible:focus {
+    opacity: 0.8;
+  }
+}
+
+.footer__contacts-link {
+  transition: opacity 0.3s ease;
+}
+
+.footer__contacts-link:focus-visible {
+  opacity: 0.8;
+}
+
+@supports not selector(:focus-visible) {
+  .footer__contacts-link.focus-visible:focus {
+    opacity: 0.8;
+  }
 }
 
 .page {
@@ -1675,7 +1758,7 @@ input::-webkit-inner-spin-button {
 }
 
   .feedback {
-    padding: 46px 0 126px;
+    padding: 46px 0 123px;
   }
 
   .feedback::before {
@@ -1713,7 +1796,7 @@ input::-webkit-inner-spin-button {
   }
 
   .form [type=checkbox] {
-    top: 25px;
+    top: 37px;
     left: -1px;
   }
 
@@ -2113,7 +2196,7 @@ input::-webkit-inner-spin-button {
   }
 
   .footer {
-    padding: 35px 0 0;
+    padding: 33px 0 0;
   }
 
   .footer ul {
@@ -2235,6 +2318,94 @@ input::-webkit-inner-spin-button {
   .modal__close-btn:active,
   .modal__close-btn:hover:active,
   .modal__close-btn.focus-visible:active {
+    opacity: 0.5;
+  }
+
+  .header__nav-link:hover,
+  .header__nav-link:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .header__nav-link:active,
+  .header__nav-link:hover:active,
+  .header__nav-link.focus-visible:active {
+    opacity: 0.5;
+  }
+
+  .header__callback-button:hover,
+  .header__callback-button:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .header__callback-button:active,
+  .header__callback-button:hover:active,
+  .header__callback-button.focus-visible:active {
+    opacity: 0.5;
+  }
+
+  .description__button:hover,
+  .description__button:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .description__button:active,
+  .description__button:hover:active,
+  .description__button.focus-visible:active {
+    opacity: 0.5;
+  }
+
+  .form__group [type=submit]:hover,
+  .form__group [type=submit]:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .form__group [type=submit]:active,
+  .form__group [type=submit]:hover:active,
+  .form__group [type=submit].focus-visible:active {
+    opacity: 0.5;
+  }
+
+  .form [type=checkbox]:hover,
+  .form [type=checkbox]:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .form [type=checkbox]:active,
+  .form [type=checkbox]:hover:active,
+  .form [type=checkbox].focus-visible:active {
+    opacity: 0.5;
+  }
+
+  .footer__social-link:hover,
+  .footer__social-link:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .footer__social-link:active,
+  .footer__social-link:hover:active,
+  .footer__social-link.focus-visible:active {
+    opacity: 0.5;
+  }
+
+  .footer__info-link:hover,
+  .footer__info-link:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .footer__info-link:active,
+  .footer__info-link:hover:active,
+  .footer__info-link.focus-visible:active {
+    opacity: 0.5;
+  }
+
+  .footer__contacts-link:hover,
+  .footer__contacts-link:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .footer__contacts-link:active,
+  .footer__contacts-link:hover:active,
+  .footer__contacts-link.focus-visible:active {
     opacity: 0.5;
   }
 }
