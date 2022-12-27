@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {showText} from './modules/show-text';
-import {accordeonToggle} from './modules/accordeon';
+import {initAccordeons} from './modules/accordeon';
 import initContentSection from './modules/content-section';
 import initForm from './modules/form';
 // ---------------------------------
@@ -19,7 +19,8 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     const contentElements = document.querySelectorAll('[data-content-section]');
     contentElements.forEach(initContentSection);
-    accordeonToggle();
+    // accordeonToggle();
+    initAccordeons();
     document.querySelectorAll('[data-section-text]').forEach(showText);
     document.querySelectorAll('[data-form]').forEach(initForm);
     initModals();

@@ -96,6 +96,8 @@
     margin-top: -15px;
     min-width: 160px;
   }
+
+  @include default-interactive;
 }
 
 .description__button--js {

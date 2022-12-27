@@ -117,6 +117,8 @@
   cursor: pointer;
   margin-top: 20px;
 
+  @include default-interactive;
+
   @media ($tablet-mobile) {
     margin-top: 20px;
   }
@@ -129,36 +131,26 @@
   }
 }
 
-.form label [type="checkbox"] {
-  position: relative;
-}
-
 .form [type="checkbox"] {
-  position: absolute;
-  top: 29px;
-  left: 9px;
+  position: relative;
+  top: 41px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
   appearance: none;
   cursor: pointer;
+  border: 1px solid $color-default-white;
+  border-radius: 2px;
+  @include default-interactive;
 
   @media ($tablet-mobile) {
-    top: 25px;
+    top: 37px;
     left: -1px;
   }
 
   @media ($mobile) {
     top: 19px;
     left: 6px;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 15px;
-    height: 15px;
-    border: 2px solid $color-default-white;
-    border-radius: 2px;
   }
 
   &:checked {

@@ -1453,12 +1453,12 @@ input::-webkit-inner-spin-button {
 
 .footer__container {
   display: grid;
-  grid-template-columns: 30% 1fr 1fr;
+  grid-template-columns: 344fr 460fr 345fr;
 }
 
 .page {
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
+  grid-template-rows: 1fr min-content;
   min-height: 100vh;
 }
 
@@ -2095,7 +2095,7 @@ input::-webkit-inner-spin-button {
   .form__group [type=submit] {
     display: block;
     margin: 30px auto 0;
-    width: 270px;
+    width: 100%;
     padding: 16px 25px 11px;
   }
 

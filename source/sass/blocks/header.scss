@@ -50,6 +50,8 @@
   font-size: 16px;
   line-height: 18px;
 
+  @include default-interactive;
+
   @media ($tablet-mobile) {
     display: block;
     width: 20px;
@@ -146,6 +148,8 @@
   @media ($tablet-mobile) {
     display: none;
   }
+
+  @include default-interactive;
 }
 
 .header__nav-link-text {
