@@ -19,7 +19,7 @@
   transition: opacity $trans-default;
 
   @include hover-focus {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   @if $active {

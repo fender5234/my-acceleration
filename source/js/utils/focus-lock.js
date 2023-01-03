@@ -9,7 +9,7 @@ const SELECTORS = [
   'object',
   'embed',
   '[contenteditable]',
-  '[tabindex]:not([tabindex^="-"])',
+  '[tabindex]:not([tabindex^="-"])'
 ];
 
 export class FocusLock {

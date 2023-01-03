@@ -101,6 +101,8 @@
       right: 16px;
     }
   }
+
+  @include default-interactive;
 }
 
 .service li {

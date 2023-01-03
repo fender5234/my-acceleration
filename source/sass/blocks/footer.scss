@@ -130,7 +130,7 @@
 
   @media ($mobile) {
     position: relative;
-    padding: 22px 25px;
+    padding: 22px 25px 0;
     border-bottom: 1px solid $color-alice-blue;
   }
 }
@@ -148,6 +148,10 @@
 
   @media ($tablet-mobile) {
     margin-bottom: 8px;
+  }
+
+  @media ($mobile) {
+    margin-bottom: 15px;
   }
 }
 
