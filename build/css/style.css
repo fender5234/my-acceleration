@@ -685,12 +685,12 @@ input::-webkit-inner-spin-button {
 }
 
 .modal__close-btn:focus-visible {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 @supports not selector(:focus-visible) {
   .modal__close-btn.focus-visible:focus {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
@@ -705,7 +705,6 @@ input::-webkit-inner-spin-button {
 
 .header__top {
   display: flex;
-  flex-wrap: wrap;
   padding: 30px 50px 35px 0;
 }
 
@@ -727,12 +726,12 @@ input::-webkit-inner-spin-button {
 }
 
 .header__nav-link:focus-visible {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 @supports not selector(:focus-visible) {
   .header__nav-link.focus-visible:focus {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
@@ -791,12 +790,12 @@ input::-webkit-inner-spin-button {
 }
 
 .header__callback-button:focus-visible {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 @supports not selector(:focus-visible) {
   .header__callback-button.focus-visible:focus {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
@@ -865,6 +864,17 @@ input::-webkit-inner-spin-button {
   color: #f2f5f6;
   cursor: pointer;
   text-transform: uppercase;
+  transition: opacity 0.3s ease;
+}
+
+.promo a:focus-visible {
+  opacity: 0.6;
+}
+
+@supports not selector(:focus-visible) {
+  .promo a.focus-visible:focus {
+    opacity: 0.6;
+  }
 }
 
 .promo__container {
@@ -1021,12 +1031,12 @@ input::-webkit-inner-spin-button {
 }
 
 .description__button:focus-visible {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 @supports not selector(:focus-visible) {
   .description__button.focus-visible:focus {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
@@ -1069,6 +1079,7 @@ input::-webkit-inner-spin-button {
   min-height: 650px;
   background-size: cover;
   background-color: #03101b;
+  transition: opacity 0.3s ease;
 }
 
 .service a::before {
@@ -1094,6 +1105,16 @@ input::-webkit-inner-spin-button {
   mask-repeat: no-repeat;
   -webkit-mask-image: url("../img/sprite/icon-arrow.svg");
   mask-image: url("../img/sprite/icon-arrow.svg");
+}
+
+.service a:focus-visible {
+  opacity: 0.6;
+}
+
+@supports not selector(:focus-visible) {
+  .service a.focus-visible:focus {
+    opacity: 0.6;
+  }
 }
 
 .service li {
@@ -1293,12 +1314,12 @@ input::-webkit-inner-spin-button {
 }
 
 .form__group [type=submit]:focus-visible {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 @supports not selector(:focus-visible) {
   .form__group [type=submit].focus-visible:focus {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
@@ -1318,12 +1339,12 @@ input::-webkit-inner-spin-button {
 }
 
 .form [type=checkbox]:focus-visible {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 @supports not selector(:focus-visible) {
   .form [type=checkbox].focus-visible:focus {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
@@ -1331,7 +1352,7 @@ input::-webkit-inner-spin-button {
   content: "";
   position: absolute;
   top: 4px;
-  left: 3px;
+  left: 2px;
   width: 9px;
   height: 6px;
   -webkit-mask-image: url("../img/sprite/icon-check.svg");
@@ -1384,8 +1405,12 @@ input::-webkit-inner-spin-button {
 }
 
 .form__group-alter--bottom [type=checkbox] {
-  top: 7px;
-  left: 9px;
+  top: 20px;
+  left: 8px;
+}
+
+.form__group label {
+  cursor: pointer;
 }
 
 .check-box {
@@ -1432,12 +1457,12 @@ input::-webkit-inner-spin-button {
 }
 
 .footer__social-link:focus-visible {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 @supports not selector(:focus-visible) {
   .footer__social-link.focus-visible:focus {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
@@ -1516,12 +1541,12 @@ input::-webkit-inner-spin-button {
 }
 
 .footer__info-link:focus-visible {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 @supports not selector(:focus-visible) {
   .footer__info-link.focus-visible:focus {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
@@ -1530,12 +1555,12 @@ input::-webkit-inner-spin-button {
 }
 
 .footer__contacts-link:focus-visible {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 @supports not selector(:focus-visible) {
   .footer__contacts-link.focus-visible:focus {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
@@ -1800,12 +1825,18 @@ input::-webkit-inner-spin-button {
     left: -1px;
   }
 
+  .form [type=checkbox]:checked::after {
+    top: 3px;
+    left: 1px;
+  }
+
   .form span {
     padding: 9px 0 0 24px;
   }
 
   .form__group {
     padding: 0;
+    grid-gap: 0 30px;
   }
 
   .form__group-alter {
@@ -2183,8 +2214,9 @@ input::-webkit-inner-spin-button {
   }
 
   .form [type=checkbox] {
-    top: 19px;
+    top: 31px;
     left: 6px;
+    flex-shrink: 0;
   }
 
   .form span {
@@ -2222,8 +2254,12 @@ input::-webkit-inner-spin-button {
 
   .footer__contacts {
     position: relative;
-    padding: 22px 25px;
+    padding: 22px 25px 0;
     border-bottom: 1px solid #f2f5f7;
+  }
+
+  .footer__contacts-list-item {
+    margin-bottom: 15px;
   }
 
   .footer__social {
@@ -2312,7 +2348,7 @@ input::-webkit-inner-spin-button {
 
   .modal__close-btn:hover,
   .modal__close-btn:hover:not(.focus-visible) {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   .modal__close-btn:active,
@@ -2323,7 +2359,7 @@ input::-webkit-inner-spin-button {
 
   .header__nav-link:hover,
   .header__nav-link:hover:not(.focus-visible) {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   .header__nav-link:active,
@@ -2334,7 +2370,7 @@ input::-webkit-inner-spin-button {
 
   .header__callback-button:hover,
   .header__callback-button:hover:not(.focus-visible) {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   .header__callback-button:active,
@@ -2343,9 +2379,20 @@ input::-webkit-inner-spin-button {
     opacity: 0.5;
   }
 
+  .promo a:hover,
+  .promo a:hover:not(.focus-visible) {
+    opacity: 0.6;
+  }
+
+  .promo a:active,
+  .promo a:hover:active,
+  .promo a.focus-visible:active {
+    opacity: 0.5;
+  }
+
   .description__button:hover,
   .description__button:hover:not(.focus-visible) {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   .description__button:active,
@@ -2354,9 +2401,20 @@ input::-webkit-inner-spin-button {
     opacity: 0.5;
   }
 
+  .service a:hover,
+  .service a:hover:not(.focus-visible) {
+    opacity: 0.6;
+  }
+
+  .service a:active,
+  .service a:hover:active,
+  .service a.focus-visible:active {
+    opacity: 0.5;
+  }
+
   .form__group [type=submit]:hover,
   .form__group [type=submit]:hover:not(.focus-visible) {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   .form__group [type=submit]:active,
@@ -2367,7 +2425,7 @@ input::-webkit-inner-spin-button {
 
   .form [type=checkbox]:hover,
   .form [type=checkbox]:hover:not(.focus-visible) {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   .form [type=checkbox]:active,
@@ -2378,7 +2436,7 @@ input::-webkit-inner-spin-button {
 
   .footer__social-link:hover,
   .footer__social-link:hover:not(.focus-visible) {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   .footer__social-link:active,
@@ -2389,7 +2447,7 @@ input::-webkit-inner-spin-button {
 
   .footer__info-link:hover,
   .footer__info-link:hover:not(.focus-visible) {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   .footer__info-link:active,
@@ -2400,7 +2458,7 @@ input::-webkit-inner-spin-button {
 
   .footer__contacts-link:hover,
   .footer__contacts-link:hover:not(.focus-visible) {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   .footer__contacts-link:active,
