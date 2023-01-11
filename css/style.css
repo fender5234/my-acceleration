@@ -1103,8 +1103,8 @@ input::-webkit-inner-spin-button {
   background-color: #ffffff;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  -webkit-mask-image: url("/img/sprite/icon-arrow.svg");
-  mask-image: url("/img/sprite/icon-arrow.svg");
+  -webkit-mask-image: url("../img/sprite/icon-arrow.svg");
+  mask-image: url("../img/sprite/icon-arrow.svg");
 }
 
 .service a:focus-visible {
@@ -1355,8 +1355,8 @@ input::-webkit-inner-spin-button {
   left: 2px;
   width: 9px;
   height: 6px;
-  -webkit-mask-image: url("/img/sprite/icon-check.svg");
-  mask-image: url("/img/sprite/icon-check.svg");
+  -webkit-mask-image: url("../img/sprite/icon-check.svg");
+  mask-image: url("../img/sprite/icon-check.svg");
   background-color: #ffffff;
 }
 
