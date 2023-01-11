@@ -898,7 +898,7 @@ input::-webkit-inner-spin-button {
 .advantages__list-item {
   position: relative;
   border: 1px solid #e5e5e5;
-  padding: 90px 56px 0 44px;
+  padding: 90px 56px 20px 44px;
   min-height: 300px;
 }
 
@@ -2254,7 +2254,7 @@ input::-webkit-inner-spin-button {
 
   .footer__contacts {
     position: relative;
-    padding: 22px 25px 0;
+    padding: 22px 25px;
     border-bottom: 1px solid #f2f5f7;
   }
 
