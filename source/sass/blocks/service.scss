@@ -93,7 +93,7 @@
     height: 14px;
     background-color: $color-default-white;
     mask-repeat: no-repeat;
-    mask-image: url("/img/sprite/icon-arrow.svg");
+    mask-image: url("../img/sprite/icon-arrow.svg");
 
     @media ($mobile) {
       mask-size: 7px 7px;
